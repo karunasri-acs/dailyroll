@@ -1,0 +1,18 @@
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		143
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='143' 
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='143'
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='143'
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='143'
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='143'
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='143'
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		500
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		{"1":{"id":"558","capture_id":"5d77b126ddf738.97883465","account_id":"143","amount":"500","file_name":"..\/..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465\/2019\/12\/05\/5d77b126ddf738.97883465-100kkb.png","description":"expenses","subcat_id":"1050","cat_id":"460","tr_date":"2019-12-05","permissionflag":"","updateddate":"2019-12-05 10:40:07","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"}}
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		1
+[2019-12-05 10:43:23]	[INFO][ws_an_balancesheet.php]		[{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-12-05","expensedesc":"expenses","expenseamount":"500","totalexpenseamount":"500","totalincomeamount":null,"curr":"\u20b9"}]

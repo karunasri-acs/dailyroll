@@ -1,0 +1,2 @@
+[2019-12-17 04:00:10]	[INFO][ws_an_update_expense1.php]		UPDATE `expenses` SET `account_id`='37',`amount`='123',`description`='sdf',`subcat_id`='415',`cat_id`='178',`tr_date`= '2019-12-17', pendingflag='pending' WHERE `id`='569'
+[2019-12-17 04:00:22]	[INFO][ws_an_update_expense1.php]		UPDATE `expenses` SET `account_id`='37',`amount`='123',`description`='sdf',`subcat_id`='415',`cat_id`='178',`tr_date`= '2019-12-17', pendingflag='pending' WHERE `id`='569'

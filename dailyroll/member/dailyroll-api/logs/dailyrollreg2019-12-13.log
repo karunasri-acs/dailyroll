@@ -1,0 +1,16 @@
+[2019-12-13 07:52:04]	[INFO][ws_an_register.php]		begining of Register
+[2019-12-13 07:52:04]	[INFO][ws_an_register.php]		after values get
+[2019-12-13 09:07:50]	[INFO][ws_an_register.php]		begining of Register
+[2019-12-13 09:07:50]	[INFO][ws_an_register.php]		after values get
+[2019-12-13 09:09:04]	[INFO][ws_an_register.php]		begining of Register
+[2019-12-13 09:09:04]	[INFO][ws_an_register.php]		after values get
+[2019-12-13 09:09:04]	[INFO][ws_an_register.php]		create a new user
+[2019-12-13 09:09:04]	[INFO][ws_an_register.php]		74
+[2019-12-13 09:09:04]	[INFO][ws_an_register.php]		before mail sent
+[2019-12-13 09:09:05]	[INFO][ws_an_register.php]		"success"
+[2019-12-13 12:55:01]	[INFO][ws_an_register.php]		begining of Register
+[2019-12-13 12:55:01]	[INFO][ws_an_register.php]		after values get
+[2019-12-13 12:55:01]	[INFO][ws_an_register.php]		create a new user
+[2019-12-13 12:55:01]	[INFO][ws_an_register.php]		75
+[2019-12-13 12:55:01]	[INFO][ws_an_register.php]		before mail sent
+[2019-12-13 12:55:02]	[INFO][ws_an_register.php]		"success"

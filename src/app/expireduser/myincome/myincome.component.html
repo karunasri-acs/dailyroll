@@ -1,0 +1,262 @@
+<div class="row">
+	
+	<div class="col-md-9">	
+			<div class="box box-warning box-solid">
+					
+				<div class="box-body">
+				<form class="form-horizontal" action="" method="POST">
+				  <div class="modal-body">
+					<div class="messages"></div>
+					<div class="row">
+						<div class="col-md-4">
+							   <div class="form-group">
+								<label for="name" class="col-sm-3 control-label">Account</label>
+							<div class="col-sm-9"> 
+									<select id="addaccount_id" #addaccount_id="ngModel" class="hideLabel form-control" [(ngModel)]="accountid" name="accountmyincex_id" (change)="searchAccount();">  
+											<option selected="" value="">Select Account Here</option>  
+											<option [ngValue]="k.account_id"  *ngFor="let k of accountslist">  
+													{{k.accountname}}  
+											</option>  
+										</select>
+							</div>
+						   </div>
+						</div>
+						<div class="col-md-4">
+						
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Status</label>
+								<div class="col-sm-9"> 
+									<select id="addsubcat_id" #addsubcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="penstatus" name="subcatid" (change)="selectpenstatus()">  
+										<option [ngValue]="k.status"  *ngFor="let k of dd">  
+												{{k.status}}  
+										</option>  
+									</select>
+								</div>
+							</div>
+							<br>
+						
+						</div>
+						
+					</div>
+				 </div>
+				</form> 
+			  </div>
+			</div>
+			<div class="modal fade" id="feedback">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h4>Add Income</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span></button>
+			</div>
+			<form class="form-horizontal" action="" method="POST">
+					<div class="modal-body">
+								 <div class="row">
+					<label for="name" class="col-sm-2 control-label">Date</label>
+					<div class="col-sm-9"> 
+							<input type="date" class="form-control"[(ngModel)]="indate" placeholder="E-Mail" name="date">
+						</div>
+						</div>
+					<br>
+					<div class="row">
+						<label for="name" class="col-sm-2 control-label">Account</label>
+						 <div class="col-sm-9"> 
+							 <select id="account_id" #account_id="ngModel" class="hideLabel form-control" [(ngModel)]="accountid" name="accountmyindrop_id" (change)="selectacc();">  
+								 <option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+										 {{k.accountname}}  
+								 </option>  
+							 </select>
+						 </div>
+						 </div>
+						 <br>
+				 <div class="row">
+									 <label for="name" class="col-sm-2 control-label">Category</label>
+									 <div class="col-sm-9"> 
+										 <select id="account_id" #account_id="ngModel" class="hideLabel form-control" [(ngModel)]="catid" name="catid" (change)="selectcat();">  
+											  <option [ngValue]="k.cat_id" *ngFor="let k of categorylist">  
+													 {{k.cat_name}}  
+											 </option>  
+										 </select>
+									 </div>
+								 </div>
+								 <br>
+								 <div class="row">
+									 <label for="name" class="col-sm-2 control-label">Sub-Category</label>
+									 <div class="col-sm-9"> 
+										 <select id="account_id" #account_id="ngModel" class="hideLabel form-control" [(ngModel)]="subcatid" name="subcatid" (change)="selectsubcat();">  
+											 <option [ngValue]="k.sub_id" *ngFor="let k of subcategorylist">  
+													 {{k.subcat_name}}  
+											 </option>  
+										 </select>
+									 </div>
+								 </div>
+							 
+								<br>
+					<div class="row">
+						<label for="name" class="col-sm-2 col-sm-2 control-label">Description </label>
+						<div class="col-sm-9"> 
+							<textarea class="form-control"  [(ngModel)]="description"  name="description" > </textarea></div>
+						</div>
+					<br>
+					
+					<div class="row">
+					 <label for="name" class="col-sm-2 control-label">Amount</label>
+						<div class="col-sm-9"> 
+							<input type="number" step = "0.01" min = "0" max = "1000000000000" class="form-control"  [(ngModel)]="amount" name="amount" placeholder="Amount">
+						</div>
+						</div>
+					<br>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+					<button type="submit"  class="btn btn-primary" data-dismiss="modal" name="add">Add</button>
+					</div>
+				</form>
+				</div>
+			</div>
+			</div>
+			<div class="box">
+				<div class="box-header">
+						</div>
+				<!-- /.box-header -->
+				<div class="box-body">
+						<div class="modal fade" id="modalunshare1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">×</span></button>
+									<h4 class="modal-title">Delete</h4>
+						</div>
+						<form action="" method="POST"></form>
+						<div class="modal-body">
+							<p>Are You Relly Want Delete</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+							<input class="btn btn-primary" name="delete" (click)="removeProduct()"  data-dismiss="modal" type="submit" value="Delete">
+						
+						</div>
+						
+						</div>
+					</div>
+					</div>
+					<div class="modal fade" tabindex="-1" role="dialog" id="modal-delay">
+						<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">×</span></button>
+							<h4 class="modal-title">Details</h4>
+							</div>
+						<form class="form-horizontal" action="" method="POST" enctype="multipart/form-data"></form>
+
+							<div class="modal-body">
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Date</label>
+								<div class="col-sm-9"> 
+								<input type="date" class="form-control" placeholder="Date"[(ngModel)]="editedProduct.tr_date" id="date" name="date">
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Account</label>
+								<div class="col-sm-9"> 
+										<select id="accounttid" #accounttid="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.accoun" name="accountid" (change)="selectacc();">  
+												<option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+														{{k.accountname}}  
+												</option>  
+											</select> 
+								</div>
+							</div>
+							<br>	
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Category</label>
+								<div class="col-sm-9"> 
+										<select id="accoun" #accoun="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.cat_id" name="catid" (change)="selectcat();">  
+												<option [ngValue]="k.cat_id" *ngFor="let k of categorylist">  
+													{{k.cat_name}}  
+											</option>  
+											</select>
+								</div>
+							</div>	
+							<br>	
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Sub-Category</label>
+								<div class="col-sm-9"> 
+										<select id="acc" #acc="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.subcat_id" name="subcatid" (change)="selectsubcat();">  
+												<option selected="" value=""></option>  
+												<option [ngValue]="k.sub_id" *ngFor="let k of subcategorylist">  
+														{{k.subcat_name}}  
+												</option>  
+											</select>
+											</div>
+							</div>
+							<br>	
+						
+							<div class="row">
+								<label for="name" class="col-sm-2 col-sm-2 control-label">Description</label>
+								<div class="col-sm-9"> 
+										<textarea class="form-control" [(ngModel)]="editedProduct.description" name = "description"  > </textarea></div>
+									</div>
+							</div>
+							<br>
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Amount</label>
+								<div class="col-sm-9"> 
+										<input type="number" step = "0.01" min = "0" max = "1000000000000" class="form-control" name="amount" [(ngModel)]="editedProduct.income_amount" placeholder="Amount" >
+									</div>
+							</div>
+							<br>
+											
+							<div class="modal-footer">
+									<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+									<button type="submit" class="btn btn-primary" data-dismiss="modal" name="update">Update</button>
+										</div>		 
+						</div>
+					
+						
+						</div>
+						</div>
+				
+		
+				<table   id="my-tables" datatable   class="table table-striped table-bordered table-sm row-border hover" *ngIf="myTable"
+				> <thead>
+						<tr role="row">
+							<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 67.4826px;">S.No</th>
+							<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 144.149px;">Date</th>
+							<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 114.149px;">Account</th>
+							<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 168.594px;">Category</th>
+							<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 181.927px;">Sub-Category</th>
+							<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 270.816px;">Description</th>
+							<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 204.149px;">Income Amount</th>
+								</tr>
+		</thead>
+		<tbody>
+	
+		<tr *ngFor="let item of incomelist,let i=index">
+				<td>{{i+1}}</td>
+				<td>{{item.tr_date}}</td>
+				<td>{{item.accountname}}</td>
+				<td>{{item.cat_name}}</td>
+				<td>{{item.subcat_name}}</td>
+				<td>{{item.description}}</td>
+				<td>{{item.income_amount}}</td>
+			
+						
+							
+			</tr>
+		</tbody>
+						
+					</table>
+				</div>
+			</div>
+	
+		</div>
+		
+		<div class="col-md-3">
+			<app-expads> </app-expads>
+		</div>
+
+	</div>			

@@ -1,0 +1,130 @@
+<div class ="row" style="background-image: url('../../../assets/images/dl3.jpg'); background-repeat: no-repeat; background-size: cover;">
+<app-header></app-header>
+<div class="login-box" >
+  <div class="login-logo">
+      <a href="{{furl}}"> 
+          <img  src="assets/images/dl22.png" alt="pic"  style="height: 120px; width: 400px;">
+         </a>
+  </div>
+  
+  <div class="login-box-body">  <!-- /.login-logo -->
+  <div class="form-login">
+   
+    <p class="login-box-msg">Sign in to start your session</p>
+       
+    <div *ngIf="myform">
+    <form login='loginForm'>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Email"[(ngModel)]='username'[ngModelOptions]="{standalone:true}">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Password" [(ngModel)]='password'[ngModelOptions]="{standalone:true}">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+            <a href="#" routerLink="/forgetpass"class="text-center" id="fgt">Forgot Password</a>
+           
+        </div>
+
+        <!-- /.col -->
+        <div class="col-xs-4">
+              <button type="button" data-toggle="modal" data-target="#feedback" id="addMemberModalBtn" class="btn btn-primary btn-block btn-flat"(click)='ValidateUser()'>Sign In</button>
+       
+        </div>
+        <!-- /.col -->
+      </div>
+      
+      <div class="row">
+        <iframe [src]='urlif1'  style="top:0; left:0; bottom:0; right:0;  border:none; margin:0; padding:0; overflow:hidden;"   height="80" width="100%" >  </iframe>
+
+      </div>
+      
+    </form>
+  </div>
+ <div *ngIf="mybutton">
+    <button type="button" data-toggle="modal" data-target="#feedback" id="addMemberModalBtn" class="btn btn-primary btn-block btn-flat"(click)='ValidateUser()'> Autenticate</button>
+       
+ </div>
+    <div *ngIf="myTable">
+      <div class="modal fade" id="feedback">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+          <h4>2-Step Verification</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span></button>
+            
+          </div>
+          <form >
+            <div class="modal-body">
+       
+              <div id='device' style="text-align: center" >
+          
+          
+                <div id="img" *ngFor="let item of devicecode">
+                   </div>
+          <form method="post" >
+              <div class="form-group">
+                  <label for="name" class="col-sm-3 control-label">Enter Code </label>
+                    <div class="col-sm-6">
+
+          <input type="text" name="code" class="form-control" [(ngModel)]="authcode" />
+                    </div></div>
+          <br> <br> <br>
+          <input type="submit" class="btn btn-primary"  data-dismiss="modal" (click) ="confirm()"/>
+          <br>
+          Click Here to send request for barcode <a   data-dismiss="modal"  (click)="sendrequest()">sendrequest</a>  
+     
+        </form>
+          </div>
+          </div>
+        </form>
+        </div>
+        </div>
+            
+        </div>
+      </div>
+    <!-- /.social-auth-links -->
+
+    <a href="#" routerLink="/register"class="text-center">Register a new membership</a>
+    <br>
+  
+    <span class="btn btn-danger" *ngIf="error" id="error" >{{error_message}}</span>
+  </div>
+</div>
+
+  <div class="modal fade" id="feedbacktour">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h4>App Tour</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span></button>
+        
+      </div>
+      <form >
+        <div class="modal-body">
+        
+             
+          <iframe [src]="urlif"
+          style="top:0; left:0; bottom:0; right:0;  border:none; margin:0; padding:0; overflow:hidden;"    width="100%" height="440"></iframe>
+
+   
+      </div>
+    </form>
+    </div>
+    </div>
+        
+    </div>
+   
+   
+  <!-- /.login-box-body -->
+</div>
+
+
+<h4 class="login-box-msg"><a data-toggle="modal" data-target="#feedbacktour" style="color:red">Tour</a></h4>
+   
+</div>
+

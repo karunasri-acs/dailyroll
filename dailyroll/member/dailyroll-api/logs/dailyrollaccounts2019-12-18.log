@@ -1,0 +1,100 @@
+[2019-12-18 04:32:37]	[INFO][ws_an_accounts.php]		1
+[2019-12-18 04:32:37]	[INFO][ws_an_accounts.php]		13
+[2019-12-18 04:32:37]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='76' group by a.account_id
+[2019-12-18 04:32:37]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 04:32:37]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 04:32:37]	[INFO][ws_an_accounts.php]		null
+[2019-12-18 04:32:41]	[INFO][ws_an_accounts.php]		6
+[2019-12-18 04:32:41]	[INFO][ws_an_accounts.php]		2
+[2019-12-18 04:32:41]	[INFO][ws_an_accounts.php]		[{"account_id":"152","user_id":"5df9effd9b6ed6.63000633","accountname":"family","currcode":"","status":"admin","groupstatus":"active"}]
+[2019-12-18 04:32:41]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='152'
+[2019-12-18 04:32:41]	[INFO][ws_an_accounts.php]		[{"add_user_id":"76","account_name":"family","email":"areef666sayad@gmail.com","name":"manisha ","phone":"8886230000","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5df9effd9b6ed6.63000633","unique_id":"76","usertype":"writeonly"}]
+[2019-12-18 04:32:45]	[INFO][ws_an_accounts.php]		1
+[2019-12-18 04:32:45]	[INFO][ws_an_accounts.php]		13
+[2019-12-18 04:32:45]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='76' group by a.account_id
+[2019-12-18 04:32:45]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 04:32:45]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 04:32:45]	[INFO][ws_an_accounts.php]		null
+[2019-12-18 04:33:49]	[INFO][ws_an_accounts.php]		4
+[2019-12-18 04:33:50]	[INFO][ws_an_accounts.php]		INSERT INTO `accounts`(`user_id`, `currcode`, `accountname`, `date`, `accountstatus`) VALUES ('5df9effd9b6ed6.63000633','INR','room maintence','2019-12-18','active')
+[2019-12-18 04:33:52]	[INFO][ws_an_accounts.php]		1
+[2019-12-18 04:33:52]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='76' group by a.account_id
+[2019-12-18 04:40:54]	[INFO][ws_an_accounts.php]		1
+[2019-12-18 04:40:54]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='76' group by a.account_id
+[2019-12-18 04:40:54]	[INFO][ws_an_accounts.php]		13
+[2019-12-18 04:40:54]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 04:40:54]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 04:40:54]	[INFO][ws_an_accounts.php]		null
+[2019-12-18 04:40:58]	[INFO][ws_an_accounts.php]		6
+[2019-12-18 04:40:58]	[INFO][ws_an_accounts.php]		2
+[2019-12-18 04:40:58]	[INFO][ws_an_accounts.php]		[{"account_id":"153","user_id":"5df9effd9b6ed6.63000633","accountname":"room maintence","currcode":"INR","status":"admin","groupstatus":"active"}]
+[2019-12-18 04:40:58]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='153'
+[2019-12-18 04:40:58]	[INFO][ws_an_accounts.php]		[{"add_user_id":"76","account_name":"room maintence","email":"areef666sayad@gmail.com","name":"manisha ","phone":"8886230000","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5df9effd9b6ed6.63000633","unique_id":"76","usertype":"writeonly"}]
+[2019-12-18 04:59:27]	[INFO][ws_an_accounts.php]		1
+[2019-12-18 04:59:27]	[INFO][ws_an_accounts.php]		13
+[2019-12-18 04:59:27]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='76' group by a.account_id
+[2019-12-18 04:59:27]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 04:59:27]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 04:59:27]	[INFO][ws_an_accounts.php]		null
+[2019-12-18 04:59:32]	[INFO][ws_an_accounts.php]		2
+[2019-12-18 04:59:32]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='153'
+[2019-12-18 04:59:32]	[INFO][ws_an_accounts.php]		[{"add_user_id":"76","account_name":"room maintence","email":"areef666sayad@gmail.com","name":"manisha ","phone":"8886230000","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5df9effd9b6ed6.63000633","unique_id":"76","usertype":"writeonly"}]
+[2019-12-18 04:59:32]	[INFO][ws_an_accounts.php]		6
+[2019-12-18 04:59:32]	[INFO][ws_an_accounts.php]		[{"account_id":"153","user_id":"5df9effd9b6ed6.63000633","accountname":"room maintence","currcode":"INR","status":"admin","groupstatus":"active"}]
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		7
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		writeonly
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		select * from users where email='karunasrivelagala@gmail.com'
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		phone number verified
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		select * from `groups` where `added_user_id`='12' and `account_id`='153'
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		153
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		room maintence
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		5df9effd9b6ed6.63000633
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		manisha 
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		INSERT INTO `groups`(`account_id`,`group_status`, `usertype`,  `added_user_id`,`userstatus` ) 
+	VALUES ('153','N','writeonly','12','active')
+[2019-12-18 05:01:10]	[INFO][ws_an_accounts.php]		before mail sent
+[2019-12-18 05:01:11]	[INFO][ws_an_accounts.php]		after mail sent
+[2019-12-18 05:01:14]	[INFO][ws_an_accounts.php]		2
+[2019-12-18 05:01:14]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='153'
+[2019-12-18 05:01:14]	[INFO][ws_an_accounts.php]		[{"add_user_id":"12","account_name":"room maintence","email":"karunasrivelagala@gmail.com","name":"karuna sri","phone":"7989583581","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5df9effd9b6ed6.63000633","unique_id":"12","usertype":"writeonly"},{"add_user_id":"76","account_name":"room maintence","email":"areef666sayad@gmail.com","name":"manisha ","phone":"8886230000","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5df9effd9b6ed6.63000633","unique_id":"76","usertype":"writeonly"}]
+[2019-12-18 05:02:51]	[INFO][ws_an_accounts.php]		2
+[2019-12-18 05:02:51]	[INFO][ws_an_accounts.php]		6
+[2019-12-18 05:02:51]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='153'
+[2019-12-18 05:02:51]	[INFO][ws_an_accounts.php]		[{"account_id":"153","user_id":"5df9effd9b6ed6.63000633","accountname":"room maintence","currcode":"INR","status":"admin","groupstatus":"active"}]
+[2019-12-18 05:02:51]	[INFO][ws_an_accounts.php]		[{"add_user_id":"12","account_name":"room maintence","email":"karunasrivelagala@gmail.com","name":"karuna sri","phone":"7989583581","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5df9effd9b6ed6.63000633","unique_id":"12","usertype":"writeonly"},{"add_user_id":"76","account_name":"room maintence","email":"areef666sayad@gmail.com","name":"manisha ","phone":"8886230000","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5df9effd9b6ed6.63000633","unique_id":"76","usertype":"writeonly"}]
+[2019-12-18 05:03:03]	[INFO][ws_an_accounts.php]		3
+[2019-12-18 05:03:03]	[INFO][ws_an_accounts.php]		SELECT * FROM `expenses` a,sub_category b WHERE a.capture_id='5c3b3a6485ea66.91060288' and a.subcat_id=b.subcat_id and a.account_id='153' and permissionflag !='archive'
+[2019-12-18 05:03:12]	[INFO][ws_an_accounts.php]		2
+[2019-12-18 05:03:12]	[INFO][ws_an_accounts.php]		6
+[2019-12-18 05:03:12]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='153'
+[2019-12-18 05:03:12]	[INFO][ws_an_accounts.php]		[{"account_id":"153","user_id":"5df9effd9b6ed6.63000633","accountname":"room maintence","currcode":"INR","status":"admin","groupstatus":"active"}]
+[2019-12-18 05:03:12]	[INFO][ws_an_accounts.php]		[{"add_user_id":"12","account_name":"room maintence","email":"karunasrivelagala@gmail.com","name":"karuna sri","phone":"7989583581","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5df9effd9b6ed6.63000633","unique_id":"12","usertype":"writeonly"},{"add_user_id":"76","account_name":"room maintence","email":"areef666sayad@gmail.com","name":"manisha ","phone":"8886230000","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5df9effd9b6ed6.63000633","unique_id":"76","usertype":"writeonly"}]
+[2019-12-18 06:15:26]	[INFO][ws_an_accounts.php]		1
+[2019-12-18 06:15:26]	[INFO][ws_an_accounts.php]		13
+[2019-12-18 06:15:26]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='76' group by a.account_id
+[2019-12-18 06:15:26]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 06:15:26]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 06:15:26]	[INFO][ws_an_accounts.php]		null
+[2019-12-18 08:00:35]	[INFO][ws_an_accounts.php]		13
+[2019-12-18 08:00:35]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 08:00:35]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5df9effd9b6ed6.63000633' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-18 08:00:35]	[INFO][ws_an_accounts.php]		null
+[2019-12-18 08:00:35]	[INFO][ws_an_accounts.php]		1
+[2019-12-18 08:00:35]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='76' group by a.account_id
+[2019-12-18 08:00:39]	[INFO][ws_an_accounts.php]		2
+[2019-12-18 08:00:39]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='153'
+[2019-12-18 08:00:39]	[INFO][ws_an_accounts.php]		[{"add_user_id":"12","account_name":"room maintence","email":"karunasrivelagala@gmail.com","name":"karuna sri","phone":"7989583581","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5df9effd9b6ed6.63000633","unique_id":"12","usertype":"writeonly"},{"add_user_id":"76","account_name":"room maintence","email":"areef666sayad@gmail.com","name":"manisha ","phone":"8886230000","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5df9effd9b6ed6.63000633","unique_id":"76","usertype":"writeonly"}]
+[2019-12-18 08:00:39]	[INFO][ws_an_accounts.php]		6
+[2019-12-18 08:00:39]	[INFO][ws_an_accounts.php]		[{"account_id":"153","user_id":"5df9effd9b6ed6.63000633","accountname":"room maintence","currcode":"INR","status":"admin","groupstatus":"active"}]

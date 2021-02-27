@@ -1,0 +1,115 @@
+  <div class="row">
+   
+      <div class="col-md-9">
+        <div class="box box-warning box-solid">
+          <div class="box-header with-border">
+             <h3 class="box-title">Balance Sheet</h3>
+             <div class="box-tools pull-right">
+            </div>
+          </div>
+          <div class="box-body">
+           <form class="form-horizontal" action="" method="POST" >
+             <div class="modal-body">
+              <div class="messages" ></div>
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="name" class="col-sm-4 control-label">Business *</label>
+                            <div class="col-sm-8"> 
+                              <select id="account_id" #account_id="ngModel" class="form-control" [(ngModel)]="accountid" name="accountdrop_id" >  
+                                  <option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+                                      {{k.accountname}}  
+                                  </option> 
+                              </select> 
+                            </div>
+                        </div>
+                      <div class="form-group">
+                          <label for="name" class="col-sm-4 control-label">Status *</label>
+                            <div class="col-sm-8"> 
+                              <select id="account_id" #account_id="ngModel" class="form-control" [(ngModel)]="status" name="accountdrop_id" >  
+                                  <option [ngValue]="k.status" *ngFor="let k of reportList">  
+                                      {{k.status}}  
+                                  </option> 
+                              </select> 
+                            </div>
+                        </div>
+                      <div class="form-group">
+                          <label for="name" class="col-sm-4  control-label">Select Type * </label>
+                            <div class="col-sm-8"> 
+                              <select id="account_id1" #account_id1="ngModel" class="form-control"  [(ngModel)]="type" name="accountselect_id" >  
+                                  <option [ngValue]="k.catname" *ngFor="let k of messagetype">  
+                                    {{k.catname}}  
+                                </option>  
+                              </select>
+                            </div>
+                        </div>
+                  </div>
+                 
+                </div>
+             
+             </div>
+             <div class="modal-footer">
+                <div class="col-sm-4"></div> 
+                  <div class="col-sm-4">
+                    <button type="submit" name = "search" (click)="search()" class="btn btn-primary">Search</button>
+                  </div> 
+                  <div class="col-sm-4"></div> 
+                </div>
+           </form> 
+           </div>
+         </div>
+         <div *ngIf="mybutton">
+         <div class="box">
+             <div class="box-header"></div>
+               <div class="box-body">
+               <table id="example" class="display" style="width:100%">
+                 <thead>
+                 <tr>
+                   <th>S.No</th>
+                   <th>Expenses Date</th>
+                   <th>Expenses Description</th>
+                   <th>{{currency}}Paid</th>
+                   <th>{{currency}}Due</th>
+                   <th>Income Date</th>
+                   <th>Income Description</th>
+                   <th>{{currency}}Paid</th>
+                   <th>{{currency}}Due</th>
+              
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr *ngFor="let item of groupreports,let i=index" >
+                   <td>{{i+1}}</td>
+                   <td>{{item.expensedate}}</td>
+                   <td>{{item.expensedesc}}</td>
+                   <td >{{item.expenseduenonamount}}</td>
+                   <td >{{item.expensedueamount}}</td>
+                   <td>{{item.incomedate}}</td>
+                   <td>{{item.incomedesc}}</td>
+                   <td>{{item.incomenondueamount}}</td>
+                   <td>{{item.incomedueamount}}</td>
+                 </tr>
+                 </tbody>
+                
+
+                 </table>
+                 <p style="float: left">Total Expense Amount :{{currency}}{{totalexpensesamount}}</p> 
+             
+                 <p style="float: right">Total  Income Amount : {{currency}}{{totalincomeamount}}</p>
+                
+                 <b style="margin-left: 100px;color:blue;font-size: 20px;">Net Amount :{{currency}}{{calculatesum}}</b>
+               </div>
+             <!-- /.box-body -->
+             </div>
+         
+     </div>
+    </div>
+
+    <div class="col-md-3">
+      <app-dailyadscomponent> </app-dailyadscomponent>
+    </div>
+    
+     </div>
+     
+   

@@ -1,0 +1,17 @@
+[2019-12-06 04:31:28]	[INFO][ws_an_forgotpass.php]		areef222sayad@gmail.com
+[2019-12-06 04:31:28]	[INFO][ws_an_forgotpass.php]		select * from users WHERE `email`='areef222sayad@gmail.com'
+[2019-12-06 04:31:29]	[INFO][ws_an_forgotpass.php]		"We've sent an email to areef222sayad@gmail.com.\n                    Please click on the password reset link in the email to generate new password."
+[2019-12-06 04:31:29]	[INFO][ws_an_forgotpass.php]		
+[2019-12-06 04:31:29]	[INFO][ws_an_forgotpass.php]		select * from users WHERE `email`=''
+[2019-12-06 04:31:29]	[INFO][ws_an_forgotpass.php]		"We've sent an email to .\n                    Please click on the password reset link in the email to generate new password."
+[2019-12-06 04:49:52]	[INFO][ws_an_getprofile.php]		5d77b126ddf738.97883465
+[2019-12-06 04:49:52]	[INFO][ws_an_getprofile.php]		62
+[2019-12-06 04:49:52]	[INFO][ws_an_getprofile.php]		select * from `users` where `user_id`='62'
+[2019-12-06 04:49:52]	[INFO][ws_an_getprofile.php]		select * from `profile` where `user_id`='62'
+[2019-12-06 04:49:52]	[INFO][ws_an_getprofile.php]		9630797285de906c05bda5.jpg
+[2019-12-06 04:49:52]	[INFO][ws_an_getprofile.php]		../../../../uploads/content/dailyroll/profile/
+[2019-12-06 04:49:52]	[INFO][ws_an_getprofile.php]		content/dailyroll/profile/
+[2019-12-06 04:49:52]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/
+[2019-12-06 04:49:52]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/9630797285de906c05bda5.jpg
+[2019-12-06 05:17:39]	[INFO][ws_an_unarchivelist.php]		SELECT * FROM `accounts` WHERE `user_id`='5d77b126ddf738.97883465'  and `accountstatus`!='active'
+[2019-12-06 05:27:22]	[INFO][ws_an_unarchivelist.php]		SELECT * FROM `accounts` WHERE `user_id`='5d77b126ddf738.97883465'  and `accountstatus`!='active'

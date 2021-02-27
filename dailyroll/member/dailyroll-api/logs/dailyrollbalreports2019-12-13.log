@@ -1,0 +1,326 @@
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		112
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='112' 
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='112'
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='112'
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='112'
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='112'
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='112'
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 04:03:31]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		132
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='132' 
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='132'
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='132'
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='132'
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='132'
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='132'
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		10500
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		15500
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		{"1":{"income_id":"222","capture_id":"5d77b126ddf738.97883465","account_id":"132","income_amount":"2000","subcat_id":"898","cat_id":"408","description":"wifi maintenance","tr_date":"2019-11-02","updateddate":"2019-11-02 08:27:36","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"2":{"income_id":"223","capture_id":"5d77b126ddf738.97883465","account_id":"132","income_amount":"3000","subcat_id":"898","cat_id":"408","description":"electric maintenance","tr_date":"2019-11-02","updateddate":"2019-11-02 06:48:23","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"3":{"income_id":"244","capture_id":"5d77b126ddf738.97883465","account_id":"132","income_amount":"2500","subcat_id":"898","cat_id":"408","description":"penthouse elecric bill","tr_date":"2019-11-22","updateddate":"2019-11-22 10:04:58","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"4":{"income_id":"245","capture_id":"5d77b126ddf738.97883465","account_id":"132","income_amount":"5000","subcat_id":"997","cat_id":"458","description":"swiggi ot income","tr_date":"2019-11-21","updateddate":"2019-11-22 09:23:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"5":{"income_id":"246","capture_id":"5d77b126ddf738.97883465","account_id":"132","income_amount":"1000","subcat_id":"997","cat_id":"458","description":"ot money","tr_date":"2019-11-21","updateddate":"2019-11-22 09:24:40","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"6":{"income_id":"247","capture_id":"5d77b126ddf738.97883465","account_id":"132","income_amount":"2000","subcat_id":"997","cat_id":"458","description":"ot money","tr_date":"2019-11-21","updateddate":"2019-11-22 09:26:54","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"}}
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		6
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		{"1":{"id":"493","capture_id":"17","account_id":"132","amount":"1000","file_name":"..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465\/2019\/11\/02\/5d77b126ddf738.97883465-02-11-2019-16:15:44-PM.jpg","description":"boys dress costs","subcat_id":"896","cat_id":"406","tr_date":"2019-11-02","permissionflag":"","updateddate":"2019-11-02 00:00:00","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"2":{"id":"499","capture_id":"5d77b126ddf738.97883465","account_id":"132","amount":"5000","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465-Capture.PNG","description":"diwali shopping dress","subcat_id":"896","cat_id":"406","tr_date":"2019-11-02","permissionflag":"","updateddate":"2019-11-02 08:16:14","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"3":{"id":"500","capture_id":"5d77b126ddf738.97883465","account_id":"132","amount":"2000","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465-Capture.PNG","description":"uniforms","subcat_id":"896","cat_id":"406","tr_date":"2019-11-02","permissionflag":"","updateddate":"2019-11-04 15:01:16","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"4":{"id":"545","capture_id":"5d77b126ddf738.97883465","account_id":"132","amount":"2000","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465-Capture.PNG","description":"diwali shopping","subcat_id":"896","cat_id":"406","tr_date":"2019-11-22","permissionflag":"","updateddate":"2019-11-22 08:28:55","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"5":{"id":"546","capture_id":"5d77b126ddf738.97883465","account_id":"132","amount":"500","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465\/2019\/11\/22\/5d77b126ddf738.97883465-Screenshot (599).png","description":"zomoto -- chiken Biryani and drink ","subcat_id":"996","cat_id":"457","tr_date":"2019-11-22","permissionflag":"","updateddate":"2019-11-22 08:53:51","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"}}
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		5
+[2019-12-13 04:03:55]	[INFO][ws_an_balancesheet.php]		[{"incomedate":"2019-11-02","incomedesc":"wifi maintenance","incomeamount":"2000","expensedate":"2019-11-02","expensedesc":"boys dress costs","expenseamount":"1000","totalexpenseamount":"10500","totalincomeamount":"15500","curr":"\u20b9"},{"incomedate":"2019-11-02","incomedesc":"electric maintenance","incomeamount":"3000","expensedate":"2019-11-02","expensedesc":"diwali shopping dress","expenseamount":"5000","totalexpenseamount":"10500","totalincomeamount":"15500","curr":"\u20b9"},{"incomedate":"2019-11-22","incomedesc":"penthouse elecric bill","incomeamount":"2500","expensedate":"2019-11-02","expensedesc":"uniforms","expenseamount":"2000","totalexpenseamount":"10500","totalincomeamount":"15500","curr":"\u20b9"},{"incomedate":"2019-11-21","incomedesc":"swiggi ot income","incomeamount":"5000","expensedate":"2019-11-22","expensedesc":"diwali shopping","expenseamount":"2000","totalexpenseamount":"10500","totalincomeamount":"15500","curr":"\u20b9"},{"incomedate":"2019-11-21","incomedesc":"ot money","incomeamount":"1000","expensedate":"2019-11-22","expensedesc":"zomoto -- chiken Biryani and drink ","expenseamount":"500","totalexpenseamount":"10500","totalincomeamount":"15500","curr":"\u20b9"},{"incomedate":"2019-11-21","incomedesc":"ot money","incomeamount":"2000","expensedate":null,"expensedesc":null,"expenseamount":null,"totalexpenseamount":"10500","totalincomeamount":"15500","curr":"\u20b9"}]
+[2019-12-13 04:06:01]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:06:01]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:01]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:01]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:06:01]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:06:01]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:01]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:04]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:05]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		130
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='130' 
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='130'
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='130'
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='130'
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='130'
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='130'
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		7500
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		{"1":{"id":"484","capture_id":"5d77b126ddf738.97883465","account_id":"130","amount":"1000","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465-Capture.PNG","description":"calculattion of electric wifi bill","subcat_id":"888","cat_id":"400","tr_date":"2019-11-01","permissionflag":"","updateddate":"2019-11-01 07:56:30","updatedby":"0","freeze":"unfreezee","pendingflag":"pending"},"2":{"id":"485","capture_id":"5d77b126ddf738.97883465","account_id":"130","amount":"500","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465\/2019\/11\/01\/Iphone-Hand-Mockup-Phone-Web-Blank-Template.jpg","description":"rice bag cost","subcat_id":"891","cat_id":"402","tr_date":"2019-11-01","permissionflag":"","updateddate":"2019-11-01 08:25:36","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"3":{"id":"486","capture_id":"5d77b126ddf738.97883465","account_id":"130","amount":"1000","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465\/2019\/11\/01\/compter work.png","description":"water meter bills","subcat_id":"893","cat_id":"403","tr_date":"2019-11-01","permissionflag":"","updateddate":"2019-11-01 08:25:36","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"4":{"id":"487","capture_id":"5d77b126ddf738.97883465","account_id":"130","amount":"5000","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d77b126ddf738.97883465\/2019\/11\/01\/fb vs.jpg","description":"room rent","subcat_id":"892","cat_id":"404","tr_date":"2019-10-27","permissionflag":"","updateddate":"2019-11-01 08:25:36","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"}}
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		4
+[2019-12-13 04:06:10]	[INFO][ws_an_balancesheet.php]		[{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-11-01","expensedesc":"calculattion of electric wifi bill","expenseamount":"1000","totalexpenseamount":"7500","totalincomeamount":null,"curr":"\u20b9"},{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-11-01","expensedesc":"rice bag cost","expenseamount":"500","totalexpenseamount":"7500","totalincomeamount":null,"curr":"\u20b9"},{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-11-01","expensedesc":"water meter bills","expenseamount":"1000","totalexpenseamount":"7500","totalincomeamount":null,"curr":"\u20b9"},{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-10-27","expensedesc":"room rent","expenseamount":"5000","totalexpenseamount":"7500","totalincomeamount":null,"curr":"\u20b9"}]
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		41
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='41' 
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:04:17]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		41
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='41' 
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:04:27]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		42
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='42' 
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='42'
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='42'
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='42'
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='42'
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='42'
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:04:34]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		42
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		CurrentMonth
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='42' and month(`tr_date`)='12'
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='42'  and month(`tr_date`)='12'
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='42' and month(`tr_date`)='12'
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='42' and month(`tr_date`)='12'
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='42' and month(`tr_date`)='12'
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='42' and month(`tr_date`)='12'
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:04:45]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		41
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='41' 
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:49:54]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		42
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='42' 
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='42'
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='42'
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='42'
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='42'
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='42'
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:50:11]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		98
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='98' 
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='98'
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='98'
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='98'
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='98'
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='98'
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		34162
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		7573
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		{"1":{"income_id":"135","capture_id":"5d55711dbbb422.14322293","account_id":"98","income_amount":"5000","subcat_id":"695","cat_id":"299","description":" swre work","tr_date":"2019-08-01","updateddate":"2019-08-26 10:51:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"2":{"income_id":"226","capture_id":"5c55c147da41c7.55832406","account_id":"98","income_amount":"2223","subcat_id":"695","cat_id":"299","description":"salary","tr_date":"2019-11-05","updateddate":"2019-11-04 15:39:47","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"3":{"income_id":"256","capture_id":"5c55c147da41c7.55832406","account_id":"98","income_amount":"350","subcat_id":"695","cat_id":"299","description":"hello","tr_date":"2019-12-13","updateddate":"2019-12-13 09:57:55","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"}}
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		3
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		{"1":{"id":"294","capture_id":"5d55711dbbb422.14322293","account_id":"98","amount":"1100","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5d55711dbbb422.14322293\/2019\/08\/15\/5d55711dbbb422.14322293-3.png","description":"erreeefef","subcat_id":"683","cat_id":"289","tr_date":"2019-07-29","permissionflag":"","updateddate":"2019-10-16 15:15:43","updatedby":"0","freeze":"","pendingflag":"non-pending"},"2":{"id":"309","capture_id":"5d55711dbbb422.14322293","account_id":"98","amount":"120","file_name":"..\/..\/uploads\/content\/dailyroll\/uploads\/5d55711dbbb422.14322293\/2019\/08\/17\/circle-cropped.png","description":" ekada roo dagara kona","subcat_id":"694","cat_id":"298","tr_date":"2019-08-16","permissionflag":"","updateddate":"2019-10-16 15:15:43","updatedby":"0","freeze":"","pendingflag":"non-pending"},"3":{"id":"311","capture_id":"5d55711dbbb422.14322293","account_id":"98","amount":"30000","file_name":"","description":" bagunay","subcat_id":"697","cat_id":"301","tr_date":"2019-12-20","permissionflag":"","updateddate":"2019-10-16 15:15:43","updatedby":"0","freeze":"","pendingflag":"non-pending"},"4":{"id":"312","capture_id":"5d55711dbbb422.14322293","account_id":"98","amount":"120","file_name":"","description":"ererew","subcat_id":"694","cat_id":"298","tr_date":"2019-08-04","permissionflag":"","updateddate":"2019-10-16 15:15:43","updatedby":"0","freeze":"","pendingflag":"non-pending"},"5":{"id":"313","capture_id":"5d55711dbbb422.14322293","account_id":"98","amount":"1110","file_name":"","description":"rerees","subcat_id":"683","cat_id":"289","tr_date":"2019-08-04","permissionflag":"","updateddate":"2019-10-16 15:15:43","updatedby":"0","freeze":"","pendingflag":"non-pending"},"6":{"id":"315","capture_id":"5d55711dbbb422.14322293","account_id":"98","amount":"125","file_name":"","description":"tr4ewew","subcat_id":"694","cat_id":"298","tr_date":"2019-08-04","permissionflag":"","updateddate":"2019-10-29 00:00:00","updatedby":"0","freeze":"","pendingflag":"non-pending"},"7":{"id":"481","capture_id":"5d55711dbbb422.14322293","account_id":"98","amount":"256","file_name":"..\/..\/uploads\/content\/dailyroll\/uploads\/5d55711dbbb422.14322293\/2019\/10\/29\/5d55711dbbb422.14322293-29-10-2019-18:48:52-PM.jpg","description":"cggdd","subcat_id":"694","cat_id":"298","tr_date":"2019-10-23","permissionflag":"","updateddate":"2019-10-29 09:19:19","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"8":{"id":"529","capture_id":"5c55c147da41c7.55832406","account_id":"98","amount":"221","file_name":"aaa","description":"tets","subcat_id":"694","cat_id":"298","tr_date":"2019-11-05","permissionflag":"","updateddate":"2019-11-04 15:37:37","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"9":{"id":"561","capture_id":"5c55c147da41c7.55832406","account_id":"98","amount":"1110","file_name":"..\/..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5c55c147da41c7.55832406\/2019\/12\/13\/5c55c147da41c7.55832406-Screenshot (166).png","description":"","subcat_id":"683","cat_id":"289","tr_date":"2019-12-13","permissionflag":"","updateddate":"2019-12-13 09:55:28","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"}}
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		9
+[2019-12-13 10:51:01]	[INFO][ws_an_balancesheet.php]		[{"incomedate":"2019-08-01","incomedesc":" swre work","incomeamount":"5000","expensedate":"2019-07-29","expensedesc":"erreeefef","expenseamount":"1100","totalexpenseamount":"34162","totalincomeamount":"7573","curr":"\u20b9"},{"incomedate":"2019-11-05","incomedesc":"salary","incomeamount":"2223","expensedate":"2019-08-16","expensedesc":" ekada roo dagara kona","expenseamount":"120","totalexpenseamount":"34162","totalincomeamount":"7573","curr":"\u20b9"},{"incomedate":"2019-12-13","incomedesc":"hello","incomeamount":"350","expensedate":"2019-12-20","expensedesc":" bagunay","expenseamount":"30000","totalexpenseamount":"34162","totalincomeamount":"7573","curr":"\u20b9"},{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-08-04","expensedesc":"ererew","expenseamount":"120","totalexpenseamount":"34162","totalincomeamount":"7573","curr":"\u20b9"},{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-08-04","expensedesc":"rerees","expenseamount":"1110","totalexpenseamount":"34162","totalincomeamount":"7573","curr":"\u20b9"},{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-08-04","expensedesc":"tr4ewew","expenseamount":"125","totalexpenseamount":"34162","totalincomeamount":"7573","curr":"\u20b9"},{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-10-23","expensedesc":"cggdd","expenseamount":"256","totalexpenseamount":"34162","totalincomeamount":"7573","curr":"\u20b9"},{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-11-05","expensedesc":"tets","expenseamount":"221","totalexpenseamount":"34162","totalincomeamount":"7573","curr":"\u20b9"},{"incomedate":null,"incomedesc":null,"incomeamount":null,"expensedate":"2019-12-13","expensedesc":"","expenseamount":"1110","totalexpenseamount":"34162","totalincomeamount":"7573","curr":"\u20b9"}]
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		103
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='103' 
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='103'
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='103'
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='103'
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='103'
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='103'
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		500
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		37000
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		{"1":{"income_id":"130","capture_id":"5c45e16fe7e326.75172792","account_id":"103","income_amount":"9000","subcat_id":"690","cat_id":"293","description":"566","tr_date":"2019-08-16","updateddate":"2019-08-26 10:51:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"2":{"income_id":"131","capture_id":"5c45e16fe7e326.75172792","account_id":"103","income_amount":"9000","subcat_id":"690","cat_id":"293","description":"301","tr_date":"2019-08-15","updateddate":"2019-08-26 10:51:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"3":{"income_id":"132","capture_id":"5c45e16fe7e326.75172792","account_id":"103","income_amount":"9000","subcat_id":"690","cat_id":"293","description":"201","tr_date":"2019-08-15","updateddate":"2019-08-26 10:51:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"4":{"income_id":"133","capture_id":"5c45e16fe7e326.75172792","account_id":"103","income_amount":"10000","subcat_id":"690","cat_id":"293","description":"101","tr_date":"2019-08-15","updateddate":"2019-08-26 10:51:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"}}
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		4
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		{"1":{"id":"301","capture_id":"5c45e16fe7e326.75172792","account_id":"103","amount":"300","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5c45e16fe7e326.75172792\/2019\/08\/16\/5c45e16fe7e326.75172792-57b697e69a7bde82e88ba1b6814f04cf--saving-money-quotes-quotes-about-money.jpg","description":"hello","subcat_id":"691","cat_id":"294","tr_date":"2019-08-14","permissionflag":"","updateddate":"2019-10-16 15:15:43","updatedby":"0","freeze":"","pendingflag":"non-pending"},"2":{"id":"304","capture_id":"5c45e16fe7e326.75172792","account_id":"103","amount":"200","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5c45e16fe7e326.75172792\/2019\/08\/16\/GenericFeaturePhoto.png","description":"pppp","subcat_id":"691","cat_id":"294","tr_date":"2019-08-15","permissionflag":"","updateddate":"2019-10-16 15:15:43","updatedby":"0","freeze":"","pendingflag":"non-pending"}}
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		2
+[2019-12-13 10:51:08]	[INFO][ws_an_balancesheet.php]		[{"incomedate":"2019-08-16","incomedesc":"566","incomeamount":"9000","expensedate":"2019-08-14","expensedesc":"hello","expenseamount":"300","totalexpenseamount":"500","totalincomeamount":"37000","curr":"\u20b9"},{"incomedate":"2019-08-15","incomedesc":"301","incomeamount":"9000","expensedate":"2019-08-15","expensedesc":"pppp","expenseamount":"200","totalexpenseamount":"500","totalincomeamount":"37000","curr":"\u20b9"},{"incomedate":"2019-08-15","incomedesc":"201","incomeamount":"9000","expensedate":null,"expensedesc":null,"expenseamount":null,"totalexpenseamount":"500","totalincomeamount":"37000","curr":"\u20b9"},{"incomedate":"2019-08-15","incomedesc":"101","incomeamount":"10000","expensedate":null,"expensedesc":null,"expenseamount":null,"totalexpenseamount":"500","totalincomeamount":"37000","curr":"\u20b9"}]
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		41
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='41' 
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:51:15]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		41
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='41' 
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='41'
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='41'
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:51:17]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		42
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='42' 
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='42'
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='42'
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='42'
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='42'
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='42'
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		0
+[2019-12-13 10:51:22]	[INFO][ws_an_balancesheet.php]		null
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		begining of the balance sheet
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		103
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		UntillToday
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		12
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		2019
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `expenses` WHERE `account_id`='103' 
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		SELECT * FROM `income` WHERE `account_id`='103'
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='103'
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='103'
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		SELECT sum(amount) as expenseamount FROM `expenses` WHERE `account_id`='103'
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		SELECT sum(income_amount) as incomeamount FROM `income` WHERE `account_id`='103'
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		500
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		37000
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		{"1":{"income_id":"130","capture_id":"5c45e16fe7e326.75172792","account_id":"103","income_amount":"9000","subcat_id":"690","cat_id":"293","description":"566","tr_date":"2019-08-16","updateddate":"2019-08-26 10:51:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"2":{"income_id":"131","capture_id":"5c45e16fe7e326.75172792","account_id":"103","income_amount":"9000","subcat_id":"690","cat_id":"293","description":"301","tr_date":"2019-08-15","updateddate":"2019-08-26 10:51:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"3":{"income_id":"132","capture_id":"5c45e16fe7e326.75172792","account_id":"103","income_amount":"9000","subcat_id":"690","cat_id":"293","description":"201","tr_date":"2019-08-15","updateddate":"2019-08-26 10:51:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"},"4":{"income_id":"133","capture_id":"5c45e16fe7e326.75172792","account_id":"103","income_amount":"10000","subcat_id":"690","cat_id":"293","description":"101","tr_date":"2019-08-15","updateddate":"2019-08-26 10:51:21","updatedby":"0","freeze":"unfreezee","pendingflag":"non-pending"}}
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		4
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		{"1":{"id":"301","capture_id":"5c45e16fe7e326.75172792","account_id":"103","amount":"300","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5c45e16fe7e326.75172792\/2019\/08\/16\/5c45e16fe7e326.75172792-57b697e69a7bde82e88ba1b6814f04cf--saving-money-quotes-quotes-about-money.jpg","description":"hello","subcat_id":"691","cat_id":"294","tr_date":"2019-08-14","permissionflag":"","updateddate":"2019-10-16 15:15:43","updatedby":"0","freeze":"","pendingflag":"non-pending"},"2":{"id":"304","capture_id":"5c45e16fe7e326.75172792","account_id":"103","amount":"200","file_name":"..\/..\/..\/uploads\/content\/dailyroll\/uploads\/5c45e16fe7e326.75172792\/2019\/08\/16\/GenericFeaturePhoto.png","description":"pppp","subcat_id":"691","cat_id":"294","tr_date":"2019-08-15","permissionflag":"","updateddate":"2019-10-16 15:15:43","updatedby":"0","freeze":"","pendingflag":"non-pending"}}
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		2
+[2019-12-13 10:51:29]	[INFO][ws_an_balancesheet.php]		[{"incomedate":"2019-08-16","incomedesc":"566","incomeamount":"9000","expensedate":"2019-08-14","expensedesc":"hello","expenseamount":"300","totalexpenseamount":"500","totalincomeamount":"37000","curr":"\u20b9"},{"incomedate":"2019-08-15","incomedesc":"301","incomeamount":"9000","expensedate":"2019-08-15","expensedesc":"pppp","expenseamount":"200","totalexpenseamount":"500","totalincomeamount":"37000","curr":"\u20b9"},{"incomedate":"2019-08-15","incomedesc":"201","incomeamount":"9000","expensedate":null,"expensedesc":null,"expenseamount":null,"totalexpenseamount":"500","totalincomeamount":"37000","curr":"\u20b9"},{"incomedate":"2019-08-15","incomedesc":"101","incomeamount":"10000","expensedate":null,"expensedesc":null,"expenseamount":null,"totalexpenseamount":"500","totalincomeamount":"37000","curr":"\u20b9"}]

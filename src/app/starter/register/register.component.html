@@ -1,0 +1,62 @@
+<app-header></app-header>
+<div class ="row" style="background-image: url('../../../assets/images/dl3.jpg'); background-repeat: no-repeat; background-size: cover;">
+<div class="register-box" >
+  <div class="register-logo">
+    <a> 
+      <img  src="assets/images/dl22.png" alt="pic"  style="height: 120px; width: 400px;">
+      
+       </a>
+  </div>
+  <div class="register-box-body" >
+   
+    <p class="login-box-msg">Register as new member</p>
+   
+    <form  method="post">
+      <div class="form-group has-feedback">
+        <div class="card-body">
+          <div #recaptcha ></div>
+        </div>
+      </div>
+ 
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Username"[(ngModel)]='firstname'[ngModelOptions]="{standalone:true}">
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Email"[(ngModel)]='email'[ngModelOptions]="{standalone:true}">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Password" [(ngModel)]='password'[ngModelOptions]="{standalone:true}">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Phone" [(ngModel)]='phone'[ngModelOptions]="{standalone:true}">
+        <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+      </div>
+      <div class="row">
+        
+        
+        <div class="col-xs-8">
+          <div class="checkbox icheck">
+            <a href="#" routerLink="/login"class="text-center" id="fgt"> Try to Login</a>
+           
+          </div>
+        </div>
+          <div class="col-xs-4" >
+            <button (click)='createUser()'class="btn btn-block btn-success">SignUp</button>
+           </div>
+          <!--div class="col-xs-4" *ngIf="disabledsignin" *ngIf="showsignin">
+            <button (click)='createUser()' disabled class="btn btn-block btn-success">SignUp</button>
+           </div-->
+          
+      </div>
+    </form>
+
+   
+  <!-- /.form-box -->
+</div>
+<!-- /.register-box -->
+
+</div>
+</div>

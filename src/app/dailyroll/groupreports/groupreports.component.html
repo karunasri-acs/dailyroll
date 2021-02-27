@@ -1,0 +1,196 @@
+<div class="row">
+  
+      <div class="col-md-9">
+        <div class="box box-warning box-solid">
+          <div class="box-header with-border">
+             <h3 class="box-title">Account reports</h3>
+             <div class="box-tools pull-right">
+            </div>
+          </div>
+          <div class="box-body">
+           <form class="form-horizontal" action="" method="POST" >
+             <div class="modal-body">
+              <div class="messages" ></div>
+                <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="name" class="col-sm-4 control-label">Business *</label>
+                            <div class="col-sm-8"> 
+                              <select id="account_id" #account_id="ngModel" class="form-control" [(ngModel)]="accountid" name="account_groupid" (change)="selectacc();">  
+                                  <option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+                                      {{k.accountname}}  
+                                  </option> 
+                              </select> 
+                            </div>
+                        </div>
+                    
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="name" class="col-sm-4  control-label">Select Type * </label>
+                            <div class="col-sm-8"> 
+                              <select id="type_id" #type_id="ngModel" class="form-control"  [(ngModel)]="type" name="accountgreortky_id" (change)="selectName();">  
+                                  <option [ngValue]="k.catname" *ngFor="let k of messagetype">  
+                                    {{k.catname}}  
+                                </option>  
+                              </select>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="name" class="col-sm-4 control-label"> From Date * </label>
+                          <div class="col-sm-8"> 
+                            <input type="date" name="fromdate"    class="form-control" [(ngModel)]="fromdate">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="name" class="col-sm-3 control-label"> To Date *</label>
+                          <div class="col-sm-9"> 
+                            <input type="date" name="todate"   required class="form-control" [(ngModel)]="todate" />
+                          </div>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="row">
+                   <label for="name" class="col-sm-2 control-label">Account *</label>
+                   <div class="col-sm-10"> 
+                      <select id="cati_id" #cati_id="ngModel" class="hideLabel form-control" [(ngModel)]="catid" name="catid" (change)="selectcat();">  
+                      
+                        <option [ngValue]="null">All</option>
+                        <option [ngValue]="k.cat_id" *ngFor="let k of categorylist">  
+                              {{k.cat_name}}  
+                          </option>  
+                        </select>
+                   </div>
+                 </div>
+                 <br>	
+                 <div class="row">
+                   <label for="name" class="col-sm-2 control-label">Sub-Account *</label>
+                   <div class="col-sm-10"> 
+                      <select id="subcat_id" #subcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="subcatid" name="subcatid" (change)="selectsubcat();">  
+                         
+                      
+                        <option [ngValue]="null">All</option>
+                        <option [ngValue]="k.sub_id" *ngFor="let k of subcategorylist">  
+                              {{k.subcat_name}}  
+                          </option>  
+                        </select>
+                   </div>
+                 </div>
+                 <br>
+               <div class="form-group">
+                 <label for="name" class="col-sm-2 control-label">Member name *</label>
+                   <div class="col-sm-10"> 
+                      <select id="member_id" #member_id="ngModel" class="hideLabel form-control" [(ngModel)]="memid" name="subcatid" (change)="selectmemid();">  
+                     
+                        <option [ngValue]="null">All</option> 
+                        <option [ngValue]="k.user_id" *ngFor="let k of memberlist">  
+                              {{k.name}}  
+                          </option>  
+                        </select>
+                 </div>
+               </div>
+               <div class="row">
+                <label for="name" class="col-sm-2 control-label">Status *</label>
+                <div class="col-sm-10"> 
+                  <select id="addsubcat_id" #addsubcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="penstatus" name="subcatid" (change)="selectpenstatus()">  
+                    <option [ngValue]="k.status"  *ngFor="let k of dd">  
+                        {{k.status}}  
+                    </option>  
+                  </select>
+                </div>
+              </div>
+             </div>
+             <div class="modal-footer">
+                <div class="col-sm-4">
+                  <button type="submit" name = "search" (click)="search()" class="btn btn-primary">Search</button>
+                
+                </div> 
+                  <div class="col-sm-2"  *ngFor="let k of checkadmin">
+                     <div  *ngIf="k.useradmin ==='admin'">
+                    <button type="submit" name = "Freeze"  data-toggle="modal" data-target="#feedback" id="addMemberModalBtn" class="btn btn-primary">Freeze</button>
+                  
+                  </div>
+                   
+                  
+                  </div> 
+                  <div class="col-sm-4"></div> 
+                </div>
+           </form> 
+           </div>
+         </div>
+         <div *ngIf="mybutton">
+         <div class="box">
+             <div class="box-header"></div>
+               <div class="box-body">
+               <table id="example" class="display" style="width:100%">
+                 <thead>
+                 <tr>
+                   <th>S.No</th>
+                   <th>Date</th>
+                   <th>Business</th>
+                   <th>Name</th>
+                   <th>Account</th>
+                   <th>Sub-Account</th>
+                   <th>Description</th>
+                   <th>{{currencyicons}}Paid</th>
+                   <th>{{currencyicons}}Due</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr *ngFor="let item of groupreports,let i=index" >
+                   <td>{{i+1}}</td>
+                   <td>{{item.tr_date}}</td>
+                   <td>{{item.accountname}}</td>
+                   <td>{{item.name}}</td>
+                   <td>{{item.cat_name}}</td>
+                   <td>{{item.subcat_name}}</td>
+                   <td>{{item.description}}</td>
+                   <td>{{item.nonpendingamount}}</td>
+                   <td>{{item.pendingamount}}</td>
+                 </tr>
+                 
+                 </tbody>
+                
+
+                 </table>
+                 <p style="float: right">TotalAmount :{{totalamount}}</p>
+               </div>
+             <!-- /.box-body -->
+             </div>
+         
+     </div>
+    </div>
+    <div class="modal fade" id="feedback" name="feedback">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h4>Freeze </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span></button>
+        </div>
+        <form class="form-horizontal" action="" method="POST">
+            <div class="modal-body">
+           <p>Are really want to freeze the account</p>
+          
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+            <button type="submit"  class="btn btn-primary"  (click)="freeze()" data-dismiss="modal" name="add">Freeze</button>
+            </div>
+          </form>
+          </div>
+        </div>
+        </div>
+    <div class="col-md-3">
+      <app-dailyadscomponent> </app-dailyadscomponent>
+      </div>
+    
+     </div>
+     
+   

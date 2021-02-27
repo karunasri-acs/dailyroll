@@ -1,0 +1,4 @@
+[2019-12-13 07:46:05]	[INFO][ws_an_getsearchreports.php]		114
+[2019-12-13 07:46:05]	[INFO][ws_an_getsearchreports.php]		
+[2019-12-13 07:46:05]	[INFO][ws_an_getsearchreports.php]		
+[2019-12-13 07:46:05]	[INFO][ws_an_getsearchreports.php]		SELECT a.tr_date,c.accountname,c.currcode,b.name,d.cat_name,e.subcat_name,a.amount,a.description  FROM `expenses` a, users b, accounts c, category d, sub_category e WHERE a.capture_id = b.unique_id  AND a.account_id =c.account_id AND a.cat_id= d.cat_id AND a.subcat_id=e.subcat_id AND a.`tr_date` BETWEEN '2019-12-13' AND  ''  and  pendingflag ='pending'  AND  a.`account_id`='114' AND a.`capture_id`='5d77b126ddf738.97883465'  AND  a.`cat_id`='342' and a.`subcat_id`='781' 

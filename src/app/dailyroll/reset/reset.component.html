@@ -1,0 +1,51 @@
+<div class="row" >
+      
+     <div class="col-md-12">
+      <div class="active"  > 
+          <span class="btn btn-danger" *ngIf="success" id="success" >{{success}}</span>
+          <br><br>
+            <form>
+                           <div class="form-group">
+                    <label for="inputName" class="col-sm-3 control-label">Old Password</label>
+                    <div class="col-sm-7">
+                        <input type="password" id="oldpass" name="oldpass" class="form-control"  [(ngModel)]="oldpass"placeholder="Old Password">
+                      </div>
+                  </div>
+         <br><br>  <br>
+          <div class="form-group">
+                    <label for="inputName" class="col-sm-3 control-label">New Password</label>
+                    <div class="col-sm-7">
+                        <input type="password" id="newpass" name="newpass" class="form-control" [(ngModel)]="newpass" placeholder="New Password" autocomplete="email">
+                      </div>
+          </div>
+          <br><br>
+          <div class="form-group">
+                    <label for="inputName" class="col-sm-3 control-label">Re-Enter New Password </label>
+          <div class="col-sm-7">
+              <input type="password" id="repass" name="repass" class="form-control"  [(ngModel)]="repass" placeholder="Re-enter Password" autocomplete="current-password">
+           
+            </div>
+          </div>
+         
+          <br><br>   
+            <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-9">
+                      <button type="button" (click)="resetpass()" class="btn btn-danger">Update</button>
+                    </div>
+                 </div>
+                 <br><br>
+                 <span class="btn btn-danger" *ngIf="error" id="error" >{{error_message}}</span>
+        
+      </form>
+       
+     
+      <!-- /.row -->
+  
+  </div>
+  <br><br>
+  <app-dailyadscomponent> </app-dailyadscomponent>
+
+  </div>
+  
+      </div>
+   

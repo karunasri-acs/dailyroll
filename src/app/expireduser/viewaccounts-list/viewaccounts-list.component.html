@@ -1,0 +1,105 @@
+
+	       <div class="box">
+				<div class="box-header">
+				   </div>
+				   
+				<!-- /.box-header -->
+				<div class="box-body">
+				  <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="example1_length"><label>Show <select name="example1_length" aria-controls="example1" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="example1_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="example1" class="table table-bordered table-striped dataTable no-footer" role="grid" aria-describedby="example1_info">
+					<thead>
+					<tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 150.816px;">S.No</th>
+					  <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 241.927px;">Amount</th>
+					  <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 159.705px;">Date</th>
+					  <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 294.149px;">Category</th>
+					  <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 548.472px;">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr role="row" class="odd" *ngFor="let item of accountlist,let i=index">
+				<td>{{i+1}}</td>
+				<td>{{item.amount}}</td>
+				<td>{{item.date}}</td>
+				<td>{{item.catname}}</td>
+				<td>{{item.description}}</td>
+						 </tr>
+				</tbody>
+				  </table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 5 of 5 entries</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="example1_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="example1_previous"><a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="example1" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button next disabled" id="example1_next"><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0">Next</a></li></ul></div></div></div></div>
+				</div>
+				<!-- /.box-body -->
+			  </div>
+			  <!-- /.box -->
+			   <div class="modal fade" id="feedback">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					<h4>Add Expenses</h4>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span></button>
+					  
+					</div>
+					<form class="form-horizontal" action="" method="POST" enctype="multipart/form-data">
+					  <div class="modal-body">
+				<div class="row">
+						  <label for="name" class="col-sm-2 control-label">Date</label>
+						  <div class="col-sm-9"> 
+							<input type="date" class="form-control" placeholder="Date" name="date" value="2019-01-08">
+						  </div>
+						</div>
+						<br> 
+						   <div class="row">
+						 <label for="name" class="col-sm-2 control-label">Category</label>
+						  <div class="col-sm-9"> 
+							 <select class="form-control" name="category">
+							 <option value=""> Select Category </option>						  <option value=""> Monthly acs maintinance</option>
+													   <option value=""> Food maintinance</option>
+													   <option value=""> Salary</option>
+													   <option value=""> shopping</option>
+													   <option value=""> grocery</option>
+													   <option value=""> events</option>
+													   <option value=""> Monthly acs maintinance</option>
+													   <option value=""> groceries</option>
+													   <option value=""> total family Income</option>
+													   <option value=""> Restaurent</option>
+													   <option value=""> travel</option>
+													   <option value=""> salary</option>
+													   <option value=""> part-time job</option>
+													   <option value=""> international trip</option>
+													   <option value=""> Unitlies</option>
+													   <option value=""> House</option>
+													   <option value=""> Salary</option>
+													   <option value=""> Rent</option>
+													 </select>
+							</div>
+						</div>
+						<br>
+						
+						<div class="row">
+						  <label for="name" class="col-sm-2 col-sm-2 control-label">Description </label>
+						  <div class="col-sm-9"> 
+							<textarea class="form-control" name="description"> </textarea></div>
+						</div>
+						<br>
+						<div class="row">
+						 <label for="name" class="col-sm-2 control-label">Amount</label>
+						  <div class="col-sm-9"> 
+							<input type="Number" class="form-control" name="amount" placeholder="Amount">
+						  </div>
+						</div>
+						<br>
+						<div class="row">
+						  <label for="name" class="col-sm-2 col-sm-2 control-label">Attachment</label>
+						  <div class="col-sm-9"> 
+						   <input type="file" name="fileToUpload" id="fileToUpload">
+						  </div>
+						<br>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary" name="add">Add</button>
+					  </div>
+					
+				  </div></form>
+				</div>
+			  </div>
+			  
+		  </div>

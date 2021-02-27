@@ -1,0 +1,101 @@
+<aside class="main-sidebar">
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+    <!-- Sidebar user panel -->
+    <div class="user-panel">
+      <div class="pull-left image">
+        <img src="{{imagepath}}" class="img-circle" alt="User Image">
+      </div>
+      <div class="pull-left info">
+        <p> {{email}}</p>
+       </div>
+    </div>
+    <!-- search form -->
+   
+    <!-- /.search form -->
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu">
+      <li class="header">MAIN NAVIGATION</li>
+     
+      
+      <li>
+        <a href="#" routerLink="dashboard">
+            <i class="fa fa-pie-chart"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+      </li>
+      <li class="treeview">
+        <a href="#">
+            <i class="fa fa-dollar"></i> <span>Expenses</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="myexpense"><i class="fa fa-dollar"></i>My Expenses</a></li>
+          <li><a routerLink="bulkexpense"><i class="fa fa-dollar"></i>Multi Expenses</a></li>
+           </ul>
+      </li>
+      <li class="treeview">
+        <a href="#">
+            <i class="fa fa-money"></i> <span>Income</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="myincome"><i class="fa fa-money"></i>My Income</a></li>
+          <li><a routerLink="bulkincome"><i class="fa fa-dollar"></i>Multi Income</a></li>
+           </ul>
+      </li>
+      <!--li class="treeview">
+        <a href="#">
+            <i class="fa fa-address-book-o"></i> <span>Business</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="accounts"><i class="fa fa-address-book-o"></i>Business</a></li>
+          <li><a routerLink="category"><i class="fa fa-list-alt"></i>Account</a></li>
+           </ul>
+      </li-->
+      <li>
+        <a href="#" routerLink="business">
+            <i class="fa fa-address-book-o"></i> <span>Business</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+      </li>
+      <li class="treeview">
+        <a href="#">
+            <i class="fa fa-th"></i> <span>Reports</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="groupreports"><i class="fa fa-th"></i>Reports</a></li>
+          <li><a routerLink="balancesheet"><i class="fa fa-th"></i>BalanceSheet</a></li>
+           </ul>
+      </li>
+  
+        <li>
+          <a href="#" routerLink="feedback">
+              <i class="fa fa-address-book-o"></i> <span>Feed Back</span>
+              <span class="pull-right-container">
+              </span>
+            </a>
+        </li>
+        <li>
+          <a href="#" routerLink="notifications">
+              <i class="fa fa-address-book-o"></i> <span>Notifications</span>
+              <span class="pull-right-container">
+              </span>
+            </a>
+        </li>
+      </ul>
+  </section>
+  <!-- /.sidebar -->
+</aside>

@@ -1,0 +1,665 @@
+<div class="row">
+  
+      <div class="col-md-12">
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs" style="margin-bottom: -55px;">
+              <li class="active"><a href="#timeline" data-toggle="tab">Account</a></li>
+              <li class=""><a href="#activity" data-toggle="tab">Sub Account</a></li>
+            </ul>
+            
+          <div class="tab-content">
+            <div class="active tab-pane" id="timeline" name="timeline">
+                <button class="btn btn-info" style="float: right;" data-toggle="modal" data-target="#feedback" id="addMemberModalBtn"><span class="glyphicon glyphicon-plus-sign"></span>Add Account</button>
+            <br><br>
+          <div class="box box-info" >
+            <div class="box-body">
+              <table class="table table-striped table-bordered table-sm row-border hover" id="my-tables" datatable  *ngIf="myTable" >
+
+               <thead>
+                <tr role="row">
+                  <th>S.No</th>
+                  <th>Business Name</th>
+                  <th >Account</th>
+                  <th >Type</th>
+                  <th>Operations</th>
+                 
+                </tr>  
+                </thead>
+                <tbody *ngIf="categorylist.length != 0">
+                  <tr role="row" class="odd" *ngFor="let item of categorylist,let i=index">
+                  <td>{{i+1}}</td>
+                  <td>{{item.accname}}</td>
+                  <td>{{item.catname}}</td> 
+                  <td>{{item.cat_type}}</td>
+                 
+                    <td><ul>
+<li>
+                   <a href=""  data-toggle="modal" data-target="#modaledit" (click)="editMember(item)"  title="Edit"> <i class="fa  fa-edit" aria-hidden="true" style="font-size:15px;color:   green;"></i></a>
+                  </li>
+                    <li *ngIf="item.status === 'active'">
+                    <a href=""  data-toggle="modal" data-target="#modalinactive"  (click)="editMember(item)" title="Inactive"> <i class="fa  fa-check" aria-hidden="true" style="font-size:15px;color:   #D11027;"></i></a>
+                    </li>
+                    <li *ngIf="item.status === 'inactive'">
+                        <a href=""  data-toggle="modal" data-target="#modalactive" (click)="editMember(item)" title="Active"> <i class="fa  fa-ban" aria-hidden="true" style="font-size:15px;color:   #D11027;"></i></a>
+                    </li>
+                 
+                 <li>
+            <a href=""  data-toggle="modal" data-target="#modaladd" (click)="editMember(item)" title="Add Sub-Account"> <i class="fa fa-plus-square"aria-hidden="true" style="font-size:15px;"></i></a>
+              </li>
+              <li><a href=""  data-toggle="modal" data-target="#contact" (click)="editMember(item)" title="Add Contact"> <i class="fa fa-phone"aria-hidden="true" style="font-size:15px;"></i></a>
+              </li>
+              <li><a href=""  data-toggle="modal" data-target="#info" (click)="editMember(item)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+              </li>
+                </ul>
+                  </td>
+                 
+                  </tr>
+                </tbody>
+                <tbody *ngIf="categorylist.length == 0">
+                  <tr>
+                      <td colspan="3" class="no-data-available">No data found!</td>
+                  </tr>
+              </tbody>
+               </table>
+            </div>
+          </div>
+          </div>
+          <div class="modal fade" id="modalinactive" name="modalinactive">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                   <h4 class="modal-title">In-Active</h4>
+              </div>
+              <form action="" method="POST">
+              <div class="modal-body">
+                  <div class="row" >
+                      <div class="col-sm-7"> 
+                   <input type="hidden" class="form-control" placeholder="Enter Sub-Account Name"  [(ngModel)]="editedProduct.cat_id"  name="subjcatid"  >	
+                     </div>
+                 </div>
+                <p>Are You Relly Want In-Active this Account</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <input class = "btn btn-primary" name = "inactivecat" data-dismiss="modal" (click)="catinactive()" type="submit" value="In-Active">
+               </div>
+              </form>
+              </div>
+            </div>
+            </div> 
+            <div class="modal fade" id="modalactive" name="modalactive">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                   <h4 class="modal-title">Active</h4>
+              </div>
+              <form action="" method="POST">
+              <div class="modal-body">
+                  <input type="hidden" class="form-control" placeholder="Enter Sub-Account Name"  [(ngModel)]="editedProduct.cat_id"   [ngModelOptions]="{standalone: true}" name="subjcatid"  >	
+                  
+                <p>Are You Relly Want Activate this Account</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <input class = "btn btn-primary"   data-dismiss="modal" (click)="catactive()" name = "activecat" type="submit" value="Active">
+               </div>
+              </form>
+              </div>
+            </div>
+            </div>
+             <div class="modal fade" id="modaledit" name="modaledit">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                   <h4 class="modal-title">Edit</h4>
+              </div>
+              <form action="" method="POST">
+              <div class="modal-body">
+            <div class="row">
+             <label for="name" class="col-sm-2 control-label">Account</label>
+              <div class="col-sm-9"> 
+                  <select id="acc_id" #acc_id="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.account_id" [ngModelOptions]="{standalone: true}" >  
+                      <option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+                          {{k.accountname}}  
+                      </option>  
+                    </select>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+             <label for="name" class="col-sm-2 control-label">Type</label>
+              <div class="col-sm-9"> 
+                  <select id="typeid" #typeid="ngModel" class="hideLabel form-control"  [(ngModel)]="editedProduct.cat_type" [ngModelOptions]="{standalone: true}" >  
+                      <option [ngValue]="k.catname" *ngFor="let k of messagetype">  
+                        {{k.catname}}  
+                    </option>  
+                  </select> 
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <label for="name" class="col-sm-2 col-sm-2 control-label">Account</label>
+                <div class="col-sm-9"> 
+                  <input type="text" class="form-control" placeholder="Enter Account Name" [(ngModel)]="editedProduct.catname" [ngModelOptions]="{standalone: true}"  name="category"  >	
+                </div>
+            </div>
+             </div>
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" (click)="updatecat()" data-dismiss="modal"name = "updatecat">Update</button>
+                </div>
+               
+              </form>
+              </div>
+            </div>
+            </div>
+            <div class="modal fade" id="modaladd" name="modaladd">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                   <h4 class="modal-title">Add Sub-Catgeory</h4>
+              </div>
+              <form action="" method="POST">
+                <div class="modal-body">
+                <div class="row">
+              <label for="name" class="col-sm-4 control-label">Sub-Account</label>
+                <div class="col-sm-7"> 
+              <input type="text" class="form-control" placeholder="Enter Sub-Account Name" [(ngModel)]="subcatnamebycat"  name="subcatname"   >	
+                </div>
+            </div>
+            <div class="row" >
+                 <div class="col-sm-7"> 
+              <input type="hidden" class="form-control" placeholder="Enter Sub-Account Name"  [(ngModel)]="editedProduct.cat_id"  name="subcatid"  >	
+                </div>
+            </div>
+            <br>
+            <div class="row">
+              <label for="name" class="col-sm-4 control-label">Amount</label>
+                <div class="col-sm-7"> 
+                  <input type="text" class="form-control" placeholder="Enter Default Amount"[(ngModel)]="subcatdefaultamount"   name="amount" >	
+                </div>
+            </div>
+            </div>
+              <br>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <input class = "btn btn-primary" (click)="addsubcategory()" data-dismiss="modal" name = "addsubcategory" type="submit" value="Add">
+               
+              </div>
+              </form>
+              </div>
+            </div>
+            </div>
+          
+          <div class="modal fade" id="feedback" name="feedback">
+          
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+              <h4>Add Account</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span></button>
+              </div>
+              <form class="form-horizontal" action="" method="POST">
+                <div class="modal-body">
+                    <div class="modal-body">
+                  <div class="row">  
+                  <label for="name" class="col-sm-2 control-label">Business</label>
+                    <div class="col-sm-9"> 
+                      <select id="account_id" #account_id="ngModel" class="hideLabel form-control" [(ngModel)]="accountid" name="account_id" >  
+                        <option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+                            {{k.accountname}}  
+                        </option>  
+                      </select>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                  <label for="name" class="col-sm-2 control-label">Type</label>
+                    <div class="col-sm-9"> 
+                      <select id="type_id" #type_id="ngModel" class="hideLabel form-control"  [(ngModel)]="type" name="type_id" >  
+                        <option [ngValue]="k.catname" *ngFor="let k of messagetype">  
+                          {{k.catname}}  
+                      </option>  
+                    </select> 
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+
+                    <label for="name" class="col-sm-2 col-sm-2 control-label">Account</label>
+                      <div class="col-sm-9"> 
+                        <input type="text" required="" class="form-control"  [(ngModel)]="catname" placeholder="Enter Account Name" name="category" value="">	
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                  <button type="submit"  (click)="addcategory()"  data-dismiss="modal"  class="btn btn-primary" name="accountadd">Add</button>
+                  </div> 
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="activity" name="activity">
+                      <button class="btn btn-info" style="float: right;padding-right: 7px;" data-toggle="modal" data-target="#sub" id="addMemberModalBt"><span class="glyphicon glyphicon-plus-sign"></span>Add Sub-Account</button>
+                      <br><br>
+            <div class="box box-warning">
+              <div class="box-body">
+              <form class="form-horizontal" method="POST" action="">
+              
+          <div class="row"><div class="col-sm-12">
+              <table  id="my-subcattable" datatable   class="table table-striped table-bordered table-sm row-border hover" 
+              *ngIf="mysubTable" >
+      <thead>
+                    <tr role="row">
+                      <th>S.No</th>
+                      <th>Business</th>
+                      <th>Account</th>
+                      <th>Account Type</th>
+                      <th>Sub-Account</th>
+                      <th>Amount</th>
+                      <th>Operations</th>
+                     
+                    </tr>  
+                  </thead>
+                  <tbody>
+                    <tr role="row" class="odd" *ngFor="let item of subcategorylist,let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{item.accountname}}</td>
+                        <td>{{item.cat_name}}</td> 
+                        <td>{{item.cat_type}}</td> 
+                        <td>{{item.subcat_name}}</td>
+                        <td>{{item.amount}}</td>
+                        <td> 
+<ul>
+  <li>
+                          <a href=""  data-toggle="modal" data-target="#subcat" (click)="editsubcat(item)"  title="Edit"> <i class="fa  fa-edit" aria-hidden="true" style="font-size:15px;color:   green;"></i></a>
+                        </li>
+                          <li *ngIf="item.status === 'active'">  
+                          <a href=""  data-toggle="modal" data-target="#modalsubinactivejh"  (click)="editsubcat(item)"  title="In-Active"> <i class="fa  fa-check" aria-hidden="true" style="font-size:15px;color:   red;"></i></a>
+                         
+                          </li>
+                         <li *ngIf="item.status === 'inactive'">
+                          <a href=""  data-toggle="modal" data-target="#modalsubactivehello" (click)="editsubcat(item)"  title="Activate"> <i class="fa  fa-ban" aria-hidden="true" style="font-size:15px;color:   red;"></i></a>
+                         </li>
+                         <li><a href=""  data-toggle="modal" data-target="#subcontact" (click)="editsubcat(item)" title="Add Contact"> <i class="fa fa-phone"aria-hidden="true" style="font-size:15px;"></i></a>
+                         </li>
+                         <li><a href=""  data-toggle="modal" data-target="#subinfo" (click)="editsubcat(item)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+                         </li>
+                        
+</ul>
+                         </td>
+                      
+                        
+           
+                  
+                  </tr>
+                 
+                  
+                </tbody>
+                </table></div></div>
+              
+              </form></div>
+            </div>
+          </div>
+          <div class="modal fade" id="modalsubactivehello" name="modalsubactivehello">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                     <h4 class="modal-title">Activate</h4>
+                </div> 
+                <form action="" method="POST">
+                <div class="modal-body">
+                   <input type="hidden" class="form-control" placeholder="Enter Sub-Account Name"  [(ngModel)]="editedSubCategory.subcat_id"  name="subjcatid"  >	
+      
+                  <p>Are You Relly Want Activate this Sub-Account</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                  <input class = "btn btn-primary" (click)="subcatactive()"  data-dismiss="modal" name = "activate" type="submit" value="Activate">
+                    </div>
+                </form>
+                </div>
+              </div>
+              </div>
+             <div class="modal fade" id="modalsubinactivejh" name="modalsubinactivejh">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                     <h4 class="modal-title">In-Activate</h4>
+                </div>
+                <form action="" method="POST">
+                <div class="modal-body">
+                   <input type="hidden" class="form-control" placeholder="Enter Sub-Account Name"  [(ngModel)]="editedSubCategory.subcat_id"  name="subjcatid"  >	
+      
+                  <p>Are You Relly Want In-Active this Sub-Account</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                  <input class = "btn btn-primary" name = "inactive" data-dismiss="modal" (click)="subcatinactive()" type="submit" value="In-Active">
+                    </div>
+                </form>
+                </div>
+              </div>
+              </div>
+             <div class="modal fade" id="subcat" name="subcat">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h4>Edit Account</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        </div>
+        <form class="form-horizontal" action="" method="POST" >
+          <div class="modal-body">
+              <div class="modal-body">
+            <div class="row">  
+             <label for="name" class="col-sm-2 control-label">Account</label>
+              <div class="col-sm-9"> 
+               <select id="cat_id1" #cat_id1="ngModel" class="hideLabel form-control" [(ngModel)]="editedSubCategory.cat_id"  [ngModelOptions]="{standalone: true}" >  
+                 
+                 <option [ngValue]="k.cat_id" *ngFor="let k of catlist">  
+                     {{k.cat_name}}  
+                 </option>  
+               </select>
+              </div>
+            </div>
+            <br>
+            
+            <br>
+            <div class="row">
+              <label for="name" class="col-sm-2  control-label">Sub-Account</label>
+                <div class="col-sm-9"> 
+                  <input type="text" class="form-control" placeholder="Enter Sub-Account Name" [(ngModel)]="editedSubCategory.subcat_name"  name="subcategory"  >
+                </div>
+            </div>
+            <br>
+            <div class="row">
+              <label for="name" class="col-sm-2 control-label">Amount</label>
+                <div class="col-sm-9"> 
+                  <input type="text" class="form-control" placeholder="Enter Default Amount"  [(ngModel)]="editedSubCategory.amount"  name="amount">	
+                </div>
+            </div>
+             </div>
+             <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary"  data-dismiss="modal" (click)="updatesubcat()" name = "editsubcat">Update</button>
+                
+            </div>
+          </div>
+        </form>
+        </div>
+        </div>
+      </div>
+          <div class="modal fade" id="sub" name="sub">
+              <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+              <h4>Add Sub-Account</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span></button>
+              </div>
+              <form class="form-horizontal" action="" method="POST">
+                <div class="modal-body">
+                    <div class="modal-body">
+                  <div class="row">  
+                  <label for="name" class="col-sm-2 control-label">Account</label>
+                    <div class="col-sm-9"> 
+                        <select id="ca_id" #ca_id="ngModel" class="hideLabel form-control" [(ngModel)]="categoryid" name="catid" >  
+                            
+                            <option [ngValue]="k.cat_id" *ngFor="let k of catlist">  
+                                {{k.cat_name}}  
+                            </option>  
+                          </select>
+                    </div>
+                  </div>
+                  <br>
+                  
+                  <br>
+                  <div class="row">
+                    <label for="name" class="col-sm-2 col-sm-2 control-label">Sub-Account</label>
+                      <div class="col-sm-9"> 
+                        <input type="text" class="form-control"  [(ngModel)]="subcatname" placeholder="Enter Sub-Account Name" name="subcategory" value="">	
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <label for="name" class="col-sm-2 col-sm-2 control-label">Amount</label>
+                      <div class="col-sm-9"> 
+                        <input type="number" class="form-control"  [(ngModel)]="defaultamount" placeholder="Enter Default Amount" name="subcategory" value="">	
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" >Close</button>
+                  <button type="submit" class="btn btn-primary" (click)="addsubcat()" data-dismiss="modal" name="addsubcat">Add</button>
+                  </div>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="contact" >
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+              <h4>Add Contact</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span></button>
+              </div>
+              <form class="form-horizontal" action="" method="POST">
+              
+                    <div class="modal-body">
+                  <div class="row">
+                    <label for="name" class="col-sm-2 control-label"> Name</label>
+                    <div class="col-sm-9"> 
+                      <input type="text" class="form-control"  required  [(ngModel)]='contactname' placeholder="Contact Name" name="contactname">
+                    </div>
+                  </div>
+                  
+                  <br>
+                  <div class="row">
+                    <label for="name" class="col-sm-2 control-label"> Email</label>
+                    <div class="col-sm-9"> 
+                      <input type="email" class="form-control"  required  [(ngModel)]='contactemail' placeholder="Contact Email" name="contactemail">
+                    </div>
+                  </div>
+                  
+                  <br>
+                  <div class="row">
+                    <label for="name" class="col-sm-2 control-label"> Address<Address></Address></label>
+                    <div class="col-sm-9"> 
+                      <input type="text" class="form-control"  required  [(ngModel)]='contactaddress' placeholder="Contact Address" name="contactaddress">
+                    </div>
+                  </div>
+                  
+                  <br>
+                  <div class="row">
+                    <label for="name" class="col-sm-2 control-label">Phone </label>
+                    <div class="col-sm-9"> 
+                      <input type="number" class="form-control"    [(ngModel)]='contactphone' placeholder="Contact Phone" name="contactphone">
+                    </div>
+                  </div>
+                  <br>
+                   </div>
+                   <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                  <button type="submit"  (click)="addcontact()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Add</button>
+                  </div>
+              
+              </form>
+              </div>
+            </div>
+          </div>
+         
+          <div class="modal fade" id="info" >
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+              <h4>View Contact</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span></button>
+              </div>
+              <form class="form-horizontal" action="" method="POST" *ngIf="mytablecontacts">
+                <div class="modal-body" >
+                  <table id="my-tables" datatable  class="display" style="width:100%" *ngIf="myTable" >
+      
+                    <thead>
+        <tr role="row">
+          <th >S.No</th>
+          <th> Name</th>
+          <th >Email </th>
+          <th >Address</th>
+          <th >Phone</th>
+         
+            
+        </tr>  
+        </thead>
+        <tbody>
+        <tr  role="row" class="odd" *ngFor="let item of mycontacts,let i=index">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.phone}}</td>
+         
+        </tr></tbody>
+      </table>
+                
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                </div>
+              
+              </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="subcontact" >
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+              <h4>Add Contact</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span></button>
+              </div>
+              <form class="form-horizontal" action="" method="POST">
+              
+                    <div class="modal-body">
+                  <div class="row">
+                    <label for="name" class="col-sm-2 control-label"> Name</label>
+                    <div class="col-sm-9"> 
+                      <input type="text" class="form-control"  required  [(ngModel)]='contactname' placeholder="Contact Name" name="contactname">
+                    </div>
+                  </div>
+                  
+                  <br>
+                  <div class="row">
+                    <label for="name" class="col-sm-2 control-label"> Email</label>
+                    <div class="col-sm-9"> 
+                      <input type="email" class="form-control"  required  [(ngModel)]='contactemail' placeholder="Contact Email" name="contactemail">
+                    </div>
+                  </div>
+                  
+                  <br>
+                  <div class="row">
+                    <label for="name" class="col-sm-2 control-label"> Address<Address></Address></label>
+                    <div class="col-sm-9"> 
+                      <input type="text" class="form-control"  required  [(ngModel)]='contactaddress' placeholder="Contact Address" name="contactaddress">
+                    </div>
+                  </div>
+                  
+                  <br>
+                  <div class="row">
+                    <label for="name" class="col-sm-2 control-label">Phone </label>
+                    <div class="col-sm-9"> 
+                      <input type="number" class="form-control"    [(ngModel)]='contactphone' placeholder="Contact Phone" name="contactphone">
+                    </div>
+                  </div>
+                  <br>
+                   </div>
+                   <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                  <button type="submit"  (click)="addsubcontact()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Add</button>
+                  </div>
+              
+              </form>
+              </div>
+            </div>
+          </div>
+         
+          <div class="modal fade" id="subinfo" >
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+              <h4>View Contact</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span></button>
+              </div>
+              <form class="form-horizontal" action="" method="POST" *ngIf="mytablecontacts">
+                <div class="modal-body" >
+                  <table id="my-tables" datatable  class="display" style="width:100%" *ngIf="myTable" >
+      
+                    <thead>
+        <tr role="row">
+          <th >S.No</th>
+          <th> Name</th>
+          <th >Email </th>
+          <th >Address</th>
+          <th >Phone</th>
+         
+            
+        </tr>  
+        </thead>
+        <tbody>
+        <tr  role="row" class="odd" *ngFor="let item of mycontacts,let i=index">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.phone}}</td>
+         
+        </tr></tbody>
+      </table>
+                
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                </div>
+              
+              </form>
+              </div>
+            </div>
+          </div>
+                
+       </div>
+      <!-- /.tab-content -->
+      </div>
+      <!-- /.nav-tabs-custom -->
+      </div>
+     
+      
+    </div>
+    
+    <!-- div class="row">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-9">
+    <app-dailyadscomponent> </app-dailyadscomponent>
+      </div>
+     
+    </div -->

@@ -1,0 +1,307 @@
+<div class="row">
+	
+	<div class="col-md-9">
+		<div class="box box-warning box-solid">
+			<div class="box-body">
+			<form class="form-horizontal" action="" method="POST">
+				<div class="modal-body">
+				<div class="messages"></div>
+				<div class="row">
+					<div class="col-md-4">
+							<div class="form-group">
+							<label for="name" class="col-sm-3 control-label">Account</label>
+						<div class="col-sm-9"> 
+								<select id="addaccount_id" #addaccount_id="ngModel" class="hideLabel form-control" [(ngModel)]="accountiddata" name="accountex_id" >  
+										<option selected="" value="">Select Account Here</option>  
+										<option [ngValue]="k.account_id"  *ngFor="let k of accountslist">  
+												{{k.accountname}}  
+										</option>  
+									</select>
+						</div>
+						
+						</div>
+					</div>
+										
+					<div class="col-md-4">
+					
+						<div class="row">
+							<label for="name" class="col-sm-2 control-label">Status</label>
+							<div class="col-sm-9"> 
+								<select id="addsubcat_id" #addsubcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="penstatus" name="subcatid" (change)="selectpenstatus();">  
+									<option [ngValue]="k.status"  *ngFor="let k of dd">  
+											{{k.status}}  
+									</option>  
+								</select>
+							</div>
+						</div>
+						<br>
+					
+					</div>		
+				</div>
+				</div>
+			</form> 
+			</div>
+		</div>	
+		<div class="row">
+
+				<div class="col-md-12">
+					<div class="col-sm-12">
+						
+						<table  id="my-tables" datatable  *ngIf="myTable">
+							<thead>
+								<tr>
+									<th>S.No</th>
+									<th>Date</th>
+									<th>Account</th>
+									<th>Category</th>
+									<th>Sub-Category</th>
+									<th>Description</th>
+									<th>Amount</th>
+									<th>Operations</th>
+									
+								</tr>
+					
+							</thead>
+							<tbody>
+							
+									<tr *ngFor="let item of expenses,let i=index">
+											
+										<td>{{i+1}}</td>
+											<td>{{item.date}}</td>
+											<td>{{item.accname}}</td>
+											<td>{{item.catname}}</td>
+											<td>{{item.subcatname}}</td>
+											<td>{{item.description}}</td>
+											<td>{{item.amount}}</td>
+											<td>
+												<ul>
+												
+											
+												<li *ngIf="item.file !== 'nofile'">
+												<a href="" data-toggle="modal" (click)="viewDoc(item)"data-target="#modaluloadpic"> <i class="fa  fa-eye" aria-hidden="true" style="font-size:15px;color:   #0C14B7;"></i></a>
+												</li>
+											</ul>
+											</td>
+													
+									</tr>
+							</tbody>
+										
+						</table>
+						</div>
+			</div>
+		</div>			
+		<div class="modal fade" id="feedback">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h4>Add Expenses</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span></button>
+							
+						</div>
+					
+					<form class="form-horizontal" action="" method="POST" enctype="multipart/form-data">
+						<div class="modal-body">
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Account</label>
+									<div class="col-sm-9"> 
+										<select id="addaccount_id" #addaccount_id="ngModel" class="hideLabel form-control" [(ngModel)]="accountid" name="accountmyexpenses_id" (change)="selectacc();">  
+											<option [ngValue]="k.account_id"  *ngFor="let k of accountslist">  
+													{{k.accountname}}  
+											</option>  
+										</select>
+									</div>
+							</div>
+							<br>
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Category</label>
+									<div class="col-sm-9"> 
+													<select id="addcat_id" #addcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="catid" name="catid" (change)="selectcat();">  
+														<option [ngValue]="k.cat_id" *ngFor="let k of categorylist">  
+																{{k.cat_name}}  
+														</option>  
+													</select>
+												</div>	
+											</div>
+										
+											<br>
+											<div class="row">
+												<label for="name" class="col-sm-2 control-label">Sub-Category</label>
+												<div class="col-sm-9"> 
+													<select id="addsubcat_id" #addsubcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="subcatid" name="subcatid" (change)="selectsubcat();">  
+														<option [ngValue]="k.sub_id"  *ngFor="let k of subcategorylist">  
+																{{k.subcat_name}}  
+														</option>  
+													</select>
+												</div>
+											</div>
+											<br>
+										<div class="row"> 
+											<label for="name" class="col-sm-2 control-label">Date</label>
+											<div class="col-sm-9"> 
+												<input type="date" class="form-control"   [(ngModel)]='expdate' placeholder="Date" required name="expdate" >
+											</div>
+									</div>
+								
+							
+							<br>
+							<div class="row">
+								<label for="name" class="col-sm-2 col-sm-2 control-label">Description </label>
+								<div class="col-sm-9"> 
+								<textarea class="form-control"   [(ngModel)]='description' name="description"> </textarea>
+								
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Amount</label>
+								<div class="col-sm-9" *ngFor="let k of amountlist" > 
+									<input type="Number" class="form-control"  [(ngModel)]='amount'   required="" name="amount" placeholder="Amount">
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<label for="name" class="col-sm-2 col-sm-2 control-label">Attachment</label>
+								<div class="col-sm-9"> 
+								<input type="file" name="fileToUpload" id="fileToUpload"/>
+								</div>
+						
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+							<button type="submit"     data-dismiss="modal" class="btn btn-primary" name="add">Add</button>
+						</div>
+					</form>
+				</div>
+				</div>
+		</div>					
+		<div class="modal fade" tabindex="-1" role="dialog"  id="modal-delay">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Details</h4>
+						</div>
+						<form class="form-horizontal" >
+								<div class="modal-body">
+									<div class="row">
+									<label for="name" class="col-sm-2 control-label">Account</label>
+									<div class="col-sm-9"> 
+											
+										<select id="account" #account="ngModel" class="hideLabel form-control" [(ngModel)]="editProduct.accountid" name="accountid" (change)="selecteditacc();">  
+													
+											<option [ngValue]="k.account_id"  *ngFor="let k of accountslist">  
+														{{k.accountname}}  
+												</option>  
+										</select>  
+									</div>
+									</div>
+									<br>
+									<div class="row">
+											<label for="name" class="col-sm-2 control-label">Date</label>
+											<div class="col-sm-9"> 
+												<input type="date" class="form-control" placeholder="Date" [(ngModel)]="editProduct.date" name="date"  >
+											</div>
+											</div>
+											<br>
+												<div class="row">
+											<label for="name" class="col-sm-2 control-label">Category</label>
+											<div class="col-sm-9"> 
+													<select id="catd" #catd="ngModel" class="hideLabel form-control" [(ngModel)]="editProduct.catid" name="accounteditexp_id" (change)="selectcat()">  
+															<option [ngValue]="k.cat_id" *ngFor="let k of categorylist">  
+																	{{k.cat_name}}  
+															</option> 
+														</select>  
+											</div>
+											</div>
+											<br>
+											<div class="row">
+													<label for="name" class="col-sm-2 control-label">Sub-Category</label>
+														<div class="col-sm-9"> 
+															<select id="editsubcat_id" #editsubcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="editProduct.subcatid" name="subcatid" (change)="selectsubcat();">  
+																	<option selected="" value=""></option>  
+																	<option [ngValue]="k.sub_id" *ngFor="let k of subcategorylist">  
+																			{{k.subcat_name}}  
+																	</option>  
+																</select>
+														</div>
+														</div>
+														<br>
+										<div class="row">
+											<label for="name" class="col-sm-2 col-sm-2 control-label">Description </label>
+											<div class="col-sm-9"> 					   
+													<textarea class="form-control" [(ngModel)]="editProduct.description" name = "description"  > </textarea></div>
+											</div>
+											<br>
+										<div class="row">
+											<label for="name" class="col-sm-2 control-label">Amount</label>
+											<div class="col-sm-9"> 
+												<input type="Number" class="form-control" name="amount" [(ngModel)]="editProduct.amount" placeholder="Amount" >
+											</div>
+											</div>
+											<br>
+								<div class="row">
+									<label for="name" class="col-sm-2 col-sm-2 control-label">Attachment</label>
+									<div class="col-sm-9"> 
+										<input type="file" name = "Upload" id="Upload" >
+									
+									</div>
+							
+								</div>
+								<br>
+								<div class="modal-footer">
+										<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+										<button type="submit" class="btn btn-primary"   data-dismiss="modal"  name="update">Update</button>
+								</div>	
+						</div>
+						</form>
+					</div>
+				</div>
+		</div>							 
+		<div class="modal fade" id="modalunshare13">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">Delete</h4>
+						</div>
+						<form action="" method="POST">
+							<div class="modal-body">
+								<p>Are You Relly Want Delete</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+								<input class = "btn btn-primary" name = "delete"  (click)="removeProduct()" data-dismiss="modal" type="submit" value="Delete">
+								</div>
+						</form>
+					</div>
+				</div>
+		</div>			
+		<div class="modal fade" id="modaluloadpic">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">View</h4>
+								</div>
+									<form action="" method="POST">
+									<div class="modal-body"  *ngFor="let doc of appDoc">
+									<img [src] ="doc.displayfile" alt ="Doc" width="100%" height="auto"/>
+									</div>
+									
+									</form>
+							</div>
+						</div>
+		</div>			
+	</div>
+	
+	<div class="col-md-3">
+		<app-expads> </app-expads>
+	</div>
+
+</div>				
+		

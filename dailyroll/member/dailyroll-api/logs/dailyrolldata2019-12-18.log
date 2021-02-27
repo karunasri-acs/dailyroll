@@ -1,0 +1,211 @@
+[2019-12-18 04:25:48]	[INFO][ws_an_device_confirm.php]		76
+[2019-12-18 04:25:48]	[INFO][ws_an_device_confirm.php]		SJD2FX34GTCEDHTO
+[2019-12-18 04:25:48]	[INFO][ws_an_device_confirm.php]		areef666sayad@gmail.com
+[2019-12-18 04:25:48]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp
+[2019-12-18 04:25:48]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 04:25:50]	[INFO][ws_an_device_confirm.php]		76
+[2019-12-18 04:25:50]	[INFO][ws_an_device_confirm.php]		SJD2FX34GTCEDHTO
+[2019-12-18 04:25:50]	[INFO][ws_an_device_confirm.php]		areef666sayad@gmail.com
+[2019-12-18 04:25:50]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp
+[2019-12-18 04:25:50]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 04:27:17]	[INFO][ws_an_device_confirm.php]		76
+[2019-12-18 04:27:17]	[INFO][ws_an_device_confirm.php]		733613
+[2019-12-18 04:27:17]	[INFO][ws_an_device_confirm.php]		SJD2FX34GTCEDHTO
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='152'GROUP BY `subcat_id`
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='152'
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='152'
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		0
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		0
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 04:27:18]	[INFO][ws_an_dashboard.php]		[{"value":"0","label":"Expenses"},{"value":"0","label":"Income"}]
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='152'
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='152'GROUP BY `subcat_id`
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='152'
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		0
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		0
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 04:28:31]	[INFO][ws_an_dashboard.php]		[{"value":"0","label":"Expenses"},{"value":"0","label":"Income"}]
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses FROM `expenses` WHERE  `account_id` ='152'GROUP BY `subcat_id`
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE  `account_id`='152'
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='152'
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		0
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		0
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 04:28:43]	[INFO][ws_an_dashboard.php]		[{"value":"0","label":"Expenses"},{"value":"0","label":"Income"}]
+[2019-12-18 06:39:16]	[INFO][ws_an_device_confirm.php]		76
+[2019-12-18 06:39:16]	[INFO][ws_an_device_confirm.php]		SJD2FX34GTCEDHTO
+[2019-12-18 06:39:16]	[INFO][ws_an_device_confirm.php]		areef666sayad@gmail.com
+[2019-12-18 06:39:16]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp
+[2019-12-18 06:39:16]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 06:39:23]	[INFO][ws_an_device_confirm.php]		76
+[2019-12-18 06:39:23]	[INFO][ws_an_device_confirm.php]		SJD2FX34GTCEDHTO
+[2019-12-18 06:39:23]	[INFO][ws_an_device_confirm.php]		areef666sayad@gmail.com
+[2019-12-18 06:39:23]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp
+[2019-12-18 06:39:23]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 06:39:39]	[INFO][ws_an_device_confirm.php]		76
+[2019-12-18 06:39:39]	[INFO][ws_an_device_confirm.php]		473686
+[2019-12-18 06:39:39]	[INFO][ws_an_device_confirm.php]		SJD2FX34GTCEDHTO
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'GROUP BY `subcat_id`
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='153'
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		10000
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		11000
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 06:39:40]	[INFO][ws_an_dashboard.php]		[{"value":"10000","label":"Expenses"},{"value":"11000","label":"Income"}]
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'GROUP BY `subcat_id`
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='153'
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		10000
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		11000
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 06:40:25]	[INFO][ws_an_dashboard.php]		[{"value":"10000","label":"Expenses"},{"value":"11000","label":"Income"}]
+[2019-12-18 08:01:04]	[INFO][ws_an_device_confirm.php]		12
+[2019-12-18 08:01:04]	[INFO][ws_an_device_confirm.php]		BDK5IJASRE7JVCCY
+[2019-12-18 08:01:04]	[INFO][ws_an_device_confirm.php]		karunasrivelagala@gmail.com
+[2019-12-18 08:01:04]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp
+[2019-12-18 08:01:04]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 08:01:15]	[INFO][ws_an_device_confirm.php]		12
+[2019-12-18 08:01:15]	[INFO][ws_an_device_confirm.php]		BDK5IJASRE7JVCCY
+[2019-12-18 08:01:15]	[INFO][ws_an_device_confirm.php]		karunasrivelagala@gmail.com
+[2019-12-18 08:01:15]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp
+[2019-12-18 08:01:15]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 08:01:39]	[INFO][ws_an_device_confirm.php]		12
+[2019-12-18 08:01:39]	[INFO][ws_an_device_confirm.php]		537940
+[2019-12-18 08:01:39]	[INFO][ws_an_device_confirm.php]		BDK5IJASRE7JVCCY
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='124'
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='124'GROUP BY `subcat_id`
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='124'
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		0
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		0
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 08:04:21]	[INFO][ws_an_dashboard.php]		[{"value":"0","label":"Expenses"},{"value":"0","label":"Income"}]
+[2019-12-18 08:04:47]	[INFO][ws_an_device_confirm.php]		12
+[2019-12-18 08:04:47]	[INFO][ws_an_device_confirm.php]		BDK5IJASRE7JVCCY
+[2019-12-18 08:04:47]	[INFO][ws_an_device_confirm.php]		karunasrivelagala@gmail.com
+[2019-12-18 08:04:47]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp
+[2019-12-18 08:04:47]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 08:04:48]	[INFO][ws_an_device_confirm.php]		12
+[2019-12-18 08:04:48]	[INFO][ws_an_device_confirm.php]		BDK5IJASRE7JVCCY
+[2019-12-18 08:04:48]	[INFO][ws_an_device_confirm.php]		karunasrivelagala@gmail.com
+[2019-12-18 08:04:48]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp
+[2019-12-18 08:04:48]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 08:04:58]	[INFO][ws_an_device_confirm.php]		12
+[2019-12-18 08:04:58]	[INFO][ws_an_device_confirm.php]		743125
+[2019-12-18 08:04:58]	[INFO][ws_an_device_confirm.php]		BDK5IJASRE7JVCCY
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'GROUP BY `subcat_id`
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='153'
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		19000
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		33000
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 08:04:59]	[INFO][ws_an_dashboard.php]		[{"value":"19000","label":"Expenses"},{"value":"33000","label":"Income"}]
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='153'
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		19000
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		33000
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		[{"value":"19000","label":"Expenses"},{"value":"33000","label":"Income"}]
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 08:05:28]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'GROUP BY `subcat_id`
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='153'
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		19000
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'GROUP BY `subcat_id`
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		33000
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 08:05:45]	[INFO][ws_an_dashboard.php]		[{"value":"19000","label":"Expenses"},{"value":"33000","label":"Income"}]
+[2019-12-18 11:08:27]	[INFO][ws_an_device_confirm.php]		13
+[2019-12-18 11:08:27]	[INFO][ws_an_device_confirm.php]		UU4OX37HH7SKTXU7
+[2019-12-18 11:08:27]	[INFO][ws_an_device_confirm.php]		manoharpv@gmail.com
+[2019-12-18 11:08:27]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fmanoharpv%40gmail.com%3Fsecret%3DUU4OX37HH7SKTXU7%26issuer%3DDailyRoll%2BApp
+[2019-12-18 11:08:27]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fmanoharpv%40gmail.com%3Fsecret%3DUU4OX37HH7SKTXU7%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='123'
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='123'GROUP BY `subcat_id`
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='123'
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		11121
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		17000
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 11:08:43]	[INFO][ws_an_dashboard.php]		[{"value":"11121","label":"Expenses"},{"value":"17000","label":"Income"}]
+[2019-12-18 11:15:05]	[INFO][ws_an_device_confirm.php]		76
+[2019-12-18 11:15:05]	[INFO][ws_an_device_confirm.php]		SJD2FX34GTCEDHTO
+[2019-12-18 11:15:05]	[INFO][ws_an_device_confirm.php]		areef666sayad@gmail.com
+[2019-12-18 11:15:05]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp
+[2019-12-18 11:15:05]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='153'
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		19000
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		33000
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'GROUP BY `subcat_id`
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 11:15:14]	[INFO][ws_an_dashboard.php]		[{"value":"19000","label":"Expenses"},{"value":"33000","label":"Income"}]
+[2019-12-18 11:18:50]	[INFO][ws_an_device_confirm.php]		76
+[2019-12-18 11:18:50]	[INFO][ws_an_device_confirm.php]		SJD2FX34GTCEDHTO
+[2019-12-18 11:18:50]	[INFO][ws_an_device_confirm.php]		areef666sayad@gmail.com
+[2019-12-18 11:18:50]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp
+[2019-12-18 11:18:50]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fareef666sayad%40gmail.com%3Fsecret%3DSJD2FX34GTCEDHTO%26issuer%3DDailyRoll%2BApp"}
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'GROUP BY `subcat_id`
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='153'
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='153'
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		19000
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		33246
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		1
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		2
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		Array
+[2019-12-18 11:18:58]	[INFO][ws_an_dashboard.php]		[{"value":"19000","label":"Expenses"},{"value":"33246","label":"Income"}]

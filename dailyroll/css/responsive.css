@@ -1,0 +1,1506 @@
+
+
+
+
+/* 
+   ------------------------------------------------------
+	RESPONSIVE STYLES
+   ------------------------------------------------------
+*/
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media (min-width: 1440px) and (max-width: 2880px) {
+	
+}
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media (min-width: 1279px) and (max-width: 1439px) {
+	
+	/*------------------------------------------*/
+	/*	 CONTENT
+	/*------------------------------------------*/	
+
+	/* Video */
+	#video-2 .video-overlay { padding-top: 200px; padding-bottom: 200px; }
+	
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+	/*------------------------------------------*/
+	/*	 BASE
+	/*------------------------------------------*/
+
+	.division .p-left-20, .division .p-left-30, .division .p-left-45, .division .p-left-60 { padding-left: 15px; }
+	.division .p-right-20, .division .p-right-30, .division .p-right-45, .division .p-right-60 { padding-right: 15px; }
+
+	/* Headers */
+
+	h5.h5-lg { font-size: 16px; line-height: 24px; }
+
+	h4.h4-small { font-size: 17px; line-height: 23px; margin-bottom: 5px; }
+	h4 { font-size: 18px; line-height: 26px; margin-bottom: 10px; }
+	h4.h4-lg { font-size: 19px; line-height: 27px; margin-bottom: 15px; } 
+	h4.h4-huge { font-size: 21px; line-height: 29px; }
+
+	h3.h3-small { font-size: 26px; line-height: 34px; }
+	h3 { font-size: 28px; line-height: 36px; letter-spacing: -0.5px; }
+	h3.h3-lg { font-size: 32px; line-height: 40px; } 
+	h3.h3-huge { font-size: 36px; line-height: 44px; } 
+
+	h2.h2-small { font-size: 40px; line-height: 50px; }  
+	h2 { font-size: 42px; line-height: 52px; }
+	h2.h2-lg { font-size: 46px; line-height: 56px; } 
+	h2.h2-huge { font-size: 52px; line-height: 62px; } 
+
+	/* Paragraphs */
+	p { font-size: 16px; line-height: 24px; }
+	p.p-medium { font-size: 17px; line-height: 25px; }
+	p.p-lg { font-size: 19px; line-height: 27px; }
+	p.p-huge { font-size: 21px; line-height: 31px; }
+
+	/* Buttons */	
+	.btn { font-size: 15px; padding: 12px 32px; }
+	.btn.btn-medium { font-size: 16px; padding: 13px 34px; }
+	.btn.btn-lg { font-size: 17px; padding: 14px 36px; }
+
+	/* Section Title */	
+	.section-title p { font-size: 18px; line-height: 28px; padding: 0 8%; }
+
+	/*------------------------------------------*/
+	/*	 HERO
+	/*------------------------------------------*/
+
+	#hero-4 .hero-overlay { padding-top: 160px; }
+	#hero-9-content { padding-top: 160px; padding-bottom: 350px; }
+
+	/* Hero Content */
+	#hero-1 .hero-txt { padding: 0 8%; }
+	#hero-3 .hero-txt { margin-top: 50px; padding-right: 0; }
+	#hero-4 .hero-txt { margin-top: 80px; padding-right: 25px; }
+	#hero-6 .hero-txt { margin-top: 50px; }
+	#hero-15 .hero-video { margin-right: 60px; margin-left: 60px; }
+
+	/* Hero Logo */
+	.hero-logo img { width: 120px ; height: 120px; }
+	#hero-1 .hero-logo { margin-top: 45px; margin-bottom: 45px; }
+	#hero-2 .hero-logo { margin-bottom: 25px; }
+	#hero-8 .hero-logo { margin-bottom: 35px; }
+
+	/* Hero Image */
+	#hero-3 .hero-img { padding-left: 0; }
+	.hero-9-image img { margin-top: -290px; }
+
+	/* Hero Buttons */
+	#hero-3 .stores-badge, #hero-4 .stores-badge, #hero-5 .stores-badge, 
+	#hero-7 .stores-badge, #hero-8 .stores-badge { margin-top: 35px; }
+
+	#hero-9 .stores-badge, #hero-10 .stores-badge, #hero-13 .stores-badge { margin-top: 30px; }
+	#hero-11 .stores-badge { margin-top: 30px; margin-bottom: 60px; }
+
+	/* Hero H3 Header */
+	h3.h3-hero {  font-size: 35px; line-height: 43px; }
+	h3.h3-hero-medium { font-size: 40px; line-height: 48px; }
+	h3.h3-hero-lg { font-size: 43px; line-height: 53px;	}
+
+	#hero-5 h3 { margin-bottom: 35px; }
+	#hero-11 h3 { margin-bottom: 15px; }
+	#hero-13 h3 { padding: 0; }
+	#hero-14 h3 { margin-bottom: 35px; }
+
+	/* Hero H2 Header */
+	h2.h2-hero { font-size: 55px; line-height: 65px; }
+
+	/* Hero Paragraphs */
+	p.p-hero-small { font-size: 16px; line-height: 24px; }
+	p.p-hero { font-size: 18px; line-height: 28px; } 
+	p.p-hero-medium { font-size: 20px; line-height: 30px; } 
+
+	#hero-17 p { padding: 0 5%; }
+
+	.hero-social-links li { margin: 0 5px; }
+	.hero-socials { margin-left: 0; }
+
+	/*------------------------------------------*/
+	/*	 CONTENT
+	/*------------------------------------------*/	
+
+	/* Features */
+	#features-3 .col-sm-4.text-right { padding-right: 20px; }
+	#features-3 .col-sm-4 { padding-left: 20px; }
+	.features-4-row { padding: 0; }
+	.fbox-4 { margin-bottom: 25px; }
+	.fbox-4-txt { margin-left: 70px; }
+
+	.fbox-1 p { padding: 0; }
+
+	.box-icon-medium h4 { margin-bottom: 12px; }
+	.fbox-4 h3 { margin-bottom: 10px; }
+
+	.box-icon span { font-size: 65px; line-height: 65px; margin-bottom: 10px; }
+	.box-icon-medium span { font-size: 80px; line-height: 80px; margin-bottom: 20px; }
+	.box-icon-small span { font-size: 60px; line-height: 60px; margin-bottom: 10px; }
+
+	span.fbox-4-number { width: 45px; height: 45px; font-size: 20px; line-height: 45px; margin-top: 5px; }
+
+	/* Content */
+	.empty-div { display: none; }
+	#content-5 .content-txt { margin-top: 15px; }
+	#content-6 .content-txt { margin-top: 50px;}
+
+	.tab-txt.m-top-80 { margin-top: 70px; }
+	.tab-txt.m-top-70, .tab-txt.m-top-100 { margin-top: 35px; }
+
+	.cbox-2 { margin-bottom: 15px; }
+
+	/* Video */
+	#video-2 .video-overlay { padding-top: 200px; padding-bottom: 200px; }
+	#video-3 .video-overlay { padding-top: 160px; padding-bottom: 160px; }
+
+	.video-2-btn {  margin-right: 30px; margin-left: 30px; }
+
+	#video-2 span { font-size: 48px; line-height: 120px; }
+	#video-3 h2.h2-huge.m-bottom-50 { margin-bottom: 40px; }
+
+	/* Statistic */
+	.statistic-number { font-size: 65px; line-height: 65px;	letter-spacing: -1px; margin-bottom: 8px; }
+
+	/* Banner */
+	#banner-2 {	 padding-top: 200px; padding-bottom: 200px;	} 
+	#banner-5 .banner-overlay {	padding-top: 80px; padding-bottom: 80px; }
+
+	#banner-1 p { margin-top: 20px; padding: 0 8%; }
+	.banner-buttons.m-top-40 { margin-top: 30px; }
+	#banner-2 .stores-badge.m-top-40 { margin-top: 35px; }
+	#banner-3 h2.h2-lg.m-bottom-40 { margin-bottom: 30px; }
+
+	#banner-4 .banner-txt.m-top-100 { margin-top: 70px; padding-left: 40px; }
+	#banner-4 h2.m-bottom-30 { margin-bottom: 20px; }
+	#banner-4 .stores-badge.m-top-35 { margin-top: 30px; }
+
+	.bbox a.other-app-link { font-size: 18px; line-height: 18px; margin-top: 3px; margin-bottom: 8px; } 
+	#banner-6 .col-md-12.m-top-25 { margin-top: 10px; }
+
+	/* Testimonials */
+	.review-1, .review-2 { padding: 0 15px; }
+	.review-3-txt { padding: 40px 35px 55px; }
+
+	.review-1 p { font-size: 18px; line-height: 28px; } 
+	.review-2 p { font-size: 17px; line-height: 26px; } 
+	.review-2 h4, .review-3 h4 { margin-bottom: 20px; }
+
+	/* Pricing */
+	#pricing-1 .pricing-row { margin-right: 15px; margin-left: 15px; }
+
+	.pricing-table span { font-size: 50px; line-height: 50px; }
+	.pricing-table sup { font-size: 30px; top: -5px; }
+
+	.pricing-table ul.features { font-size: 16px; line-height: 16px; padding: 20px 10px 0; }
+	.pricing-table ul.features li { padding: 6px 0; } 
+
+	#pricing-2 .nav-tabs > li > a { font-size: 15px; padding: 9px 25px; }
+
+	/* FAQs */
+	.faqs-form-holder {	margin-left: 0px; margin-right: 0px; }
+	.faqs-accordion.m-top-20 { margin-top: 0; } 
+
+	#faqs-2 .panel-group .panel, #faqs-2 .panel-group .panel + .panel { margin-bottom: 8px; }
+	#faqs-2 .panel-heading a { font-size: 17px; }
+
+	/* Blog */
+	.blog-1-post { padding: 0 10px; } 
+	.blog-post-link a { font-size: 16px; line-height: 23px; margin-bottom: 10px; } 
+	.blog-1-post .blog-post-link a { font-size: 22px; line-height: 30px; margin-bottom: 30px; }
+
+	/* Newsletter */
+	#newsletter-1 { padding-top: 120px; padding-bottom: 120px; }
+	#newsletter-2, #newsletter-3 { padding-top: 100px; padding-bottom: 100px; }
+
+	.newsletter-form { margin: 0 12%; }
+
+	.newsletter-form .form-control { height: 52px; }
+	.newsletter-form .btn { height: 52px; }
+
+	a.newsletter-social { font-size: 22px; margin: 0 5px; }
+
+	/* Footer */
+	a.foo-social { margin: 0 2px; }
+	
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 991px) {	
+
+	/*------------------------------------------*/
+	/*	 BASE
+	/*------------------------------------------*/
+
+	.wide-120 { padding-top: 100px; padding-bottom: 100px; }
+	.wide-100 { padding-top: 100px; padding-bottom: 100px; }
+	.wide-90 { padding-top: 100px; padding-bottom: 90px; }
+	.wide-80 { padding-top: 100px; padding-bottom: 80px; }
+	.wide-70 { padding-top: 100px; padding-bottom: 70px; }
+	.wide-60 { padding-top: 100px; padding-bottom: 60px; }
+	.wide-50 { padding-top: 100px; padding-bottom: 50px; }
+	.wide-40 { padding-top: 100px; padding-bottom: 40px; }
+	.wide-30 { padding-top: 100px; padding-bottom: 30px; }
+
+	.p-top-120 { padding-top: 100px; }
+
+	.division .p-left-20, .division .p-left-30, .division .p-left-45, .division .p-left-60 { padding-left: 15px; }
+	.division .p-right-20, .division .p-right-30, .division .p-right-45, .division .p-right-60 { padding-right: 15px; }
+
+	/* Headers */
+
+	h5.h5-lg { font-size: 15px; line-height: 23px; }
+
+	h4.h4-small { font-size: 16px; line-height: 24px; margin-bottom: 5px; }
+	h4 { font-size: 17px; line-height: 25px; margin-bottom: 10px; }
+	h4.h4-lg { font-size: 18px; line-height: 26px; margin-bottom: 15px; } 
+	h4.h4-huge { font-size: 20px; line-height: 28px; }
+
+	h3.h3-small { font-size: 24px; line-height: 32px; }
+	h3 { font-size: 26px; line-height: 34px; letter-spacing: -0.5px; }
+	h3.h3-lg { font-size: 28px; line-height: 36px; } 
+	h3.h3-huge { font-size: 32px; line-height: 40px; } 
+
+	h2.h2-small { font-size: 34px; line-height: 44px; }  
+	h2 { font-size: 36px; line-height: 46px; }
+	h2.h2-lg { font-size: 40px; line-height: 50px; } 
+	h2.h2-huge { font-size: 44px; line-height: 52px; } 
+
+	/* Paragraphs */
+	p { font-size: 15px; line-height: 23px; }
+	p.p-medium { font-size: 16px; line-height: 24px; }
+	p.p-lg { font-size: 17px; line-height: 25px; }
+	p.p-huge { font-size: 19px; line-height: 28px; }
+
+	/* Buttons */	
+	.btn { font-size: 15px; padding: 11px 30px; }
+	.btn.btn-medium { font-size: 16px; padding: 12px 32px; }
+	.btn.btn-lg { font-size: 17px; padding: 13px 34px; }
+
+	/* Store Badges */
+	a.store { margin-right: 6px; }
+
+	img.appstore-button { width: 140px; height: 44px; }
+	img.googleplay-button { width: 150px; height: 44px; }
+	img.amazon-button { width: 139px; height: 44px; }
+	img.windows-button { width: 145px; height: 44px; }
+
+	/* Section Title */	
+	.section-title p { font-size: 17px; line-height: 27px;  padding: 0 8%; }
+
+	/*------------------------------------------*/
+	/*	 Navigation Menu
+	/*------------------------------------------*/
+
+	.navbar-nav > li > a { font-size: 15px; padding: 0 12px; }
+	.navbar-nav > li > a.header-btn { font-size: 14px; margin-top: 11px; padding: 4px 18px; }
+	
+	/*------------------------------------------*/
+	/*	 HERO
+	/*------------------------------------------*/
+
+	.hero-row-160, .hero-row-140 { padding-top: 160px; padding-bottom: 120px; }
+
+	#hero-4 .hero-overlay { padding-top: 160px; }
+	#hero-7 { padding-top: 120px; }
+	#hero-9-content { padding-top: 150px; padding-bottom: 300px; }
+	#hero-11 .hero-overlay { padding-top: 150px; }
+	.hero-bottom-menu { position: relative;  text-align: center; }
+	.hero-bottom-menu .col-md-5.text-right { text-align: center; }
+	.hero-userful-links { margin-bottom: 10px; }
+
+	/* Hero Content */
+	#hero-3 .hero-txt { padding-left: 40px; }
+	#hero-4 .hero-txt { margin-top: 20px; margin-bottom: 40px; }
+	#hero-6 .hero-txt { margin-top: 40px; }
+	#hero-12 .hero-txt { margin-top: 60px; }
+	#hero-15 .hero-video { margin-right: 60px; margin-left: 60px; }
+
+	/* Hero Logo */
+	.hero-logo img { width: 120px ; height: 120px; }
+	#hero-1 .hero-logo { margin-top: 45px; margin-bottom: 45px; }
+	#hero-2 .hero-logo img { width: 100px ; height: 100px; }
+	#hero-2 .hero-logo { margin-bottom: 15px; }
+	#hero-8 .hero-logo { margin-bottom: 35px; }
+	
+	/* Hero Image */
+	#hero-2 .hero-img { margin-top: 50px; }
+	.hero-9-image img { margin-top: -240px; padding-left: 40px; padding-right: 40px; }
+
+	#hero-18 img.img-responsive { width: 100px; height: 100px; }
+
+	/* Hero Buttons */
+	#hero-3 .stores-badge, #hero-4 .stores-badge, #hero-5 .stores-badge, 
+	#hero-7 .stores-badge, #hero-8 .stores-badge, #hero-12 .stores-badge { margin-top: 30px; margin-bottom: 10px; }
+
+	#hero-9 .stores-badge, #hero-10 .stores-badge, #hero-13 .stores-badge { margin-top: 30px; }
+	#hero-11 .stores-badge { margin-top: 25px; margin-bottom: 60px; }
+
+	#hero-12 .stores-badge { margin-top: 35px; margin-bottom: 10px; }
+
+	#hero-18 .stores-badge { margin-top: 70px; }
+
+	#hero-1 .hero-buttons { margin-top: 35px; }
+	#hero-2 .modal-video, #hero-6 .modal-video { margin-top: 15px; }
+	#hero-7 .modal-video, #hero-8 .modal-video { margin-top: 20px; }
+	
+	/* Hero H3 Header */
+	h3.h3-hero {  font-size: 30px; line-height: 38px; }
+	h3.h3-hero-medium { font-size: 35px; line-height: 43px; }
+	h3.h3-hero-lg { font-size: 38px; line-height: 48px;	}
+
+	#hero-2 h3, #hero-11 h3, #hero-9 h3 { margin-bottom: 15px; }
+	#hero-4 h3 { margin-bottom: 20px; }
+	#hero-5 h3 { margin-bottom: 30px; }
+	#hero-7 h2 { margin-top: 30px; }
+	#hero-12 h3 { margin-bottom: 20px; }
+	#hero-13 h3 { padding: 0 2%; }
+	#hero-14 h3 { margin-bottom: 25px; }
+	#hero-15 h3 { margin-bottom: 30px; }
+
+	/* Hero H2 Header */
+	h2.h2-hero { font-size: 50px; line-height: 60px; }
+	#hero-18 h2.h2-hero { font-size: 45px; line-height: 55px; margin-bottom: 60px; }
+
+	/* Hero Paragraphs */
+	p.p-hero-small { font-size: 15px; line-height: 23px; }
+	p.p-hero { font-size: 16px; line-height: 26px; } 
+	p.p-hero-medium { font-size: 18px; line-height: 28px; } 
+
+	.hero-section span.req { font-size: 14px; line-height: 14px; } 
+	.hero-section .modal-video a { font-size: 15px; font-weight: 300; }
+
+	.hero-social-links li { margin: 0 5px; }
+	.hero-socials { margin-left: 0; }
+
+	/*------------------------------------------*/
+	/*	 CONTENT
+	/*------------------------------------------*/	
+
+	/* Features */
+	#features-4.wide-50 { padding-top: 100px; padding-bottom: 70px; }
+	#features-3 .col-sm-4.text-right { padding-right: 15px; }
+	#features-3 .col-sm-4 { padding-left: 15px; }
+	.features-4-row .col-md-6 { margin-bottom: 30px; }
+
+	.fbox-4 { margin-bottom: 25px; }
+	.fbox-4-txt { margin-left: 70px; }
+
+	.fbox-1 p { padding: 0; }
+
+	.box-icon-medium h4 { margin-bottom: 12px; }
+	.fbox-4 h3 { margin-bottom: 10px; }
+
+	.box-icon span { font-size: 60px; line-height: 60px; margin-bottom: 10px; }
+	.box-icon-medium span { font-size: 75px; line-height: 75px; margin-bottom: 15px; }
+	.box-icon-small span { font-size: 55px; line-height: 55px; margin-bottom: 10px; }
+
+	#content-6 .box-icon-small span { font-size: 50px; line-height: 50px; margin-bottom: 10px; }
+
+	span.fbox-4-number { width: 45px; height: 45px; font-size: 20px; line-height: 45px; margin-top: 5px; }
+
+	.fbox-3 { margin-bottom: 30px; }
+	.fbox-3.m-top-80 { margin-top: 20px; }
+
+	#features-4 .features-img { margin-bottom: 50px; }
+
+	/* Content */
+	#content-5 { padding-bottom: 50px; }
+
+	.content-txt { margin-top: 50px; margin-bottom: 50px; }
+
+	.tab-txt, .tab-img { margin-right: 40px; margin-left: 40px; }
+	#tabs-1 .nav-tabs > li > a { font-size: 15px; padding: 20px 50px 20px; }
+
+	.tab-content > .tab-pane { padding: 60px 0 0; }
+	.tab-txt.m-top-100, .tab-txt.m-top-80 { margin-top: 0; }
+	.tab-txt h3.h3-lg.m-bottom-30 { margin-bottom: 20px; }
+
+	#tab-1 .tab-txt, #tab-2 .tab-img, #tab-3 .tab-img { margin-bottom: 50px; }
+
+	#content-6 .content-txt { margin-top: 0px;}
+	.cbox-2 { margin-bottom: 15px; }
+	.cbox-2-txt { padding-left: 15px; } 
+	.cbox-2-txt h4.h4-huge { margin-bottom: 5px; }
+	.cbox-2-txt p { font-size: 14px; line-height: 22px; }
+	
+	/* Video */
+	#video-2 .video-overlay { padding-top: 140px; padding-bottom: 140px; }
+	#video-3 .video-overlay { padding-top: 120px; padding-bottom: 120px; }
+
+	#video-2 span { font-size: 36px; line-height: 90px; }
+
+	.video-2-btn, .video-3-btn {  width: 90px; height: 90px; }
+	.video-2-btn {  margin-right: 25px; margin-left: 25px; }
+	.play-icon { width: 90px; height: 90px; background: url(../images/play-icon-medium.png); margin-top: -45px; margin-left: -45px; }
+	#video-3 h2.h2-huge.m-bottom-50 { margin-bottom: 30px; }
+
+	/* Statistic */
+	#statistic-1 { padding-top: 80px; padding-bottom: 30px; }
+	.statistic-number { font-size: 55px; line-height: 55px;	letter-spacing: -1px; margin-bottom: 8px; }
+
+	/* Banner */
+	#banner-2 {	 padding-top: 150px; padding-bottom: 150px;	} 
+	#banner-5 .banner-overlay {	padding-top: 80px; padding-bottom: 80px; }
+	#banner-7 .banner-overlay { padding-top: 100px; }
+
+	#banner-1 p { margin-top: 20px; padding: 0; }
+	#banner-1 .banner-img.m-top-60 { margin-top: 50px; }
+	.banner-buttons.m-top-40 { margin-top: 30px; }
+	#banner-2 .stores-badge.m-top-40, #banner-3 .stores-badge.m-top-40 { margin-top: 30px; }
+
+	#banner-3 .banner-txt.m-top-60 { margin-top: 10px; }
+	#banner-3 h2.h2-lg.m-bottom-40 { font-size: 36px; line-height: 44px; margin-bottom: 25px; }
+
+	#banner-4-image { margin-top: -30px; }
+	#banner-4 .banner-txt.m-top-100 { margin-top: 50px; padding-left: 15px; }
+	#banner-4 h2.m-bottom-30 { font-size: 32px; line-height: 40px; margin-bottom: 10px; }
+	#banner-4 p.p-medium { font-size: 15px; line-height: 23px; }
+	#banner-4 .stores-badge.m-top-35 { margin-top: 20px; }
+
+	#banner-5 .banner-icon { margin-top: 0; }
+	#banner-5 h2 { margin-bottom: 10px; }
+	#banner-5 p.p-medium { font-size: 16px; line-height: 24px; }
+	#banner-5 .stores-badge { margin-top: 20px; margin-bottom: 15px; }
+	.banner-app-rating p { font-size: 13px; line-height: 22px; }
+
+	.bbox a.other-app-link { font-size: 18px; line-height: 18px; margin-top: 3px; margin-bottom: 8px; } 
+	#banner-6 .col-md-12.m-top-25 { margin-top: 5px; }
+
+	/* Testimonials */
+	.review-1, .review-2 { padding: 0 8px; }
+	.review-3-txt { padding: 40px 35px 55px; }
+
+	.review-1 p, .review-2 p { font-size: 16px; line-height: 24px; } 
+	.review-2 h4, .review-3 h4 { margin-bottom: 15px; }
+
+	/* Pricing */
+	#pricing-1 .pricing-row { margin-right: 0; margin-left: 0; }
+	#pricing-1 .col-sm-4 { padding: 0 4px; }
+
+	.pricing-table span { font-size: 45px; line-height: 45px; }
+	.pricing-table sup { font-size: 25px; top: -5px; }
+
+	.pricing-table ul.features { font-size: 15px; line-height: 15px; padding: 20px 5px 0; }
+	.pricing-table ul.features li { padding: 5px 0; } 
+
+	.pricing-row .btn { padding: 11px 22px; }
+
+	#pricing-2 .col-sm-6 { padding: 0 15px; }	
+	#pricing-2 .pricing-txt { text-align: center; margin-top: 0; }
+	#pricing-2 .pricing-txt h3.h3-huge { margin-bottom: 10px; }
+	#pricing-2 .nav-tabs { margin-bottom: 20px; }
+	#pricing-2 .nav-tabs > li > a { font-size: 15px; padding: 9px 25px; }
+	#pricing-2 .pricing-txt p { padding: 0 5% }
+
+	/* FAQs */
+	.faqs-form-holder {	margin-left: 0px; margin-right: 0px; }
+	.faqs-form h3 br { display: none; }
+	.faqs-accordion.m-top-20 { margin-top: 0; } 
+
+	#faqs-2 .panel-group .panel, #faqs-2 .panel-group .panel + .panel { margin-bottom: 8px; }
+	#faqs-2 .panel-heading a { font-size: 17px; }
+
+	/* Blog */
+	#blog-1 .blog-overlay { padding-top: 100px;padding-bottom: 100px; }
+
+	.blog-1-post { padding: 0 10px; } 
+	.blog-post-link a { font-size: 16px; line-height: 23px; margin-bottom: 10px; } 
+	.blog-1-post .blog-post-link a { font-size: 20px; line-height: 28px; margin-bottom: 20px; }
+
+	/* Newsletter */
+	#newsletter-1 { padding-top: 100px; padding-bottom: 100px; }
+	#newsletter-2, #newsletter-3 { padding-top: 100px; padding-bottom: 100px; }
+
+	#newsletter-2 p { padding: 0; }
+
+	.newsletter-form { margin: 0 5%; }
+	.newsletter-form .form-control { height: 52px; }
+	.newsletter-form .btn { height: 52px; }
+
+	a.newsletter-social { font-size: 22px; margin: 0 5px; }
+
+	/* Footer */
+	#footer-1, #footer-1 .col-md-3.text-right, #footer-4, #footer-4 .col-md-6.text-right, #footer-5, #footer-5 .col-md-6.text-right { text-align: center; }
+
+	#footer-1 .foo-logo { margin-bottom: 20px; } 
+	#footer-1 .foo-links, #footer-5 .footer-copyright { margin-bottom: 25px; } 
+	#footer-1 .foo-socials { margin-bottom: 40px; } 
+	#footer-4 .footer-copyright { margin-bottom: 15px; } 
+	
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media (min-width: 768px) and (max-width: 800px) { 
+
+	/*------------------------------------------*/
+	/*	 Navigation Menu
+	/*------------------------------------------*/
+
+	.navbar-nav > li > a { font-size: 15px; padding: 0 12px; }
+	.navbar-nav > li > a.header-btn { font-size: 14px; line-height:24px; margin-top: 11px; padding: 5px 15px; }
+
+	/*------------------------------------------*/
+	/*	 HERO
+	/*------------------------------------------*/
+
+	/* Hero H3 Header */
+	h3.h3-hero {  font-size: 28px; line-height: 36px; }
+	h3.h3-hero-medium { font-size: 33px; line-height: 41px; }
+	h3.h3-hero-lg { font-size: 35px; line-height: 45px;	}
+
+	/* Hero H2 Header */
+	h2.h2-hero { font-size: 48px; line-height: 58px; }
+
+	/* Hero Paragraphs */
+	p.p-hero-small { font-size: 15px; line-height: 23px; }
+	p.p-hero { font-size: 16px; line-height: 26px; } 
+	p.p-hero-medium { font-size: 18px; line-height: 28px; } 
+
+	.hero-social-links li { margin: 0 5px; }
+	.hero-socials { margin-left: 0; }
+
+	/*------------------------------------------*/
+	/*	 CONTENT
+	/*------------------------------------------*/	
+
+	/* Features */
+	.box-icon span { font-size: 55px; line-height: 55px; margin-bottom: 10px; }
+	.box-icon-medium span { font-size: 70px; line-height: 70px; margin-bottom: 10px; }
+	.box-icon-small span { font-size: 50px; line-height: 50px; margin-bottom: 10px; }
+
+	/* Content */
+	.content-txt h2, .content-txt h3 { margin-bottom: 20px; } 
+
+	#content-2 .btn, .tab-pane .modal-video { margin-top: 18px; }
+	#content-4 .btn, #content-5 .btn, .tab-pane .btn { margin-top: 15px; }
+
+	#tabs-1 .nav-tabs > li > a { font-size: 14px; padding: 20px 40px 20px; }
+	.tab-pane .stores-badge { margin-top: 25px; }
+
+	.cbox p { font-size: 14px; line-height: 22px; } 
+
+	.app-devices { padding: 10px 0 0 5px; }
+	.app-devices-desc span { font-size: 14px; line-height: 14px!important; }
+
+	/* Statistic */
+	.statistic-number { font-size: 50px; line-height: 50px; }
+
+	/* Banner */
+	#banner-4 h2.m-bottom-30 { font-size: 30px; line-height: 38px; margin-bottom: 14px; }
+
+	/* Screenshots */
+	.screens-row { margin-right: 5px; margin-left: 5px; }
+
+	/* Testimonials */
+	.review-1 { opacity: 1; }
+
+	/* Pricing */
+	.pricing-table span { font-size: 40px; line-height: 40px; }
+	.pricing-table sup { font-size: 22px; top: -5px; }
+
+	/* FAQs */
+	#faqs-1 h4.h4-huge { margin-bottom: 20px; }
+	.question h5 { margin-bottom: 5px; }
+	.question { margin-bottom: 15px; }
+
+	.faqs-form-holder { padding: 40px 40px 20px; }
+	.faqs-form .form-control { height: 44px; font-size: 14px; }
+	
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 767px) {	
+
+	/*------------------------------------------*/
+	/*	 PRELOAD ANIMATION
+	/*------------------------------------------*/
+		
+	#loader { width: 70px; height: 70px; margin: -35px 0 0 -35px; }
+
+	/*------------------------------------------*/
+	/*	 BASE
+	/*------------------------------------------*/
+
+	.division { padding-left: 45px; padding-right: 45px; }	
+
+	/* Headers */
+
+	h5.h5-lg { font-size: 14px; line-height: 22px; }
+
+	h4.h4-small { font-size: 16px; line-height: 24px; margin-bottom: 5px; }
+	h4 { font-size: 16px; line-height: 24px; margin-bottom: 10px; }
+	h4.h4-lg { font-size: 17px; line-height: 25px; margin-bottom: 15px; } 
+	h4.h4-huge { font-size: 18px; line-height: 26px; }
+
+	h3.h3-small { font-size: 22px; line-height: 30px; }
+	h3 { font-size: 24px; line-height: 32px; letter-spacing: -0.5px; }
+	h3.h3-lg { font-size: 26px; line-height: 34px; } 
+	h3.h3-huge { font-size: 30px; line-height: 38px; } 
+
+	h2.h2-small { font-size: 32px; line-height: 40px; }  
+	h2 { font-size: 34px; line-height: 42px; }
+	h2.h2-lg { font-size: 36px; line-height: 42px; } 
+	h2.h2-huge { font-size: 38px; line-height: 46px; } 
+
+	/* Paragraphs */
+	p.p-medium { font-size: 16px; line-height: 24px; }
+	p.p-lg { font-size: 16px; line-height: 24px; }
+	p.p-huge { font-size: 17px; line-height: 26px; }
+
+	/* Buttons */	
+	.btn { font-size: 14px; padding: 10px 25px; }
+	.btn.btn-medium { font-size: 15px; padding: 11px 28px; }
+	.btn.btn-lg { font-size: 16px; padding: 12px 30px; }
+
+	/* Section Title */	
+	.section-title p { font-size: 16px; line-height: 24px; }
+
+	/*------------------------------------------*/
+	/*	 Navigation Menu
+	/*------------------------------------------*/
+
+	.header { margin-bottom: 60px; }
+	.navbar-brand { padding: 18px 45px; }
+	.navbar-fixed-top .navbar-collapse {  max-height: 500px; }
+
+	.navbar { text-align: center; padding: 0; box-shadow: 0 0 2px rgba(50, 50, 50, 0.4); }
+
+	/* Logo Image */
+	.navbar .logo-white, .navbar.scroll .logo-white, .navbar.dark-nav .logo-white, .navbar.scroll .logo-white { display: none; }
+	.navbar .logo-black, .navbar.scroll .logo-black, .navbar.dark-nav .logo-black, .navbar.scroll .logo-black { display: block; }
+
+	/* Navigation Bar */	
+	.navbar-nav { background: #f0f0f0; margin-top: 0; margin-bottom: 0; border-top: 1px solid #ddd; }
+	.navbar { padding: 0; background-color: #fff; }
+	.navbar-fixed-top { border-width: 0 0 0; }
+
+	/* Navigation Menu */	
+	.navbar-nav > li > a { color: #333; line-height: 50px; margin-bottom: 0px; }
+
+	/* Header Button */	
+	.navbar-nav > li > a.header-btn.btn-tra, .navbar-nav > li > a.header-btn { 
+		background-color: #444; 
+		border-color: #444;
+		line-height: 34px;
+		margin-top: 0; 
+		margin-bottom: 0; 
+		margin-left: 0; 
+		-webkit-border-radius: 0; 
+		-moz-border-radius: 0; 
+		border-radius: 0; 
+	}
+
+	/* Navigation Menu Hover */	
+	.navbar-nav > li > a:hover, .dark-nav .navbar-nav > li > a:hover, .scroll .navbar-nav > li > a:hover  { background-color: #e0e0e0; color: #000; }
+	.dark-nav .navbar-nav > li > a.header-btn:hover, .navbar-nav > li > a.header-btn.btn-tra:hover { background-color: #222; border-color: #222; color: #fff; }
+
+	/*------------------------------------------*/
+	/*	 HERO
+	/*------------------------------------------*/
+
+	.hero-row-160, .hero-row-140 { padding-top: 100px; padding-bottom: 100px; }
+	#hero-12 .hero-row-140 { padding-bottom: 30px; }
+
+	#hero-4 .hero-overlay { padding-top: 100px; }
+	#hero-7.p-top-120 { padding-top: 100px; }
+	#hero-9-content { padding-top: 100px; padding-bottom: 300px; }
+	#hero-11 .hero-overlay { padding-top: 80px; }
+
+	/* Hero Content */
+	#hero-2, #hero-3, #hero-4, #hero-6, #hero-12, #hero-14, #hero-16 { text-align: center; }
+	#hero-2 .hero-txt { margin-top: 0; padding: 0 10%; }
+	#hero-3 .hero-txt, #hero-12 .hero-txt { margin-top: 40px; }
+	#hero-4 .hero-txt { margin-top: 0; margin-bottom: 40px; padding: 0 10%; }
+	#hero-6 .hero-txt, #hero-12 .hero-txt { padding: 0 15%; }
+	#hero-14 .hero-txt { margin-top: 0; margin-bottom: 40px; padding: 0 10%; }
+	#hero-15 .hero-video { margin-right: 30px; margin-left: 30px; }
+	#hero-16 .hero-txt { margin-top: 40px; padding: 0 5%; }
+
+	/* Hero Logo */
+	#hero-2 .hero-logo img { width: 120px ; height: 120px; margin-bottom: 20px; }
+
+	/* Hero Image */
+	#hero-2 .hero-img { margin: 50px 20% 0; }
+	#hero-3 .hero-img { margin: 0 25%; }
+	#hero-4 .hero-img { margin: 0 20%; }
+	#hero-6 .hero-img { margin: 0 20%; }
+	.hero-9-image img { margin-top: -240px; padding-left: 25px; padding-right: 25px; }
+	#hero-13 img.img-responsive { padding: 0 5%; }
+	#hero-14 .hero-img { margin: 0 25%; }
+	#hero-16 .hero-img { margin: 0 20%; }
+
+	/* Hero Buttons */
+	#hero-3 .stores-badge, #hero-4 .stores-badge, #hero-5 .stores-badge, 
+	#hero-7 .stores-badge, #hero-8 .stores-badgeб #hero-9 .stores-badge, 
+	#hero-12 .stores-badge, #hero-13 .stores-badge { margin-top: 25px; }
+
+	#hero-10 .stores-badge { margin-top: 25px; margin-bottom: 45px }
+	#hero-11 .stores-badge { margin-top: 20px; margin-bottom: 60px; }
+
+	#hero-1 .hero-buttons, #hero-16 .stores-badge { margin-top: 30px; }
+
+	/* Hero H3 Header */
+	h3.h3-hero {  font-size: 28px; line-height: 36px; }
+	h3.h3-hero-medium { font-size: 33px; line-height: 43px; }
+	h3.h3-hero-lg { font-size: 33px; line-height: 43px;	}
+
+	#hero-2 h3, #hero-3 h3 { margin-bottom: 20px; }
+	#hero-7 h2 { margin-top: 0; }
+
+	/* Hero H2 Header */
+	h2.h2-hero { font-size: 48px; line-height: 58px; }
+	#hero-18 h2.h2-hero { font-size: 38px; line-height: 48px; }
+
+	/* Hero Paragraphs */
+	p.p-hero-small { font-size: 15px; line-height: 23px; }
+	p.p-hero { font-size: 16px; line-height: 26px; } 
+	p.p-hero-medium { font-size: 16px; line-height: 26px; } 
+
+	#hero-1 p, #hero-5 p, #hero-8 p, #hero-9 p, #hero-11 p { padding: 0; }
+	#hero-10 p { padding: 0 5%;	}
+	#hero-16 p { padding: 0 8%; }
+
+	#hero-16 p.p-hero-medium { margin-bottom: 20px; }
+
+	.hero-section .modal-video a { font-size: 14px; font-weight: 300; }
+	.hero-userful-links li { font-size: 13px; line-height: 36px; margin: 0 5px; }
+	.hero-social-links li { font-size: 13px; }
+
+	.hero-social-links li { margin: 0 5px; }
+	.hero-socials { margin-left: 0; }
+
+	/*------------------------------------------*/
+	/*	 CONTENT
+	/*------------------------------------------*/	
+
+	/* Features */
+	.fbox-1 p, .fbox-2 p, .fbox-3 p { padding: 0 10%; }
+
+	#features-3 .col-sm-4.text-right, #features-3 .col-sm-4 { text-align: center; }
+	.fbox-3-img { margin-top: 45px; }
+
+	/* Content */
+	.content-txt { margin-top: 0; margin-bottom: 50px; }
+	#content-6 .content-img { padding: 0 12%; }
+
+	.content-txt h2, .content-txt h3 { margin-bottom: 20px; } 
+
+	#content-2 .btn, .tab-pane .modal-video { margin-top: 18px; }
+	#content-4 .btn, #content-5 .btn, .tab-pane .btn { margin-top: 15px; }
+
+	#tabs-1 .nav-tabs > li > a { font-size: 14px; padding: 20px 40px 20px; }
+	.tab-pane .stores-badge { margin-top: 25px; }
+
+	.cbox p { font-size: 14px; line-height: 22px; } 
+
+	.app-devices { padding: 10px 0 0 5px; }
+	.app-devices-desc { padding-top: 20px; }
+	.app-devices-desc span { font-size: 14px; line-height: 14px!important; }
+
+	.tab-txt, .tab-img { margin-right: 0; margin-left: 0; }
+
+	/* Video */
+	#video-2 .video-overlay, #video-3 .video-overlay { padding-top: 100px; padding-bottom: 100px; }
+
+	#video-2 span { font-size: 30px; line-height: 90px; }
+	.video-2-btn, .video-3-btn {  width: 90px; height: 90px; }
+	.video-2-btn { margin-right: 15px; margin-left: 15px; }
+
+	.play-icon { width: 90px; height: 90px; background: url(../images/play-icon-medium.png); margin-top: -45px; margin-left: -45px; }
+	#video-3 h2.h2-huge.m-bottom-50 { margin-bottom: 20px; }
+
+	/* Statistic */
+	.statistic-number { font-size: 50px; line-height: 50px; }
+
+	/* Banner */
+	#banner-2 {	padding-top: 130px; padding-bottom: 130px; } 
+	#banner-2, #banner-3, #banner-4, #banner-5 { text-align: center; }
+
+	#banner-3 h2.h2-lg.m-bottom-40 { font-size: 30px; line-height: 40px; margin-bottom: 20px; }
+	#banner-2 .stores-badge.m-top-40, #banner-3 .stores-badge.m-top-40 { margin-top: 25px; }
+
+	#banner-4 { padding-bottom: 100px; }
+	#banner-4 .banner-txt.m-top-100 { margin-top: 40px; }
+	#banner-4-image { margin: -50px 60px 0;  }
+
+	#banner-5 .banner-icon { margin-bottom: 20px; }
+
+	.bbox { margin-bottom: 40px; }
+	#banner-6 .col-md-12.m-top-25 { margin-top: 25px; }
+	.banner-icon img { width: 170px; height: 170px; }
+
+	/* Screenshots */
+	.screens-row { margin-right: 0; margin-left: 0; }
+
+	/* Testimonials */
+	.review-1 { opacity: 1; }
+
+	/* Pricing */
+	#pricing-1 .pricing-row, #pricing-2 .tab-content { margin-right: 45px; margin-left: 45px; }
+
+	/* FAQs */
+	.faqs-form .form-control { height: 46px; font-size: 15px; }
+	.faqs-form-btn .btn { font-size: 15px; padding: 13px 36px; }
+
+	/* Blog */
+	.blog-1-post { padding: 0 5%; } 
+
+	/* Newsletter */
+	.newsletter-form { margin: 0; }
+	.newsletter-form .form-control { height: 50px; font-size: 15px; }
+	#newsletter-3 .newsletter-form .form-control { font-size: 16px; }
+	.newsletter-form .btn {  height: 50px; font-size: 15px; padding: 0 50px; }
+	#newsletter-3 .newsletter-form .btn {  font-size: 16px; padding: 0 60px; }
+
+	/* Footer */
+	#footer-2 { text-align: center; }
+
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 640px) {	
+
+	#stlChanger { display: none; }
+
+	/*------------------------------------------*/
+	/*	 BASE
+	/*------------------------------------------*/
+
+	.division { padding-left: 30px; padding-right: 30px; }	
+
+	h5.h5-lg { font-size: 14px; line-height: 22px; }
+
+	h4.h4-small { font-size: 16px; line-height: 24px; margin-bottom: 5px; }
+	h4 { font-size: 16px; line-height: 24px; margin-bottom: 10px; }
+	h4.h4-lg { font-size: 17px; line-height: 25px; margin-bottom: 15px; } 
+	h4.h4-huge { font-size: 18px; line-height: 26px; }
+
+	h3.h3-small { font-size: 20px; line-height: 28px; }
+	h3 { font-size: 22px; line-height: 30px; letter-spacing: -0.5px; }
+	h3.h3-lg { font-size: 23px; line-height: 31px; } 
+	h3.h3-huge { font-size: 24px; line-height: 32px; } 
+
+	h2.h2-small { font-size: 28px; line-height: 36px; }  
+	h2 { font-size: 30px; line-height: 38px; }
+	h2.h2-lg { font-size: 32px; line-height: 40px; } 
+	h2.h2-huge { font-size: 32px; line-height: 40px; } 
+
+	/* Paragraphs */
+	p.p-medium { font-size: 15px; line-height: 23px; }
+	p.p-lg { font-size: 15px; line-height: 23px; }
+	p.p-huge { font-size: 16px; line-height: 24px; }
+
+	/* Store Badges */
+	img.appstore-button { width: 125px; height: 39px; }
+	img.googleplay-button { width: 133px; height: 39px; }
+	img.amazon-button { width: 123px; height: 39px; }
+	img.windows-button { width: 128px; height: 39px; }
+
+	/* Section Title */	
+	.section-title h2 { margin-bottom: 10px; }
+
+	/* Navigation Menu */	
+	.navbar-nav > li > a { font-size: 15px; }
+	.navbar-nav > li > a.header-btn { font-size: 15px; }
+
+	/*------------------------------------------*/
+	/*	 HERO
+	/*------------------------------------------*/
+
+	.hero-row-160 { padding-top: 80px; padding-bottom: 80px; }
+	.hero-row-140 { padding-top: 80px; padding-bottom: 80px; }
+
+	#hero-4 .hero-overlay { padding-top: 80px; }
+	#hero-7.p-top-120 { padding-top: 80px; }
+	#hero-9-content { padding-top: 80px; padding-bottom: 300px; }
+	#hero-11 .hero-overlay { padding-top: 80px; }
+
+	/* Hero Content */
+	#hero-2 .hero-txt, #hero-4 .hero-txt { padding: 0 5%; }
+	#hero-6 .hero-txt, #hero-12 .hero-txt { padding: 0 10%; }
+
+	/* Hero Logo */
+	.hero-logo img, #hero-2 .hero-logo img { width: 100px ; height: 100px; }
+	#hero-1 .hero-logo { margin-top: 40px; margin-bottom: 40px; }
+	#hero-2 .hero-logo img { margin-bottom: 15px; }
+
+	/* Hero Image */
+	#hero-2 .hero-img { margin: 50px 15% 0; }
+	
+	/* Hero H3 Header */
+	h3.h3-hero {  font-size: 25px; line-height: 33px; }
+	h3.h3-hero-medium { font-size: 30px; line-height: 40px; }
+	h3.h3-hero-lg { font-size: 30px; line-height: 40px;	}
+
+	/* Hero H2 Header */
+	h2.h2-hero { font-size: 45px; line-height: 55px; }
+	#hero-18 h2.h2-hero { font-size: 32px; line-height: 42px; }
+
+	/* Hero Paragraphs */
+	p.p-hero-small { font-size: 15px; line-height: 23px; }
+	p.p-hero { font-size: 15px; line-height: 23px; } 
+	p.p-hero-medium { font-size: 15px; line-height: 23px; } 
+
+	#hero-1 p, #hero-5 p, #hero-8 p, #hero-9 p, #hero-11 p { padding: 0; }
+
+	.hero-social-links li { margin: 0 5px; }
+	.hero-socials { margin-left: 0; }
+
+	/*------------------------------------------*/
+	/*	 CONTENT
+	/*------------------------------------------*/	
+
+	/* Features */
+	.fbox-1 p, .fbox-2 p, .fbox-3 p { padding: 0 5%; }
+
+	/* Content */
+	#tabs-1 .nav-tabs > li > a { font-size: 14px; padding: 15px 30px; }
+
+	/* Video */
+	.video-2-btn { display: block; float: none!important; margin: 25px auto; }
+	#video-2 span { font-size: 32px; line-height: 32px; display: block; float: none!important; }
+
+	/* Statistic */
+	.statistic-number { font-size: 46px; line-height: 46px; }
+
+	/* Banner */
+	#banner-2 {	padding-top: 100px; padding-bottom: 100px; } 
+	#banner-7 p { padding: 0; }
+
+	#banner-2 h2 { margin-bottom: 15px; }
+	#banner-3 h2.h2-lg.m-bottom-40 { font-size: 26px; line-height: 34px; margin-bottom: 16px; }
+	#banner-4 h2.m-bottom-30 { font-size: 26px; line-height: 34px; margin-bottom: 14px; }
+
+	#banner-1 p { padding: 0 ; margin-top: 15px; }
+	#banner-5 p.p-medium { font-size: 15px; line-height: 23px; }
+
+	.bbox a.other-app-link { font-size: 16px; line-height: 16px; margin-top: 15px; margin-bottom: 7px; } 
+	.bbox p.darkgrey-color { margin-bottom: 3px; }
+
+	/* Clients */
+	#clients-1 { padding-top: 50px; padding-bottom: 20px; }
+	.brand-logo { padding: 0 12px; }
+
+	/* Pricing */
+	#pricing-1 .pricing-row, #pricing-2 .tab-content { margin-right: 30px; margin-left: 30px; }
+
+	/* Blog */
+	p.blog-post-meta  { font-size: 13px; line-height: 13px; }
+
+	.blog-post-author p, .blog-post-author span { font-size: 13px; line-height: 22px; } 
+	.blog-1-post .blog-post-link a { font-size: 18px; line-height: 26px; margin-bottom: 20px; }
+
+	/* Contacts */
+	.contact-form { margin-left: 10px; margin-right: 10px; }
+
+	#scrollUp { display: none; width: 40px; height: 40px; position: fixed; bottom: 15px;right: 15px; }
+
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media only screen and (max-width : 479px) {
+
+	/*------------------------------------------*/
+	/*	 BASE
+	/*------------------------------------------*/
+
+	body { font-size: 14px; line-height: 22px; }
+
+	.division { padding-left: 15px; padding-right: 15px; }
+
+	.wide-120 { padding-top: 80px; padding-bottom: 80px; }
+	.wide-100 { padding-top: 80px; padding-bottom: 80px; }
+	.wide-90 { padding-top: 80px; padding-bottom: 70px; }
+	.wide-80 { padding-top: 80px; padding-bottom: 60px; }
+	.wide-70 { padding-top: 80px; padding-bottom: 50px; }
+	.wide-60 { padding-top: 80px; padding-bottom: 40px; }
+	.wide-50 { padding-top: 80px; padding-bottom: 30px; }
+	.wide-40 { padding-top: 80px; padding-bottom: 20px; }
+	.wide-30 { padding-top: 80px; padding-bottom: 10px; }
+
+	.p-top-120 { padding-top: 80px; }
+
+	h5.h5-lg { font-size: 14px; line-height: 22px; }
+
+	h4.h4-small { font-size: 16px; line-height: 24px; margin-bottom: 5px; }
+	h4 { font-size: 16px; line-height: 24px; margin-bottom: 10px; }
+	h4.h4-lg { font-size: 17px; line-height: 25px; margin-bottom: 15px; } 
+	h4.h4-huge { font-size: 18px; line-height: 26px; }
+
+	h3.h3-small { font-size: 19px; line-height: 27px; }
+	h3 { font-size: 20px; line-height: 28px; letter-spacing: -0.5px; }
+	h3.h3-lg { font-size: 21px; line-height: 29px; } 
+	h3.h3-huge { font-size: 23px; line-height: 31px; } 
+
+	h2.h2-small { font-size: 24px; line-height: 32px; }  
+	h2 { font-size: 26px; line-height: 34px; }
+	h2.h2-lg { font-size: 28px; line-height: 36px; } 
+	h2.h2-huge { font-size: 28px; line-height: 36px; } 
+
+	/* Paragraphs */
+	p { font-size: 14px; line-height: 22px; }
+	p.p-medium { font-size: 14px; line-height: 22px; }
+	p.p-lg { font-size: 14px; line-height: 22px; }
+	p.p-huge { font-size: 14px; line-height: 22px; }
+
+	/* Buttons */	
+	.btn { font-size: 13px; padding: 8px 20px; }
+	.btn.btn-medium { font-size: 14px; padding: 10px 25px; }
+	.btn.btn-lg { font-size: 14px; padding: 10px 25px; }
+ 
+	/* Section Title */	
+	.section-title h2 { margin-bottom: 10px; }
+	.section-title p { font-size: 14px; line-height: 23px; padding: 0; }
+
+	/*------------------------------------------*/
+	/*	 Navigation Menu
+	/*------------------------------------------*/
+	
+	.navbar-brand { padding: 18px 30px; }
+	.navbar-toggle { margin: 11px 30px 11px 0; }
+
+	/* Navigation Menu */	
+	.navbar-nav > li > a { font-size: 14px; }
+	.navbar-nav > li > a.header-btn { font-size: 14px; }
+
+	/*------------------------------------------*/
+	/*	 HERO
+	/*------------------------------------------*/
+
+	#hero-9-content { padding-bottom: 200px; }
+
+	/* Hero Content */
+	#hero-1 .hero-txt, #hero-2 .hero-txt, #hero-3 .hero-txt, #hero-4 .hero-txt, #hero-5 .hero-txt, 
+	#hero-6 .hero-txt, #hero-7 .hero-txt, #hero-8 .hero-txt, #hero-9 .hero-txt, #hero-10 .hero-txt, 
+	#hero-11 .hero-txt, #hero-12 .hero-txt, #hero-13 .hero-txt, #hero-14 .hero-txt, #hero-15 .hero-txt { padding: 0 5px; }
+
+	#hero-14 .hero-txt { padding: 0 5%; }
+	#hero-15 .hero-video { margin-right: 5px; margin-left: 5px; }
+
+	#hero-5 .col-xs-8 { width: 100%; float: none!important; margin: 0; }
+
+	/* Hero Image */
+	.hero-9-image img { margin-top: -160px; }
+	#hero-13 img.img-responsive { padding: 0 10%; }
+	#hero-14 .hero-img { margin: 0 20%; }
+
+	#hero-18 img.img-responsive { width: 80px; height: 80px; }
+
+	/* Hero Buttons */
+	#hero-15 .stores-badge { margin-top: 25px; }
+	#hero-18 .stores-badge { margin-top: 40px; }
+
+	/* Hero H3 Header */
+	h3.h3-hero {  font-size: 20px; line-height: 28px; }
+	h3.h3-hero-medium { font-size: 24px; line-height: 32px; }
+	h3.h3-hero-lg { font-size: 24px; line-height: 32px;	}
+
+	#hero-12 h3 { margin-bottom: 15px; }
+	#hero-15 h3 { margin-bottom: 25px; }
+
+	/* Hero H2 Header */
+	h2.h2-hero { font-size: 34px; line-height: 44px; }
+	#hero-18 h2.h2-hero { font-size: 25px; line-height: 35px; margin-bottom: 40px; }
+
+	/* Hero Paragraphs */
+	p.p-hero-small { font-size: 14px; line-height: 22px; }
+	p.p-hero { font-size: 14px; line-height: 22px; } 
+	p.p-hero-medium { font-size: 14px; line-height: 22px; } 
+
+	#hero-5 p { padding: 0 5% }
+	#hero-16 p, #hero-17 p { padding: 0 2%; }
+
+	.hero-section span.req { font-size: 13px; line-height: 13px; } 
+	.hero-section .modal-video a { font-size: 13px; font-weight: 300; }
+
+	.hero-userful-links li { line-height: 32px; }
+	.hero-social-links li { line-height: 32px; margin: 0 3px; }
+	.hero_social { width: 32px; height: 32px; font-size: 15px; line-height: 32px; margin: 0 2px; }
+
+	.hero-socials { margin-left: 0px; }
+
+	/*------------------------------------------*/
+	/*	 CONTENT
+	/*------------------------------------------*/	
+
+	/* Features */
+	.features-4-row { padding: 0; }
+	.fbox-1 p, .fbox-2 p, .fbox-3 p { padding: 0; }
+
+	span.fbox-4-number { width: 38px; height: 38px; font-size: 17px; line-height: 38px; margin-top: 5px; }
+	.fbox-4-txt { margin-left: 55px; }
+
+	/* Content */
+	.box-icon span { font-size: 50px; line-height: 50px; margin-bottom: 6px; }
+	.box-icon-medium span { font-size: 65px; line-height: 65px; margin-bottom: 6px; }
+	.box-icon-small span { font-size: 45px; line-height: 45px; margin-bottom: 6px; }
+
+	.app-devices-desc { padding-top: 10px; }
+
+	#tabs-1 .nav-tabs { display: block; }	
+	#tabs-1  .nav-tabs > li  { width: 100%;  }
+	#tabs-1  .nav-tabs > li > a  { padding: 15px 40px; margin-bottom: 5px; margin-right: 0; }
+
+	#content-6 .content-img { padding: 0 5%; }
+
+	/* Video */
+	#video-2 .video-overlay, #video-3 .video-overlay { padding-top: 80px; padding-bottom: 80px; }
+	#video-2 span { font-size: 26px; line-height: 26px; }
+
+	.video-2-btn, .video-3-btn {  width: 60px; height: 60px; }
+	.play-icon { width: 60px; height: 60px; background: url(../images/play-icon-small.png); margin-top: -30px; margin-left: -30px; }
+
+	/* Statistic */
+	#statistic-1 { padding-bottom: 40px; }
+	#statistic-1 .col-xs-3  { width: 100%; margin-bottom: 40px; }
+	.statistic-number { font-size: 42px; line-height: 42px; margin-bottom: 5px; }
+
+	/* Banner */
+	#banner-7 .banner-overlay { padding-top: 80px; }
+	#banner-4 { padding-bottom: 80px; }
+	#banner-1 p { padding: 0; }
+
+	#banner-3 h2.h2-lg.m-bottom-40 { font-size: 28px; line-height: 34px;  }
+	#banner-4-image { margin: -50px 10px 0;  }
+	#banner-4 .banner-txt.m-top-100 { margin-top: 30px; }
+	#banner-4 .banner-txt { margin-top: 30px; }
+
+	#banner-4 h2.m-bottom-30 { font-size: 26px; line-height: 34px; }
+	#banner-4 p.p-medium { font-size: 14px; line-height: 22px; }
+
+	.bbox  { text-align: center; }
+	img.other-app-logo { float: none!important; margin-right: 0;}
+
+	/* Screenshots */
+	.screenshots-wrap { width: 280px; margin: 78px auto 100px; }
+	.carousel-item { width: 240px; margin: 0 20px; text-align: center; }
+	.carousel-item img {width: 240px; text-align: center; }
+	.iphone-frame { top: -62px; }
+	.iphone-frame img { max-width: 280px; }
+
+	/* Clients */
+	.brand-logo { padding: 0 18px; }
+
+	/* Pricing */
+	#pricing-1 .pricing-row, #pricing-2 .tab-content { margin-right: 0; margin-left: 0; }
+
+	/* FAQs */
+	#faqs-2 .panel-heading { padding: 5px 0; }
+	span.qnumber { display: none; }
+	#faqs-2 .panel-heading a { font-size: 15px; line-height: 22px; }
+	#faqs-2 .panel-body { padding: 10px 0 0 18px; margin-left: 5px; }
+
+	.faqs-form-holder {	padding: 35px 35px 15px; }
+	.faqs-form .form-control { height: 44px; font-size: 15px; padding: 0 10px; }
+
+	/* Blog */
+	#blog-1 .blog-overlay {	padding-top: 80px; padding-bottom: 80px; }
+	.blog-1-post { padding: 0; } 
+
+	/* Newsletter */
+	.newsletter-form .form-control, .input-group-btn { width: 100%; float: none!important; margin-bottom: 8px; }
+	.input-group-btn, .newsletter-section .input-group .form-control, .newsletter-section .input-group { display: block; text-align: center; }	
+	.newsletter-section .input-group .form-control { height: 45px; display: block; float:none!important; width: 100%; border-radius: 0; padding: 5px 20px;  }
+	.newsletter-form .form-control { border-right:  1px solid #ccc; }
+	#newsletter-2 .newsletter-form .form-control { border-right: 1px solid #ccc; }	
+	.newsletter-form .btn { height: 45px; display: inline-block; float:none!important; width: 100%!important; border-radius: 0; }
+
+	#newsletter-3 h2 { margin-bottom: 30px; }
+	.newsletter-section p.m-bottom-40 { margin-bottom: 20px; }
+
+	.newsletter-social.m-top-20 { margin-top: 0px; }
+	.newsletter-icons.m-top-30 { margin-top: 10px; }
+	a.newsletter-social { width: 35px; height: 35px; font-size: 20px; line-height: 35px !important;margin: 0 5px; }
+	
+	/* Contacts */
+	.contact-form { margin-left: 0; margin-right: 0; }
+	.contact-form .form-control { height: 44px; font-size: 14px; padding: 0 10px; }
+	.contact-form textarea { min-height: 160px; }
+
+	/* Footer */
+	.footer h5 { margin-bottom: 20px; }
+	.footer-links li { margin: 0 5px; }
+	.footer-links li a { font-size: 14px; line-height: 22px; }
+
+	a.foo-social { margin: 0 3px; }
+
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media (min-width: 416px) and (max-width: 478.99px) {
+
+	.screenshots-wrap { width: 280px; margin: 78px auto 100px; }
+	.carousel-item { width: 240px; margin: 0 20px; text-align: center; }
+	.carousel-item img {width: 240px; text-align: center; }
+	.iphone-frame { top: -62px; }
+	.iphone-frame img { max-width: 280px; }
+
+
+}
+
+
+@media (min-width: 321px) and (max-width: 415px) {
+
+	.screenshots-wrap { width: 280px; margin: 78px auto 100px; }
+	.carousel-item { width: 240px; margin: 0 20px; text-align: center; }
+	.carousel-item img {width: 240px; text-align: center; }
+	.iphone-frame { top: -62px; }
+	.iphone-frame img { max-width: 280px; }
+
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+@media (max-width: 320px) {	
+
+	/*------------------------------------------*/
+	/*	 PRELOAD ANIMATION
+	/*------------------------------------------*/
+	
+	#loader { width: 54px; height: 54px; margin: -27px 0 0 -27px; border: 2px solid transparent; border-top-color: #25c6ff; }
+	#loader:before { border: 2px solid transparent; border-top-color: #e74c3c; }
+	#loader:after { border: 2px solid transparent; border-top-color: #f9c922; }
+
+	/*------------------------------------------*/
+	/*	 BASE
+	/*------------------------------------------*/
+
+	body { font-size: 13px; line-height: 20px; }
+
+	.division { padding-left: 4px; padding-right: 4px; }
+
+	/* Headers */
+
+	h5.h5-lg { font-size: 14px; line-height: 22px; }
+
+	h4.h4-small { font-size: 15px; line-height: 23px; margin-bottom: 5px; }
+	h4 { font-size: 15px; line-height: 23px; margin-bottom: 10px; }
+	h4.h4-lg { font-size: 16px; line-height: 24px; margin-bottom: 15px; } 
+	h4.h4-huge { font-size: 17px; line-height: 24px; }
+
+	h3.h3-small { font-size: 18px; line-height: 26px; }
+	h3 { font-size: 19px; line-height: 27px; letter-spacing: -0.5px; }
+	h3.h3-lg { font-size: 19px; line-height: 27px; } 
+	h3.h3-huge { font-size: 20px; line-height: 28px; } 
+
+	h2.h2-small { font-size: 21px; line-height: 29px; }  
+	h2 { font-size: 22px; line-height: 28px; }
+	h2.h2-lg { font-size: 24px; line-height: 32px; } 
+	h2.h2-huge { font-size: 24px; line-height: 32px; } 
+
+	/* Paragraphs */
+	p { font-size: 13px; line-height: 20px; }
+	p.p-medium { font-size: 13px; line-height: 20px; }
+	p.p-lg { font-size: 13px; line-height: 20px; }
+	p.p-huge { font-size: 13px; line-height: 20px; }
+
+	/* Store Badges */
+	a.store { margin-bottom: 5px; }
+
+	img.appstore-button { width: 115px; height: 36px; }
+	img.googleplay-button { width: 123px; height: 36px; }
+	img.amazon-button { width: 114px; height: 36px; }
+	img.windows-button { width: 118px; height: 36px; }
+
+	/* Buttons */	
+	a.btn { margin-bottom: 10px; }
+	a.btn.m-right-5, a.btn.m-right-10 { margin-right: 0; }
+	a.store { margin-right: 0; display: block; margin-bottom: 8px; }
+
+	/* Section Title */	
+	.section-title p { font-size: 13px; line-height: 20px; }
+
+	/*------------------------------------------*/
+	/*	 Navigation Menu
+	/*------------------------------------------*/
+	
+	.navbar-brand { padding: 18px 15px; }
+	.navbar-toggle { margin: 11px 15px 11px 0; }
+
+	/*------------------------------------------*/
+	/*	 HERO
+	/*------------------------------------------*/
+
+	.hero-row-160 { padding-top: 60px; padding-bottom: 60px; }
+	.hero-row-140 { padding-top: 60px; padding-bottom: 60px; }
+	#hero-12 .hero-row-140 { padding-bottom: 15px; }
+
+	#hero-4 .hero-overlay { padding-top: 60px; }
+	#hero-7.p-top-120 { padding-top: 60px; }
+	#hero-9-content { padding-top: 60px; padding-bottom: 140px; }
+	#hero-11 .hero-overlay { padding-top: 60px; }
+
+	#hero-8 .col-xs-8 { width: 100%; float: none!important; margin: 0; }
+
+	#hero-14 .hero-txt { margin-bottom: 20px;  }
+
+	/* Hero Logo */
+	.hero-logo img, #hero-2 .hero-logo img { width: 80px ; height: 80px; }
+	#hero-1 .hero-logo { margin-top: 30px; margin-bottom: 30px; }
+	#hero-2 .hero-logo img { margin-bottom: 10px; }
+	#hero-8 .hero-logo { margin-bottom: 20px; }
+
+	/* Hero Image */
+	#hero-2 .hero-img { margin: 30px 5% 0; }
+	#hero-3 .hero-img { margin: 0 12%; }
+	#hero-4 .hero-img { margin: 0 10%; }
+	#hero-6 .hero-img { margin: 0 5%; }
+	.hero-9-image img { margin-top: -110px; padding-left: 0; padding-right: 0; }
+	#hero-14 .hero-img { margin: 0 8%; }
+	#hero-16 .hero-img { margin: 0 8%; }
+
+	/* Hero Buttons */
+	#hero-3 .stores-badge, #hero-4 .stores-badge, #hero-5 .stores-badge, 
+	#hero-7 .stores-badge, #hero-8 .stores-badge { margin-top: 20px; }
+
+	#hero-9 .stores-badge { margin-top: 20px; }
+	#hero-10 .stores-badge { margin-top: 25px; margin-bottom: 35px; }
+	#hero-11 .stores-badge { margin-top: 20px; margin-bottom: 40px; }
+
+	#hero-1 .hero-buttons { margin-top: 20px; }
+	#hero-7 .modal-video { margin-bottom: 40px; }
+
+	#hero-2 .modal-video, #hero-6 .modal-video, #hero-7 .modal-video { margin-top: 10px; }
+	#hero-8 .modal-video { margin-top: 15px; }
+
+	/* Hero H3 Header */
+	h3.h3-hero {  font-size: 18px; line-height: 26px; }
+	h3.h3-hero-medium { font-size: 20px; line-height: 28px; }
+	h3.h3-hero-lg { font-size: 20px; line-height: 28px;	}
+
+	#hero-5 h3 { margin-bottom: 15px; }
+	#hero-8 h3 { padding: 0 2%; }
+
+	/* Hero H2 Header */
+	h2.h2-hero { font-size: 30px; line-height: 40px; }
+
+	#hero-7 h2 { margin-bottom: 10px; }
+
+	/* Hero Paragraphs */
+	p.p-hero-small { font-size: 13px; line-height: 20px; }
+	p.p-hero { font-size: 13px; line-height: 20px; } 
+	p.p-hero-medium { font-size: 13px; line-height: 20px; } 
+
+	#hero-17 p.p-hero-small { margin-top: 30px; }
+
+	.hero-userful-links { margin-bottom: 15px; }
+	.hero-userful-links li { margin: 0 3px; }
+	span.stay-connected { display: none; }
+	.hero-socials { margin-left: 0; }
+	
+	/*------------------------------------------*/
+	/*	 CONTENT
+	/*------------------------------------------*/	
+
+	/* Features */
+
+	span.fbox-4-number { display: none; }
+	.fbox-4-txt { margin-left: 0; }
+
+	.box-icon span { font-size: 45px; line-height: 45px; margin-bottom: 6px; }
+	.box-icon-medium span { font-size: 60px; line-height: 60px; margin-bottom: 6px; }
+	.box-icon-small span { font-size: 40px; line-height: 40px; margin-bottom: 6px; }
+
+	/* Content */
+	.app-devices { padding: 20px 0 0 2px; }
+	.app-devices i { font-size: 60px; line-height: 60px!important; margin-right: 15px; }
+	.app-devices-desc { padding-top: 0; }
+	.app-devices-desc span { font-size: 14px; line-height: 14px!important; }
+
+	/* Video */
+	#video-2 span { font-size: 22px; line-height: 22px; }
+
+	/* Banner */
+	.banner-buttons .btn.m-right-10 { margin-right: 0; margin-bottom: 10px;  }
+
+	#banner-3 h2.h2-lg.m-bottom-40 { font-size: 22px; line-height: 30px; margin-bottom: 16px; }
+	#banner-4 h2.m-bottom-30 { font-size: 22px; line-height: 30px; }
+
+	/* Screenshots */
+	.screenshots-wrap { width: 280px; margin: 78px auto 100px; }
+	.carousel-item { width: 240px; margin: 0 20px; text-align: center; }
+	.carousel-item img {width: 240px; text-align: center; }
+	.iphone-frame { top: -62px; }
+	.iphone-frame img { max-width: 280px; }
+
+	/* Testimonials */
+	.review-3-txt { padding: 30px 30px 35px; margin: 0; }
+	.review-3 .testimonial-avatar img { margin: -30px auto 0; }
+
+	/* Pricing */
+	.pricing-table span { font-size: 38px; line-height: 38px; }
+	.pricing-table sup { font-size: 20px; top: -5px; }
+
+	/* FAQs */
+	.faqs-form-holder { padding: 30px 20px 10px; margin-left: 0; margin-right: 0; }
+	.faqs-form .form-control { height: 40px; font-size: 14px; padding: 0 8px; }
+
+	/* Footer */
+	a.foo-social { width: 34px; height: 34px; font-size: 15px; line-height: 34px !important; margin: 0 2px; }
+
+}	

@@ -1,0 +1,352 @@
+<div class="row">
+  
+    <div class="col-md-10">
+            <div class="nav-tabs-custom">
+    <ul class="nav nav-tabs">
+    <li class="active"><a href="#timeline" data-toggle="tab" aria-expanded="true">Business</a></li>
+    <li class=""><a href="#activity" data-toggle="tab" aria-expanded="flase">Archived Business</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane  active in" id="timeline" name ="timeline">
+                  <button class="btn btn-info" style="float: right;padding-right: 7px;margin-top:-70px;" data-toggle="modal" data-target="#feedback" ><span class="glyphicon glyphicon-plus-sign"></span>Add Business</button>
+
+                  <div class="box box-info">
+        <div class="box-body">
+       
+          
+            <div class="modal fade" id="modal-delay14">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Business Details</h4>
+              </div>
+              <form class="form-horizontal" action="" method="POST" enctype="multipart/form-data"></form>
+                <div class="modal-body">
+                <div class="row">
+                  <label for="name" class="col-sm-2 control-label">Business Name</label>
+                  <div class="col-sm-9"> 
+                  <input type="text" class="form-control" placeholder="Business" name="account" value="Friends">
+                  </div>
+                </div>
+                <br>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" name="update">Update</button>
+                <input type="hidden" class="btn btn-primary" name="accountid" value="14">
+                </div>
+              
+              </div>
+            </div>
+            </div>
+            <div>
+             
+                <div class="row"><div class="col-sm-12">
+                  <table id="my-tables" datatable  class="display" style="width:100%" *ngIf="myTable" >
+      
+                      <thead>
+          <tr role="row">
+            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 105.26px;">S.No</th>
+            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 283.038px;">Business Name</th>
+            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 257.483px;">Created Date</th>
+            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 377.361px;">Operations</th>
+           
+              
+          </tr>  
+          </thead>
+          <tbody>
+          <tr  role="row" class="odd" *ngFor="let item of accountlist,let i=index">
+              <td>{{i+1}}</td>
+              <td>{{item.accountname}}</td>
+              <td>{{item.date}}</td> 
+              <td>
+                <ul>
+                    <li>
+                    <a  (click)="viewAccount(item)" > <i class="fa fa-eye" aria-hidden="true" style="font-size:15px;color:   #0C14B7;"></i></a>
+                    </li>
+                     <li>
+                       <a (click)="viewlistaccounts(item)"  > <i class="fa  fa-exchange" aria-hidden="true" style="font-size:15px;color:   #0C14B7;"></i></a>                                                      
+                     </li>
+                      <li *ngIf="item.user_id ===uid &&  item.accountstatus ==='inactive'">
+                         <a href=""  data-toggle="modal" data-target="#modalactive1"title="Active" (click)="editMember(item)" > <i class="fa  fa-ban" aria-hidden="true" style="font-size:15px;color:   #D11027;"></i></a>
+                      </li>
+                      <li *ngIf="item.user_id ===uid && item.accountstatus==='active'">
+                         <a href=""  data-toggle="modal" data-target="#modalinactive2" title="In-Active" (click)="editMember(item)" > <i class="fa  fa-check" aria-hidden="true" style="font-size:15px;color:   #D11027;"></i></a>
+                      </li>
+                      <li><a href=""  data-toggle="modal" data-target="#contact" (click)="editMember(item)" title="Add Contact"> <i class="fa fa-plus-square"aria-hidden="true" style="font-size:15px;"></i></a>
+                      </li>
+                      <li><a href=""  data-toggle="modal" data-target="#info" (click)="editMember(item)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+                      </li>
+                        
+                 </ul>
+              </td>
+              
+           
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal fade" id="modalactive1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title">Activate</h4>
+          </div>
+          <form action="" method="POST">
+          <div class="modal-body">
+           
+            <p>Are You Relly Want Activate this Business</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+            <button class = "btn btn-primary" (click)="activate()"   name="Activate"   value="Activate" data-dismiss="modal" >Activate</button>
+            </div>
+          </form>
+          </div>
+        </div>
+        </div>
+       
+        <div class="modal fade" id="modalinactive2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+                 <h4 class="modal-title">In-Activate</h4>
+            </div>
+            <form action="" method="POST">
+            <div class="modal-body">
+             
+              <p>Are You Relly Want In-Activate this Business</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+              <button  class = "btn btn-primary"  (click)="inactivate()"  data-dismiss="modal" >In-Active</button>
+            
+            </div>
+            </form>
+            </div>
+          </div>
+        </div>
+    </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="feedback" name="feedback">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h4>Add Business</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span></button>
+        </div>
+        <form class="form-horizontal" action="" method="POST">
+          <div class="modal-body">
+              <div class="modal-body">
+            <div class="row">
+              <label for="name" class="col-sm-2 control-label">Business Name</label>
+              <div class="col-sm-9"> 
+                <input type="text" class="form-control"  required  [(ngModel)]='accountname' placeholder="Business Name" name="account">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <label for="name" class="col-sm-2 control-label">Currency</label>
+              <div class="col-sm-9"> 
+                <select id="addaccount_id1" #addaccount_id1="ngModel" placeholder="Currency Type" class="hideLabel form-control" [(ngModel)]="currencyid" name="currencyid" (change)="selectName();">  
+                  <option selected="" value="">Select Currency Here</option>  
+                  <option [ngValue]="k.currencycode"  *ngFor="let k of currencylist">  
+                      {{k.currencyname}}  
+                  </option>  
+                </select>
+              </div>
+            </div>
+            <br>
+             </div>
+             <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+            <button type="submit"  (click)="addaccount()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Add</button>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+   
+    <div class="modal fade" id="contact" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h4>Add Contact</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span></button>
+        </div>
+        <form class="form-horizontal" action="" method="POST">
+        
+              <div class="modal-body">
+            <div class="row">
+              <label for="name" class="col-sm-2 control-label"> Name</label>
+              <div class="col-sm-9"> 
+                <input type="text" class="form-control"  required  [(ngModel)]='contactname' placeholder="Contact Name" name="contactname">
+              </div>
+            </div>
+            
+            <br>
+            <div class="row">
+              <label for="name" class="col-sm-2 control-label"> Email</label>
+              <div class="col-sm-9"> 
+                <input type="email" class="form-control"  required  [(ngModel)]='contactemail' placeholder="Contact Email" name="contactemail">
+              </div>
+            </div>
+            
+            <br>
+            <div class="row">
+              <label for="name" class="col-sm-2 control-label"> Address<Address></Address></label>
+              <div class="col-sm-9"> 
+                <input type="text" class="form-control"  required  [(ngModel)]='contactaddress' placeholder="Contact Address" name="contactaddress">
+              </div>
+            </div>
+            
+            <br>
+            <div class="row">
+              <label for="name" class="col-sm-2 control-label">Phone </label>
+              <div class="col-sm-9"> 
+                <input type="number" class="form-control"    [(ngModel)]='contactphone' placeholder="Contact Phone" name="contactphone">
+              </div>
+            </div>
+            <br>
+             </div>
+             <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+            <button type="submit"  (click)="addcontact()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Add</button>
+            </div>
+        
+        </form>
+        </div>
+      </div>
+    </div>
+   
+    <div class="modal fade" id="info" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h4>View Contact</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span></button>
+        </div>
+        <form class="form-horizontal" action="" method="POST">
+          <div class="modal-body" >
+            <table id="my-tables" datatable  class="display" style="width:100%" *ngIf="mytablecontacts" >
+      
+              <thead>
+  <tr >
+    <th >S.No</th>
+    <th> Name</th>
+    <th >Email </th>
+    <th >Address</th>
+    <th >Phone</th>
+   
+      
+  </tr>  
+  </thead>
+  <tbody>
+  <tr  *ngFor="let item of mycontacts,let i=index">
+      <td>{{i+1}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.address}}</td>
+      <td>{{item.phone}}</td>
+   
+  </tr></tbody>
+</table>
+          
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          </div>
+        
+        </form>
+        </div>
+      </div>
+    </div>
+   
+    
+   
+    <!-- /.tab-pane -->
+    <div class="tab-pane" id="activity" name="activity">
+      <div class="box box-warning">
+        <div class="box-body">
+        <form class="form-horizontal" method="POST" action="">
+          <div class="modal fade" id="modalunshare2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span></button>
+                     <h4 class="modal-title">UnArchive</h4>
+                </div>
+                
+                <div class="modal-body">
+                  <p>Are You Relly Want UnArchive this Account</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                  <button class = "btn btn-primary" (click)="activate()"   name="Activate"   value="Activate" data-dismiss="modal" >Activate</button>
+             
+                </div>
+                
+                </div>
+              </div>
+              </div>
+            </form></div>
+          </div>
+             
+                  <div class="row"><div class="col-sm-12">
+                   <table   id="my-archaved" datatable  class="display" style="width:100%" *ngIf="myacraved" >
+            <thead>
+            <tr role="row">
+                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 0px;">S.No</th>
+                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 0px;">Account Name</th>
+                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 0px;">Created Date</th>
+                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 0px;">Operations</th>
+              </tr>  
+      </thead>
+            <tbody>
+              <tr role="row" class="odd" *ngFor="let item of archieveacclist,let i=index">
+               <td>{{i+1}}</td>
+               <td>{{item.accountname}}</td>
+               <td>{{item.date}}</td>
+               <td>
+                  <a (click)="viewAccount(item)" > <i class="fa fa-eye" aria-hidden="true" style="font-size:15px;color:   #0C14B7;"></i></a>
+                   <a href="" data-toggle="modal" data-target="#modalunshare2" title="Active" (click)="editMember(item)"> <i class="fa  fa-archive" aria-hidden="true" style="font-size:15px;color:   #D11027;"></i></a>
+              </td>
+              
+             </tr>
+       </tbody>
+          </table>
+    </div>
+  </div>      
+    </div>
+    </div>
+  <!-- /.tab-content -->
+  </div>
+  <!-- /.nav-tabs-custom -->
+  </div>
+ 
+  
+
+</div>
+
+
+<!-- div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-9">
+<app-dailyadscomponent> </app-dailyadscomponent>
+  </div>
+ 
+</div -->

@@ -1,0 +1,105 @@
+<div class="row">
+	
+	<div class="col-md-9">
+		
+			<div class="modal fade" id="feedback" name="feedback">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h4>Add Notification</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span></button>
+					</div>
+					<form class="form-horizontal" action="" method="POST">
+							<div class="modal-body">
+								
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Business*</label>
+								 <div class="col-sm-9"> 
+									 <select id="account_id" #account_id="ngModel" class="hideLabel form-control" [(ngModel)]="accountid" name="accountmyincoe_id" (change)="selectacc();">  
+										 <option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+												 {{k.accountname}}  
+										 </option>  
+									 </select>
+								 </div>
+								 </div>
+								 <br>
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Type*</label>
+								 <div class="col-sm-9"> 
+									 <select id="account_id" #account_id="ngModel" class="hideLabel form-control" [(ngModel)]="seltype" name="accountmyincoe_id" (change)="selectacc();">  
+										 <option [ngValue]="k.type" *ngFor="let k of dtype">  
+												 {{k.type}}  
+										 </option>  
+									 </select>
+								 </div>
+								 </div>
+								 <br>
+					
+							<div class="row">
+								<label for="name" class="col-sm-2 col-sm-2 control-label">Description*</label>
+								<div class="col-sm-9"> 
+									<textarea class="form-control"  [(ngModel)]="description"  name="description" > </textarea></div>
+								</div>
+							<br>
+							
+						
+						
+						
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+							<button type="submit"  class="btn btn-primary"  (click)="addNotification()" data-dismiss="modal" name="add">Add</button>
+							</div>
+						</form>
+						</div>
+					</div>
+					</div>
+					<div class="box">
+								<div class="box-header">
+									 </div>
+								<!-- /.box-heade r-->
+								<div class="box-body">
+                  <button class="btn btn-info" style="float: right;" data-toggle="modal" data-target="#feedback" id="addMemberModalBtn"><span class="glyphicon glyphicon-plus-sign"></span>Add Notifications </button>
+					<br><br>
+										<table datatable *ngIf="myTable" id="my-tables">
+												<thead>
+															<tr role="row">
+																<th>S.No</th>
+																<th>Date</th>
+																<th>Name</th>
+																<th>Type</th>
+																<th>Business</th>
+																<th>Description</th>
+															</tr>
+							</thead>
+							<tbody  >
+                <tr *ngFor="let item of notlist,let i=index">
+									<td>{{i+1}}</td>
+									<td>{{item.date}}</td>
+									<td>{{item.username}}</td>
+									<td>{{item.type}}</td>
+									<td>{{item.accountname}}</td>
+									<td>{{item.description}}</td>
+												   
+								</tr>
+					
+							</tbody>
+										 
+										</table>
+									
+						
+								
+								</div>
+					</div>
+			
+	</div>
+
+	<div class="col-md-3">
+		<app-dailyadscomponent> </app-dailyadscomponent>
+		<app-dailyadscomponent> </app-dailyadscomponent>
+	</div>
+	
+	</div>
+		
+			

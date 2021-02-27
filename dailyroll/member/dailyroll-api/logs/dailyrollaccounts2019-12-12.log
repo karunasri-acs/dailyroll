@@ -1,0 +1,126 @@
+[2019-12-12 04:05:53]	[INFO][ws_an_accounts.php]		1
+[2019-12-12 04:05:53]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='13' group by a.account_id
+[2019-12-12 04:05:53]	[INFO][ws_an_accounts.php]		13
+[2019-12-12 04:05:53]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:05:53]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:05:53]	[INFO][ws_an_accounts.php]		null
+[2019-12-12 04:05:57]	[INFO][ws_an_accounts.php]		6
+[2019-12-12 04:05:57]	[INFO][ws_an_accounts.php]		[{"account_id":"19","user_id":"5c3b3a75532f62.49043861","accountname":"Manohar Family","currcode":"USD","status":"admin"}]
+[2019-12-12 04:05:57]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 04:05:57]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 04:05:57]	[INFO][ws_an_accounts.php]		[{"add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"writeonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 04:06:28]	[INFO][ws_an_accounts.php]		16
+[2019-12-12 04:06:28]	[INFO][ws_an_accounts.php]		UPDATE `groups` SET `usertype`='readonly' WHERE added_user_id='45' and `account_id`='19'
+[2019-12-12 04:06:30]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 04:06:30]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 04:06:30]	[INFO][ws_an_accounts.php]		[{"add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"readonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 04:07:00]	[INFO][ws_an_accounts.php]		1
+[2019-12-12 04:07:00]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='13' group by a.account_id
+[2019-12-12 04:07:00]	[INFO][ws_an_accounts.php]		13
+[2019-12-12 04:07:00]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:07:00]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:07:00]	[INFO][ws_an_accounts.php]		null
+[2019-12-12 04:07:03]	[INFO][ws_an_accounts.php]		10
+[2019-12-12 04:07:03]	[INFO][ws_an_accounts.php]		UPDATE `groups` SET `account_status`='inactive' WHERE `account_id`='19'
+[2019-12-12 04:07:03]	[INFO][ws_an_accounts.php]		UPDATE `accounts` SET `accountstatus`='inactive' WHERE account_id='19'
+[2019-12-12 04:07:05]	[INFO][ws_an_accounts.php]		13
+[2019-12-12 04:07:05]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:07:05]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:07:05]	[INFO][ws_an_accounts.php]		Array
+[2019-12-12 04:07:05]	[INFO][ws_an_accounts.php]		[{"user_id":"5c3b3a75532f62.49043861","account_id":"19","accountname":"Manohar Family","date":"2019-01-13","accountstatus":"inactive"}]
+[2019-12-12 04:07:05]	[INFO][ws_an_accounts.php]		1
+[2019-12-12 04:07:05]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='13' group by a.account_id
+[2019-12-12 04:18:29]	[INFO][ws_an_accounts.php]		13
+[2019-12-12 04:18:29]	[INFO][ws_an_accounts.php]		1
+[2019-12-12 04:18:29]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:18:29]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='13' group by a.account_id
+[2019-12-12 04:18:29]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:18:29]	[INFO][ws_an_accounts.php]		Array
+[2019-12-12 04:18:29]	[INFO][ws_an_accounts.php]		[{"user_id":"5c3b3a75532f62.49043861","account_id":"19","accountname":"Manohar Family","date":"2019-01-13","accountstatus":"inactive"}]
+[2019-12-12 04:18:35]	[INFO][ws_an_accounts.php]		11
+[2019-12-12 04:18:35]	[INFO][ws_an_accounts.php]		UPDATE `groups` SET `account_status`='active' WHERE `account_id`='19'
+[2019-12-12 04:18:35]	[INFO][ws_an_accounts.php]		UPDATE `accounts` SET `accountstatus`='active' WHERE account_id='19'
+[2019-12-12 04:18:36]	[INFO][ws_an_accounts.php]		1
+[2019-12-12 04:18:36]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='13' group by a.account_id
+[2019-12-12 04:18:36]	[INFO][ws_an_accounts.php]		13
+[2019-12-12 04:18:36]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:18:36]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 04:18:36]	[INFO][ws_an_accounts.php]		null
+[2019-12-12 04:18:41]	[INFO][ws_an_accounts.php]		6
+[2019-12-12 04:18:41]	[INFO][ws_an_accounts.php]		[{"account_id":"19","user_id":"5c3b3a75532f62.49043861","accountname":"Manohar Family","currcode":"USD","status":"admin"}]
+[2019-12-12 04:18:41]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 04:18:41]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 04:18:41]	[INFO][ws_an_accounts.php]		[{"add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"readonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 05:34:27]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 05:34:27]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 05:34:27]	[INFO][ws_an_accounts.php]		6
+add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"readonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 05:34:27]	[INFO][ws_an_accounts.php]		[{"account_id":"19","user_id":"5c3b3a75532f62.49043861","accountname":"Manohar Family","currcode":"USD","status":"admin"}]
+[2019-12-12 05:37:58]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 05:37:58]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 05:37:58]	[INFO][ws_an_accounts.php]		[{"add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"readonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 05:37:58]	[INFO][ws_an_accounts.php]		6
+[2019-12-12 05:37:58]	[INFO][ws_an_accounts.php]		[{"account_id":"19","user_id":"5c3b3a75532f62.49043861","accountname":"Manohar Family","currcode":"USD","status":"admin"}]
+[2019-12-12 05:39:15]	[INFO][ws_an_accounts.php]		6
+[2019-12-12 05:39:15]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 05:39:15]	[INFO][ws_an_accounts.php]		[{"account_id":"19","user_id":"5c3b3a75532f62.49043861","accountname":"Manohar Family","currcode":"USD","status":"admin"}]
+[2019-12-12 05:39:15]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 05:39:15]	[INFO][ws_an_accounts.php]		[{"add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"readonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 05:41:07]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 05:41:07]	[INFO][ws_an_accounts.php]		6
+[2019-12-12 05:41:07]	[INFO][ws_an_accounts.php]		[{"account_id":"19","user_id":"5c3b3a75532f62.49043861","accountname":"Manohar Family","currcode":"USD","status":"admin","groupstatus":null}]
+[2019-12-12 05:41:07]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 05:41:07]	[INFO][ws_an_accounts.php]		[{"add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"readonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 05:41:46]	[INFO][ws_an_accounts.php]		1
+[2019-12-12 05:41:46]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='13' group by a.account_id
+[2019-12-12 05:41:46]	[INFO][ws_an_accounts.php]		13
+[2019-12-12 05:41:46]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 05:41:46]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 05:41:46]	[INFO][ws_an_accounts.php]		null
+[2019-12-12 05:42:38]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 05:42:38]	[INFO][ws_an_accounts.php]		6
+[2019-12-12 05:42:38]	[INFO][ws_an_accounts.php]		[{"account_id":"19","user_id":"5c3b3a75532f62.49043861","accountname":"Manohar Family","currcode":"USD","status":"admin","groupstatus":null}]
+[2019-12-12 05:42:38]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 05:42:38]	[INFO][ws_an_accounts.php]		[{"add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"readonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 05:44:29]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 05:44:29]	[INFO][ws_an_accounts.php]		6
+[2019-12-12 05:44:29]	[INFO][ws_an_accounts.php]		[{"account_id":"19","user_id":"5c3b3a75532f62.49043861","accountname":"Manohar Family","currcode":"USD","status":"admin","groupstatus":"active"}]
+[2019-12-12 05:44:29]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 05:44:29]	[INFO][ws_an_accounts.php]		[{"add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"readonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 05:44:49]	[INFO][ws_an_accounts.php]		1
+[2019-12-12 05:44:49]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='13' group by a.account_id
+[2019-12-12 05:44:49]	[INFO][ws_an_accounts.php]		13
+[2019-12-12 05:44:49]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 05:44:49]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 05:44:49]	[INFO][ws_an_accounts.php]		null
+[2019-12-12 05:44:53]	[INFO][ws_an_accounts.php]		10
+[2019-12-12 05:44:53]	[INFO][ws_an_accounts.php]		UPDATE `groups` SET `account_status`='inactive' WHERE `account_id`='19'
+[2019-12-12 05:44:53]	[INFO][ws_an_accounts.php]		UPDATE `accounts` SET `accountstatus`='inactive' WHERE account_id='19'
+[2019-12-12 05:44:56]	[INFO][ws_an_accounts.php]		1
+[2019-12-12 05:44:56]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='13' group by a.account_id
+[2019-12-12 05:44:56]	[INFO][ws_an_accounts.php]		13
+[2019-12-12 05:44:56]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 05:44:56]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a75532f62.49043861' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-12 05:44:56]	[INFO][ws_an_accounts.php]		Array
+[2019-12-12 05:44:56]	[INFO][ws_an_accounts.php]		[{"user_id":"5c3b3a75532f62.49043861","account_id":"19","accountname":"Manohar Family","date":"2019-01-13","accountstatus":"inactive"}]
+[2019-12-12 05:44:59]	[INFO][ws_an_accounts.php]		2
+[2019-12-12 05:44:59]	[INFO][ws_an_accounts.php]		SELECT a.added_user_id,a.userstatus,a.group_status,b.user_id,a.usertype FROM `groups` a , accounts b  WHERE  a.`account_id`=b.`account_id`  and a.`account_id`='19'
+[2019-12-12 05:44:59]	[INFO][ws_an_accounts.php]		[{"add_user_id":"13","account_name":"Manohar Family","email":"manoharpv@gmail.com","name":"Manohar","phone":"6105293505","groupstatus":"Y","userstatus":"active","adminstatus":"admin","uniqid":"5c3b3a75532f62.49043861","unique_id":"13","usertype":"writeonly"},{"add_user_id":"45","account_name":"Manohar Family","email":"williams.pitta1022@gmail.com","name":"Williams Pitta","phone":"6107724842","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"45","usertype":"readonly"},{"add_user_id":"49","account_name":"Manohar Family","email":"sushmapitta16@gmail.com","name":"Sushma Pitta","phone":"6103166833","groupstatus":"N","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"49","usertype":"writeonly"},{"add_user_id":"55","account_name":"Manohar Family","email":"jaypit723@gmail.com","name":"Jayson Pitta","phone":"7326310211","groupstatus":"Y","userstatus":"active","adminstatus":"member","uniqid":"5c3b3a75532f62.49043861","unique_id":"55","usertype":"writeonly"}]
+[2019-12-12 05:44:59]	[INFO][ws_an_accounts.php]		6
+[2019-12-12 05:44:59]	[INFO][ws_an_accounts.php]		[{"account_id":"19","user_id":"5c3b3a75532f62.49043861","accountname":"Manohar Family","currcode":"USD","status":"admin","groupstatus":"inactive"}]

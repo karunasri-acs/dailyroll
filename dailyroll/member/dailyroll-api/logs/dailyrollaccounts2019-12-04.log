@@ -1,0 +1,8 @@
+[2019-12-04 12:59:43]	[INFO][ws_an_accounts.php]		1
+[2019-12-04 12:59:43]	[INFO][ws_an_accounts.php]		SELECT  b.user_id,a.account_id,b.accountname,b.date,b.accountstatus FROM  groups a,accounts b WHERE  a.`account_id`=b.account_id AND a.`added_user_id`='12' group by a.account_id
+[2019-12-04 12:59:43]	[INFO][ws_an_accounts.php]		13
+[2019-12-04 12:59:43]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a6485ea66.91060288' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-04 12:59:43]	[INFO][ws_an_accounts.php]		SELECT b.user_id,b.account_id,b.accountname,b.date,b.accountstatus FROM groups a,accounts b WHERE b.`user_id`='5c3b3a6485ea66.91060288' AND b.accountstatus!='active' group by b.`account_id`
+
+[2019-12-04 12:59:43]	[INFO][ws_an_accounts.php]		null

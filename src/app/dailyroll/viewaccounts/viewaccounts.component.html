@@ -1,0 +1,262 @@
+<div class="row">
+<div  *ngFor="let item of accountname" >
+	<div *ngIf="item.status === 'admin' && item.groupstatus ==='active'" >
+	<button class="btn btn-info" style="float: right;padding-right: 7px;" data-toggle="modal" data-target="#feedback" id="addMemberModalBtn"><span class="glyphicon glyphicon-plus-sign"></span>Add Member </button>
+	</div>
+</div>
+<br><br>
+<div class="box box-warning">
+		<form class="form-horizontal" action="" method="POST">
+	<div class="box-body"  *ngFor="let item of accountname">
+		<div class="form-group">
+		<label class="col-sm-3 control-label">Business Name</label>
+			<div class="col-sm-3">
+			<input type="text" class="form-control" name="accountname" [(ngModel)]="item.accountname">
+			</div>
+			<div class="col-sm-3"> 
+				<select id="addaccount_id" #addaccount_id="ngModel" placeholder="Currency Type" class="hideLabel form-control" [(ngModel)]="item.currcode" name="currcode">  
+									  <option selected="" value="">Select Currency Here</option>  
+									  <option [ngValue]="k.currencycode"  *ngFor="let k of currencylist">  
+											  {{k.currencyname}}  
+									  </option>  
+				</select>
+			  </div>
+			<div *ngIf="item.status === 'admin'">
+			<div class="col-sm-3">
+				<input class="btn btn-primary" (click)="update(item)" name="update" type="submit" value="update">
+			</div>
+			</div>
+		</div>
+	</div>
+	</form>  
+	</div>
+	<div class="box">
+		<div class="box-header"></div>
+			<div class="box-body">
+				<div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+			<div class="row">
+				<div class="col-sm-12">
+					<table   id="my-archaved" datatable  s class="table table-bordered table-striped dataTable no-footer" role="grid" aria-describedby="example1_info" *ngIf="myacraved">
+						<thead>
+						<tr role="row">
+								<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 121.927px;">S.No.</th>
+								<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 183.038px;">Name</th>
+								<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 590.816px;">Email</th>
+								<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 261.927px;">Phone No.</th>
+								<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 256.25px;">Operations</th>
+							
+							</tr>
+						</thead>
+						<tbody>
+						<tr role="row" class="odd"  *ngFor="let item of viewaccount,let i=index">
+								<td>{{i+1}}</td>
+								<td>{{item.name}}</td>
+								<td>{{item.email}}</td>
+								<td>{{item.phone}}</td>
+								<td>
+										<ul class="opera">
+												<li  *ngIf="item.groupstatus === 'Y'"> 
+							<a (click)="viewAccount(item)"><i class="fa  fa-exchange"></i></a>
+									</li>
+									<li  *ngIf="item.groupstatus === 'N'"> 
+											<a href=""  data-toggle="modal" > <i class="fa fa-lock" aria-hidden="true" style="font-size:15px;color:   red;"></i></a>
+									</li>	
+							
+										<li  *ngIf="item.uniqid === uid && item.unique_id !==uid && item.adminstatus==='member'">		
+					
+						
+									<a href=""  (click)="editMember(item)" data-toggle="modal" data-target="#admisn" title="Admin"> <i class="fa fa-user" aria-hidden="true" style="font-size:15px;color:   #0C14B7;"></i></a>
+										</li>
+									<li  *ngIf="item.userstatus === 'inactive' && item.uniqid === uid && item.unique_id !==uid && item.adminstatus==='member'">	
+											<a href="" (click)="editMember(item)" data-toggle="modal" data-target="#modal-delay1" title="Active"> <i class="fa fa-close" aria-hidden="true" style="font-size:15px;color:   #0C14B7;"></i></a>
+									
+									</li>
+								<li  *ngIf="item.userstatus === 'active' && item.uniqid === uid && item.unique_id !==uid && item.adminstatus==='member'">
+							
+										<a href="" (click)="editMember(item)" data-toggle="modal" data-target="#modal-delay" title="In-Active"> <i class="fa fa-check-circle" aria-hidden="true" style="font-size:15px;color:   green;"></i></a>
+								</li>
+							
+								<li  *ngIf="item.userstatus === 'active' && item.uniqid === uid && item.unique_id !==uid && item.adminstatus==='member' && item.usertype ==='writeonly'" >
+							
+										<a href="" (click)="editMember(item)" data-toggle="modal" data-target="#modal-delay2" title="Read Only"><span class="fa-stack ">
+											<i class="fa fa-pencil fa-stack-1x"  style="color:  green;" ></i>
+											<i class="fa fa-ban fa-stack-2x fa-rotate-90 text-danger"></i>
+											</span></a>
+								</li>
+								<li  *ngIf="item.userstatus === 'active' && item.uniqid === uid && item.unique_id !==uid && item.adminstatus==='member' && item.usertype ==='readonly'" >
+							
+										<a href="" (click)="editMember(item)" data-toggle="modal" data-target="#modal-delay2" title="Write Only"><i class="fa fa-pencil" aria-hidden="true" style="font-size:16px;color:  green;"></i></a>
+								</li>
+							
+						
+					</ul>
+							</td>
+							
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			</div>
+			</div>
+	</div>
+	<div class="modal fade" id="modal-delay" name="modal-delay">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"></h4>
+				</div>
+			
+				 <div class="modal-body">
+					<p>Do you really want to In-Active this member from the group ?</p>
+				 </div>
+				<form action = "" method = "POST">							
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left"  data-dismiss="modal">Close</button>
+						 <input class = "btn btn-primary"  (click)="inactive()"name = "inactive" type="submit" data-dismiss="modal" value="yes">
+						</div>
+				</form>
+				</div>
+			</div>
+			</div>
+	<div class="modal fade" id="modal-delay2" name="modal-delay2">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"></h4>
+				</div>
+			
+				 <div class="modal-body">
+					<p>Do you really want Write Only Access to this Member?</p>
+				 </div>
+				<form action = "" method = "POST">							
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left"  data-dismiss="modal">Close</button>
+						 <input class = "btn btn-primary"  (click)="changeusertypestatus()"name = "inactive" type="submit" data-dismiss="modal" value="yes">
+						</div>
+				</form>
+				</div>
+			</div>
+			</div>
+	<div class="modal fade" id="modal-delay3" name="modal-delay3">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"></h4>
+				</div>
+			
+				 <div class="modal-body">
+					<p>Do you really want Read Only Access to this Member?</p>
+				 </div>
+				<form action = "" method = "POST">							
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left"  data-dismiss="modal">Close</button>
+						 <input class = "btn btn-primary"  (click)="changeusertypestatus()"name = "inactive" type="submit" data-dismiss="modal" value="yes">
+						</div>
+				</form>
+				</div>
+			</div>
+			</div>
+		<div class="modal fade" id="modal-delay1" name="modal-delay1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"></h4>
+				</div>
+				 <div class="modal-body">
+					<p>Do you really want to Active this member from the group ?</p>
+				 </div>
+				<form action = "" method = "POST">							
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left"  data-dismiss="modal">Close</button>
+						 <input class = "btn btn-primary" name = "active"(click)="active()" data-dismiss="modal" type="submit" value="yes">
+					</div>
+				</form>
+				</div>
+			</div>
+			</div>
+		<div class="modal fade" id="admisn"  name="admisn">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"></h4>
+				</div>
+				 <div class="modal-body">
+					<p>Do you really want to make this member as a Admin of the group?</p>
+				 </div>
+				<form action = "" method = "POST">							
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left"  data-dismiss="modal">Close</button>
+						 <input class = "btn btn-primary" name = "admin" (click)="admin()" data-dismiss="modal" type="submit" value="yes">
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+	<div class="modal fade" id="feedback" name="feedback">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h4>Add Group</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<form class="form-horizontal" action="" method="POST">
+				<div class="modal-body">
+								<div class="row">
+					<label for="name" class="col-sm-2 control-label">Name </label>
+						<div class="col-sm-9"> 
+						<input type="text" class="form-control" name="name" [(ngModel)]="membername" placeholder="Name">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+					<label for="name" class="col-sm-2 control-label">E-mail </label>
+						<div class="col-sm-9"> 
+						<input type="text" class="form-control" placeholder="E-Mail" [(ngModel)]="memberemail" name="email">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<label for="name" class="col-sm-2 col-sm-2 control-label">Phone No. </label>
+						<div class="col-sm-9"> 
+								<input type="text" class="form-control" placeholder="Phone Number" [(ngModel)]="memberphoneno" name="pass">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<label for="name" class="col-sm-2 col-sm-2 control-label">User Type</label>
+						<div class="col-sm-9"> 
+						 <select align="center" name ="usertype" id ="usertype"  [(ngModel)]="selectusertype"   class="form-control"  >
+					  <option [ngValue]="k.usertype"  *ngFor="let k of usertypelist">  
+						{{k.usertype}}  
+				</option>  
+
+					 	  </select>
+		  
+  
+  
+						 
+					  </div>  
+					  </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary" (click)="addMemberToGroup()" data-dismiss="modal" name="add">Add</button>
+				</div>
+				</form>
+		</div>
+	</div>
+</div>
+</div>

@@ -1,0 +1,620 @@
+<div class="row">
+	
+	<div class="col-md-9">
+			<div class="box box-warning box-solid">
+				<div class="box-body">
+				<form class="form-horizontal" action="" method="POST">
+				  <div class="modal-body">
+					<div class="messages"></div>
+					<div class="row">
+						
+						<div class="col-md-4">
+							   <div class="form-group">
+								<label for="name" class="col-sm-3 control-label">Business</label>
+							<div class="col-sm-9"> 
+									<select id="addaccount_id" #addaccount_id="ngModel" class="hideLabel form-control" [(ngModel)]="accountdataid" name="accountincome_id" >  
+											<option selected="" value="">Select Business Here</option>  
+											<option [ngValue]="k.account_id"  *ngFor="let k of searchaccountslist">  
+													{{k.accountname}}  
+											</option>  
+										</select>
+							</div>
+						   </div>
+						 
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="name" class="col-sm-3 control-label">Status</label>
+								<div class="col-sm-9"> 
+									<select id="addsubcat_id" #addsubcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="penstatus" name="subcatid" >  
+										<option [ngValue]="k.status"  *ngFor="let k of dd">  
+												{{k.status}}  
+										</option>  
+									</select>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="name" class="col-sm-3 control-label">Year</label>
+								<div class="col-sm-9"> 
+								  <select id="addsubcat_id" #addsubcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="selectyear" name="years" >  
+								  <option [ngValue]="k.year"  *ngFor="let k of yeardrop">  
+								  {{k.year}}  
+								  </option>  
+								  </select>
+								</div>
+							  </div>
+
+						</div>
+						
+						
+					</div>
+					<div class="row">
+						
+						<div class="col-md-12">
+							<button class="btn btn-info" style="float: right;margin-left:7px" data-toggle="modal" data-target="#feedback" id="addMemberModalBtn"><span class="glyphicon glyphicon-plus-sign"></span>Add Income </button>
+						&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-info" style="float: right;margin-left: 7px;" tittle="Treeview" (click)="treeview()"> <i class="fa fa-tree"></i></button>
+						&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-info" style="float: right;margin-left: 7px;" tittle="Tableview" (click)="tableview()"><i class="fa fa-table" ></i></button>
+						&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-info" style="float: right;padding-right: 7px;"   tittle="Search"(click)="searchtree()"><span class="glyphicon glyphicon-search"></span></button>
+								
+							
+						</div>
+						
+						
+					</div>
+
+				 </div>
+				</form> 
+			  </div>
+			</div>
+			<div class="modal fade" id="feedback" name="feedback">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h4>Add Income</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span></button>
+					</div>
+					<form class="form-horizontal" action="" method="POST">
+							<div class="modal-body">
+								
+							<div class="row">
+								<label for="name" class="col-sm-2 control-label">Business*</label>
+								 <div class="col-sm-7"> 
+									 <select id="account_id" #account_id="ngModel" class="hideLabel form-control" [(ngModel)]="accountid" name="accountmyincoe_id" (change)="selectacc();">  
+										 <option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+												 {{k.accountname}}  
+										 </option>  
+									 </select>
+								 </div>
+								 <div class="col-sm-2">
+									<a  href=""   data-toggle="modal" data-target="#info" (click)="showbusicon()" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+									
+				
+								  </div>
+								 </div>
+								 <br>
+						 <div class="row">
+											 <label for="name" class="col-sm-2 control-label">Account*</label>
+											 <div class="col-sm-7"> 
+												 <select id="cat_id" #cat_id="ngModel" class="hideLabel form-control" [(ngModel)]="catid" name="catid" (change)="selectcat();">  
+													  <option [ngValue]="k.cat_id" *ngFor="let k of categorylist">  
+															 {{k.cat_name}}  
+													 </option>  
+												 </select>
+											 </div>
+											 <div class="col-sm-2">
+												<a  href=""   data-toggle="modal" data-target="#info" (click)="showbusicon()" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+												
+							
+											  </div>
+										 </div>
+										 
+										 <br>
+										 <div class="row">
+											 <label for="name" class="col-sm-2 control-label">Sub-Account*</label>
+											 <div class="col-sm-7"> 
+												 <select id="subcat_id" #subcat_id="ngModel" class="hideLabel form-control" [(ngModel)]="subcatid" name="subcatid" (change)="selectsubcat();" >  
+													 <option [ngValue]="k.sub_id" *ngFor="let k of subcategorylist">  
+															 {{k.subcat_name}}  
+													 </option>  
+												 </select>
+											 </div>
+											 <div class="col-sm-2">
+												<a  href=""   data-toggle="modal" data-target="#info" (click)="showbusicon()" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+												
+							
+											  </div>
+										 </div>
+									 
+										<br>
+										<div class="row">
+											<label for="name" class="col-sm-2 control-label">Date*</label>
+											<div class="col-sm-7" *ngFor="let yy of mindate" > 
+													<p style="color:blue;font-size:10px;">Freezed Date: {{yy.mindate}}</p>
+													<input type="date" class="form-control" onkeydown="return false" [(ngModel)]="indate" placeholder="E-Mail" name="date" min="{{yy.mindate}}"  max="{{yy.maxdate}}" >
+												</div>
+											
+												</div>
+											<br>
+							<div class="row">
+								<label for="name" class="col-sm-2 col-sm-2 control-label">Description*</label>
+								<div class="col-sm-7"> 
+									<textarea class="form-control"  [(ngModel)]="description"  name="description" > </textarea></div>
+								</div>
+							<br>
+							
+							<div class="row">
+							 <label for="name" class="col-sm-2 control-label">Amount*</label>
+								<div class="col-sm-7"> 
+									<input type="number" step = "0.01" min = "0" max = "1000000000000" class="form-control"  [(ngModel)]="amount" name="amount" placeholder="Amount">
+								</div>
+								</div>
+							<br>
+							<div class="row">
+								<label for="name" class="col-sm-2 col-sm-2 control-label">Attachment *</label>
+								<div class="col-sm-7"> 
+								  <input type="file" name="fileToUpload" id="fileToUpload" accept="image/x-png,image/gif,image/jpeg,image/tiff,image/giff,image/jpg,image/raw">
+								</div>
+							  </div>
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+							<button type="submit"  class="btn btn-primary"  (click)="addIncome()" data-dismiss="modal" name="add">Add</button>
+							</div>
+						</form>
+						</div>
+					</div>
+					</div>
+				
+								<!-- /.box-header -->
+								
+									<div *ngIf="treedataview">
+										<div class="box box-warning box-solid">
+											<div class="box-header">
+									<h2> Income Tree View</h2>
+											</div>
+										  <div class="box-body">
+											<div class="modal-body">
+											  <div *ngIf="catshow">
+												<mat-tree [dataSource]="classifications" [treeControl]="treeControl">
+												<mat-nested-tree-node *matTreeNodeDef="let node">
+												  <div class="row">
+													<button class="btn btn-primary btn-xs"  mat-icon-button type="button" (click)="treeControl.toggle(node)"
+													[style.visibility]="node.children.length ? 'visible':'hidden'">
+													<mat-icon>{{treeControl.isExpanded(node) ? '_':'+' }}</mat-icon>
+													</button>
+													<span *ngIf="node.type !=='datas'"  style="padding-left: 5px;"> {{node.name}} </span>
+													<span  *ngIf="node.type !=='datas'"  data-toggle="tooltip" title="" class="badge bg-light-blue" >{{node.count}}</span>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  *ngIf="node.type ==='busi' || node.type ==='acc' || node.type ==='subacc'"  href=""  data-toggle="modal" data-target="#adincome"  style="text-align: center;"(click)="editMember(node)" title="Add Contact"> <i class="fa fa-plus"aria-hidden="true" style="font-size:15px;"></i></a>
+													
+													
+													<div class="row" *ngIf="node.type ==='datas'" style="margin-top:-20px" >
+														<div class="col-md-2">
+															  {{node.name}}  
+														 </div>
+														<div class="col-md-2">
+															  {{node.tr_date}}  
+														 </div>
+														<div class="col-md-2">
+															  {{node.username}}  
+														 </div>
+														<div class="col-md-2">
+															  {{node.description}}  
+														 </div>
+														<div class="col-md-2">
+															<span *ngIf="node.pendingstatus ==='non-pending'" style="color:green"> {{node.symbol}}{{node.income_amount}} </span>
+															<span *ngIf="node.pendingstatus ==='pending'"  style="color:red"> {{node.symbol}}{{node.income_amount}} </span>
+																	
+														
+														</div>
+														<div class="col-md-2">
+															<ul>
+																<li  *ngIf="node.type ==='datas'" >
+																<a  href=""  data-toggle="modal" data-target="#adincome"  style="text-align: center;"(click)="editMember(node)" title="Add Contact"> <i class="fa fa-plus"aria-hidden="true" style="font-size:15px;"></i></a>
+															</li>
+																<li  *ngIf="node.capture_id === uid  && node.adminstatus !=='admin' && node.feezestatus !== 'freeze' " >
+																	<a href="" type="button" data-toggle="modal" data-target="#modal-delay" (click)="editMember(node)" style="font-size:15px;color:   #0C14B7;"> <span class="fa fa-edit"></span>  </a>
+																	<a href=""type="button" data-toggle="modal" data-target="#modalunshare1" (click)="editMember(node)" style="font-size:15px;color:   #0C14B7;"> <i class="fa fa-trash" aria-hidden="true"></i></a>
+																
+																</li>
+																<li  *ngIf=" node.adminstatus ==='admin' && node.feezestatus !== 'freeze' " >
+																	<a href="" type="button" data-toggle="modal" data-target="#modal-delay" (click)="editMember(node)" style="font-size:15px;color:   #0C14B7;"> <span class="fa fa-edit"></span>  </a>
+																	<a href=""type="button" data-toggle="modal" data-target="#modalunshare1" (click)="editMember(node)" style="font-size:15px;color:   #0C14B7;"> <i class="fa fa-trash" aria-hidden="true"></i></a>
+																
+																</li>
+																<li  *ngIf="node.adminstatus ==='admin' && node.feezestatus === 'freeze'" >
+									
+																	<a href="" type="button" data-toggle="modal" data-target="#modal-delay" (click)="editMember(node)" style="font-size:15px;color:   #0C14B7;"> <span class="fa fa-edit"></span>  </a>
+																	
+																</li>
+															</ul>			
+														
+														</div>
+													  </div>
+													  
+													<ng-container matTreeNodeOutlet  *ngIf="treeControl.isExpanded(node)"></ng-container>
+												  </div>
+												</mat-nested-tree-node>
+												</mat-tree>
+											  </div>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									  <div *ngIf="tabledataview">
+										<h2> Income Table View</h2>
+										<table  id="my-tables" datatable *ngIf="myTable">
+												<thead>
+															<tr role="row">
+																<th>S.No</th>
+																<th>Date</th>
+																<th>Business</th>
+																<th>Account</th>
+																<th>Sub-Account</th>
+																<th>Description</th>
+																<th>Income Amount</th>
+																<th>Operation</th>
+															</tr>
+							</thead>
+							<tbody  >
+						
+							<tr *ngFor="let item of incomeListbynormal,let i=index">
+									<td>{{i+1}}</td>
+									<td>{{item.tr_date}}</td>
+									<td>{{item.accountname}}</td>
+									<td>{{item.cat_name}}</td>
+									<td>{{item.subcat_name}}</td>
+									<td>{{item.description | slice:0:25 }}</td>
+									<td  *ngIf="item.pendingstatus ==='non-pending'"  style="color:green">{{item.symbol}} {{item.income_amount}}</td>
+									<td  *ngIf="item.pendingstatus ==='pending'"  style="color:red">{{item.symbol}} {{item.income_amount}}</td>
+									<td>
+										<ul>
+																
+											<li  *ngIf="item.capture_id === uid  && item.adminstatus !=='admin' && item.feezestatus !== 'freeze' " >
+												<a href="" type="button" data-toggle="modal" data-target="#modal-delay" (click)="editMember(item)" style="font-size:15px;color:   #0C14B7;"> <span class="fa fa-edit"></span>  </a>
+												<a href=""type="button" data-toggle="modal" data-target="#modalunshare1" (click)="editMember(item)" style="font-size:15px;color:   #0C14B7;"> <i class="fa fa-trash" aria-hidden="true"></i></a>
+											
+											</li>
+											<li  *ngIf=" item.adminstatus ==='admin' && item.feezestatus !== 'freeze' " >
+												<a href="" type="button" data-toggle="modal" data-target="#modal-delay" (click)="editMember(item)" style="font-size:15px;color:   #0C14B7;"> <span class="fa fa-edit"></span>  </a>
+												<a href=""type="button" data-toggle="modal" data-target="#modalunshare1" (click)="editMember(item)" style="font-size:15px;color:   #0C14B7;"> <i class="fa fa-trash" aria-hidden="true"></i></a>
+											
+											</li>
+											<li  *ngIf="item.adminstatus ==='admin' && item.feezestatus === 'freeze'" >
+				
+												<a href="" type="button" data-toggle="modal" data-target="#modal-delay" (click)="editMember(item)" style="font-size:15px;color:   #0C14B7;"> <span class="fa fa-edit"></span>  </a>
+												
+											</li>
+											<li *ngIf="item.file !== 'nofile'">
+												<a href="" data-toggle="modal" (click)="viewDoc(item)"data-target="#modaluloadpic"> <i class="fa  fa-eye" aria-hidden="true" style="font-size:15px;color:   #0C14B7;"></i></a>
+											  </li>
+										</ul>
+										</td>				   
+								</tr>
+							</tbody>
+										 
+										</table>
+								</div>
+										<div class="modal fade" id="modalunshare1" name="modalunshare1">
+									<div class="modal-dialog">
+										<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">×</span></button>
+												 <h4 class="modal-title">Delete</h4>
+										</div>
+										<form action="" method="POST"></form>
+										<div class="modal-body">
+											<p>Are You Relly Want Delete</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+											<input class="btn btn-primary" name="delete" (click)="removeProduct()"  data-dismiss="modal" type="submit" value="Delete">
+										
+										</div>
+										
+										</div>
+									</div>
+									</div>
+									<div class="modal fade" tabindex="-1" role="dialog" id="modal-delay" name="modal-delay">
+										<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">×</span></button>
+											<h4 class="modal-title">Details</h4>
+											</div>
+										<form class="form-horizontal" action="" method="POST" enctype="multipart/form-data"></form>
+			
+											<div class="modal-body">
+										
+											<div class="row">
+												<label for="name" class="col-sm-2 control-label">Business</label>
+												<div class="col-sm-7"> 
+														<select id="accounttid" #accounttid="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.accoun" name="accountid" (change)="selectacc();">  
+																<option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+																		{{k.accountname}}  
+																</option>  
+															</select> 
+												</div>
+												<div class="col-sm-2">
+													<a  href=""   data-toggle="modal" data-target="#info" (click)="showBusinessForm(editedProduct)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+													
+								
+												  </div>
+											</div>
+											<br>	
+											<div class="row">
+												<label for="name" class="col-sm-2 control-label">Account</label>
+												<div class="col-sm-7"> 
+														<select id="accoun" #accoun="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.cat_id" name="catid" (change)="selectcat();">  
+																<option [ngValue]="k.cat_id" *ngFor="let k of categorylist">  
+																	{{k.cat_name}}  
+															</option>  
+															</select>
+												</div>
+												<div class="col-sm-2">
+													<a  href=""   data-toggle="modal" data-target="#info" (click)="showAccForm(editedProduct)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+													
+								
+												  </div>
+											</div>	
+											<br>	
+											<div class="row">
+												<label for="name" class="col-sm-2 control-label">Sub-Account</label>
+												<div class="col-sm-7"> 
+														<select id="acc" #acc="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.subcat_id" name="subcatid" (change)="selecteditsubcat();">  
+																<option selected="" value=""></option>  
+																<option [ngValue]="k.sub_id" *ngFor="let k of subcategorylist">  
+																		{{k.subcat_name}}  
+																</option>  
+															</select>
+														 </div>
+														 <div class="col-sm-2">
+															<a  href=""   data-toggle="modal" data-target="#info" (click)="showeditsubac(editedProduct)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+															
+										
+														  </div>
+											</div>
+											<br>	
+											<div class="row">
+												<label for="name" class="col-sm-2 control-label">Date</label>
+												<div class="col-sm-7"> 
+												<input type="date" class="form-control" placeholder="Date"[(ngModel)]="editedProduct.tr_date" id="date" name="date">
+												</div>
+											</div>
+											<br>
+											<div class="row">
+												<label for="name" class="col-sm-2 col-sm-2 control-label">Description</label>
+												<div class="col-sm-7"> 
+														<textarea class="form-control" [(ngModel)]="editedProduct.description" name = "description"  > </textarea></div>
+											</div>
+											
+											<br>
+											<div class="row">
+												<label for="name" class="col-sm-2  col-sm-2  control-label">Amount</label>
+												<div class="col-sm-7"> 
+													<p style="color:blue;font-size:15px;">Due Amount: {{editedProduct.pendingamount}}</p>
+									
+														<input type="number" step = "0.01" min = "0" max = "1000000000000" class="form-control" name="amount" [(ngModel)]="editedProduct.income_amount" placeholder="Amount" >
+													</div>
+											</div>
+											<br>
+											<div class="row">
+												<label for="name" class="col-sm-2  col-sm-2 control-label">Status</label>
+												<div class="col-sm-7"> 
+														<select id="accoun" #accoun="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.pendingstatus" name="catid">  
+																<option [ngValue]="k.status" *ngFor="let k of dd">  
+																	{{k.status}}  
+															</option>  
+															</select>
+												</div>
+											</div>
+												<br>
+												<div class="row">
+													<label for="name" class="col-sm-2 col-sm-2 control-label">Attachment *</label>
+													<div class="col-sm-7"> 
+														<input type="file" name = "Upload" id="Upload" accept="image/x-png,image/gif,image/jpeg,image/tiff,image/giff,image/jpg,image/raw" >
+				  
+													</div>
+												  </div>
+											
+										</div>	
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+													<button type="submit" class="btn btn-primary"(click)="updateProduct()"  data-dismiss="modal" name="update">Update</button>
+											</div>		 
+										</div>
+									
+										
+										</div>
+										</div>
+								
+									<div class="modal fade" tabindex="-1" role="dialog" id="adincome" name="modal-delay">
+										<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">×</span></button>
+											<h4 class="modal-title">Detailsqq
+
+											</h4>
+											</div>
+										<form class="form-horizontal" action="" method="POST" enctype="multipart/form-data"></form>
+			
+											<div class="modal-body">
+										
+											<div class="row">
+												<label for="name" class="col-sm-2 control-label">Business</label>
+												<div class="col-sm-7"> 
+														<select id="accounttid" #accounttid="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.accoun" name="accountid" (change)="selecteditacc();">  
+																<option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+																		{{k.accountname}}  
+																</option>  
+															</select> 
+												</div>
+												<div class="col-sm-2">
+													<a  href=""   data-toggle="modal" data-target="#info" (click)="showBusinessForm(editedProduct)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+													
+								
+												  </div>
+											</div>
+											<br>	
+											<div class="row">
+												<label for="name" class="col-sm-2 control-label">Account</label>
+												<div class="col-sm-7"> 
+														<select id="accoun" #accoun="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.cat_id" name="catid" (change)="editselectcat();">  
+																<option [ngValue]="k.cat_id" *ngFor="let k of categorylist">  
+																	{{k.cat_name}}  
+															</option>  
+															</select>
+												</div>
+												<div class="col-sm-2">
+													<a  href=""   data-toggle="modal" data-target="#info" (click)="showAccForm(editedProduct)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+													
+								
+												  </div>
+												
+
+											</div>	
+											<br>	
+											<div class="row">
+												<label for="name" class="col-sm-2 control-label">Sub-Account</label>
+												<div class="col-sm-7"> 
+														<select id="acc" #acc="ngModel" class="hideLabel form-control" [(ngModel)]="editedProduct.subcat_id" name="subcatid" (change)="selecteditsubcat();">  
+																<option selected="" value=""></option>  
+																<option [ngValue]="k.sub_id" *ngFor="let k of subcategorylist">  
+																		{{k.subcat_name}}  
+																</option>  
+															</select>
+														 </div>
+														 <div class="col-sm-2">
+															<a  href=""   data-toggle="modal" data-target="#info" (click)="showeditsubac(editedProduct)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+															
+										
+														  </div>
+											</div>
+											<br>	
+											<div class="row">
+												<label for="name" class="col-sm-2 control-label">Date</label>
+												
+													<div class="col-sm-9" *ngFor="let yy of mindate" > 
+													<p style="color:blue;font-size:10px;">Freezed Date: {{yy.mindate}}</p>
+													
+													<input type="date" class="form-control" onkeydown="return false" [(ngModel)]="subcatdate" placeholder="E-Mail" name="date" min="{{yy.mindate}}"  max="{{yy.maxdate}}" >
+												</div>
+												
+											</div>
+											<br>
+											<div class="row">
+												<label for="name" class="col-sm-2 col-sm-2 control-label">Description</label>
+												<div class="col-sm-9"> 
+														<textarea class="form-control" [(ngModel)]="subcatdesc" name = "description"  > </textarea></div>
+													</div>
+											
+											<br>
+											<div class="row">
+												<label for="name" class="col-sm-2  col-sm-2  control-label">Amount</label>
+												<div class="col-sm-9"> 
+													
+														<input type="number" step = "0.01" min = "0" max = "1000000000000" class="form-control" name="amount" [(ngModel)]="subcatamount" placeholder="Amount" (change)="selecteditsubcat();">
+													</div>
+											</div>
+											<br>
+											<div class="row">
+												<label for="name" class="col-sm-2 col-sm-2 control-label">Attachment *</label>
+												<div class="col-sm-7"> 
+												  <input type="file" name="filedata" id="filedata" accept="image/x-png,image/gif,image/jpeg,image/tiff,image/giff,image/jpg,image/raw">
+												</div>
+											  </div>
+											
+											</div>	
+											<br>	
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+													<button type="submit" class="btn btn-primary"(click)="uploadImage()"  data-dismiss="modal" name="update">Add</button>
+														</div>		 
+										</div>
+									
+										
+										</div>
+										</div>
+								
+						
+								
+										<div class="modal fade" id="info" *ngIf="display" >
+											<div class="modal-dialog">
+											  <div class="modal-content">
+											  <div class="modal-header">
+											  <h4>View Contact</h4>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">×</span></button>
+											  </div>
+											  <form class="form-horizontal" action="" method="POST">
+												<div class="modal-body" >
+												  <table id="my-tables" datatable  class="display" style="width:100%"   *ngIf="mytablecontacts">
+										
+													<thead>
+										<tr role="row">
+										  <th >S.No</th>
+										  <th >Date</th>
+										  <th> Name</th>
+										  <th >Email </th>
+										  <th >Address</th>
+										  <th >Phone</th>
+										
+										 
+											
+										</tr>  
+										</thead>
+										<tbody>
+										<tr  role="row" class="odd" *ngFor="let item of mycontacts,let i=index">
+											<td>{{i+1}}</td>
+											<td>{{item.adddate}}</td>
+											<td>{{item.name}}</td>
+											<td>{{item.email}}</td>
+											<td>{{item.address}}</td>
+											<td>{{item.phone}}</td>
+											
+										</tr></tbody>
+										</table>
+												
+												</div>
+												<div class="modal-footer">
+												  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+												</div>
+											  
+											  </form>
+											  </div>
+											</div>
+										  </div>			
+					
+				</div>
+	
+
+	<div class="col-md-3">
+		<app-dailyadscomponent> </app-dailyadscomponent>
+		<app-dailyadscomponent> </app-dailyadscomponent>
+	</div>
+	
+	</div>
+	<div class="modal fade" id="modaluloadpic" name="modaluloadpic">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span></button>
+			  <h4 class="modal-title">View</h4>
+			</div>
+			<form action="" method="POST">
+			  <div class="modal-body"  *ngFor="let doc of appDoc">
+				<img [src] ="doc.displayfile" alt ="Doc" width="100%" height="auto"/>
+			  </div>
+			</form>
+		  </div>
+		</div>
+	  </div>		
+			

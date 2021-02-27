@@ -1,0 +1,44 @@
+[2019-12-05 08:06:28]	[INFO][ws_an_forgotpass.php]		areef222sayad@gmail.com
+[2019-12-05 08:06:28]	[INFO][ws_an_forgotpass.php]		select * from users WHERE `email`='areef222sayad@gmail.com'
+[2019-12-05 08:06:30]	[INFO][ws_an_forgotpass.php]		"We've sent an email to areef222sayad@gmail.com.\n                    Please click on the password reset link in the email to generate new password."
+[2019-12-05 08:12:12]	[INFO][ws_an_forgotpass.php]		areef222sayad@gmail.com
+[2019-12-05 08:12:12]	[INFO][ws_an_forgotpass.php]		select * from users WHERE `email`='areef222sayad@gmail.com'
+[2019-12-05 08:12:13]	[INFO][ws_an_forgotpass.php]		"We've sent an email to areef222sayad@gmail.com.\n                    Please click on the password reset link in the email to generate new password."
+[2019-12-05 08:14:23]	[INFO][ws_an_forgotpass.php]		areef222sayad@gmail.com
+[2019-12-05 08:14:23]	[INFO][ws_an_forgotpass.php]		select * from users WHERE `email`='areef222sayad@gmail.com'
+[2019-12-05 08:14:24]	[INFO][ws_an_forgotpass.php]		"We've sent an email to areef222sayad@gmail.com.\n                    Please click on the password reset link in the email to generate new password."
+[2019-12-05 08:21:07]	[INFO][ws_an_unarchivelist.php]		SELECT * FROM `accounts` WHERE `user_id`='5d77b126ddf738.97883465'  and `accountstatus`!='active'
+[2019-12-05 08:31:23]	[INFO][ws_an_getprofile.php]		5d77b126ddf738.97883465
+[2019-12-05 08:31:23]	[INFO][ws_an_getprofile.php]		62
+[2019-12-05 08:31:23]	[INFO][ws_an_getprofile.php]		select * from `users` where `user_id`='62'
+[2019-12-05 08:31:23]	[INFO][ws_an_getprofile.php]		select * from `profile` where `user_id`='62'
+[2019-12-05 08:31:23]	[INFO][ws_an_getprofile.php]		15266505895ddd06f0c47f4.jpg
+[2019-12-05 08:31:23]	[INFO][ws_an_getprofile.php]		../../../../uploads/content/dailyroll/profile/
+[2019-12-05 08:31:23]	[INFO][ws_an_getprofile.php]		content/dailyroll/profile/
+[2019-12-05 08:31:23]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/
+[2019-12-05 08:31:23]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/15266505895ddd06f0c47f4.jpg
+[2019-12-05 08:31:44]	[INFO][ws_an_profile.php]		5d77b126ddf738.97883465
+[2019-12-05 08:31:44]	[INFO][ws_an_profile.php]		62
+[2019-12-05 08:31:44]	[INFO][ws_an_profile.php]		1
+[2019-12-05 08:31:44]	[INFO][ws_an_profile.php]		UPDATE `profile` SET `name`='name',`lastname`='sayyad',`email`='areef222sayad@gmail.com',`address`='pragatinagar hyderabad',`phone`='8886230186',`country`='india',`photo`='9630797285de906c05bda5.jpg' WHERE `user_id`='62'
+[2019-12-05 08:31:47]	[INFO][ws_an_getprofile.php]		5d77b126ddf738.97883465
+[2019-12-05 08:31:47]	[INFO][ws_an_getprofile.php]		62
+[2019-12-05 08:31:47]	[INFO][ws_an_getprofile.php]		select * from `users` where `user_id`='62'
+[2019-12-05 08:31:47]	[INFO][ws_an_getprofile.php]		select * from `profile` where `user_id`='62'
+[2019-12-05 08:31:47]	[INFO][ws_an_getprofile.php]		9630797285de906c05bda5.jpg
+[2019-12-05 08:31:47]	[INFO][ws_an_getprofile.php]		../../../../uploads/content/dailyroll/profile/
+[2019-12-05 08:31:47]	[INFO][ws_an_getprofile.php]		content/dailyroll/profile/
+[2019-12-05 08:31:47]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/
+[2019-12-05 08:31:47]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/9630797285de906c05bda5.jpg
+[2019-12-05 08:34:25]	[INFO][ws_an_resetpass.php]		62
+[2019-12-05 08:34:25]	[INFO][ws_an_resetpass.php]		L4h6DdVfy1nBhZXqvlPmEf/xTdszMDkzOWM4OGVh
+[2019-12-05 08:34:25]	[INFO][ws_an_resetpass.php]		UPDATE `users` SET `encrypted_password`= 'QWBjjiGglsSE7uka+bPNAm1Yzgg4ZjJlZTI4Zjhl',`salt`='8f2ee28f8e' WHERE `user_id` = '62'
+[2019-12-05 08:34:25]	[INFO][ws_an_resetpass.php]		"password changed success"
+[2019-12-05 08:35:28]	[INFO][ws_an_unarchivelist.php]		SELECT * FROM `accounts` WHERE `user_id`='5d77b126ddf738.97883465'  and `accountstatus`!='active'
+[2019-12-05 10:40:07]	[INFO][ws_an_addexpense.php]		INSERT INTO `expenses`(`capture_id`, `account_id`,`amount`, `file_name`, `description`, `cat_id`,`subcat_id`,`tr_date`,`pendingflag`) 
+		                 VALUES ('5d77b126ddf738.97883465','143','500','../../../../uploads/content/dailyroll/uploads/5d77b126ddf738.97883465/2019/12/05/5d77b126ddf738.97883465-100kkb.png','expenses','460','1050','2019-12-05','non-pending')
+[2019-12-05 10:48:59]	[INFO][ws_an_unarchivelist.php]		SELECT * FROM `accounts` WHERE `user_id`='5d77b126ddf738.97883465'  and `accountstatus`!='active'
+[2019-12-05 13:50:24]	[INFO][ws_an_resetpass.php]		62
+[2019-12-05 13:50:24]	[INFO][ws_an_resetpass.php]		CYlOvGQWQzs9dHQa2d1N2sYtPdcxMDI3NjE2NDJi
+[2019-12-05 13:50:24]	[INFO][ws_an_resetpass.php]		UPDATE `users` SET `encrypted_password`= 'kUe6QdaYtXDlV4rpuzVc8d3i3h4wNjgzMTU0MGI5',`salt`='06831540b9' WHERE `user_id` = '62'
+[2019-12-05 13:50:24]	[INFO][ws_an_resetpass.php]		"password changed success"

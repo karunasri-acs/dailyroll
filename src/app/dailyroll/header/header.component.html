@@ -1,0 +1,64 @@
+<header class="main-header" >
+  <!-- Logo -->
+  <a href="#" class="logo">
+    <!-- mini logo for sidebar mini 50x50 pixels -->
+    <span class="logo-mini"><b>DRoll</b></span>
+    <span class="logo-lg" ><img  src="assets/daily/images/dr20.png"  height="45px" width="50px"  alt="" ><img  src="assets/daily/images/dly21.png" height="auto" width="120px"  alt=""></span>
+     
+  </a>
+  <!-- Header Navbar: style can be found in header.less -->
+  <nav class="navbar navbar-static-top" style="height: 10px;"  >
+    <!-- Sidebar toggle button-->
+    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" id="headnav">
+        <span  class="sr-only">Toggle navigation</span>
+      </a>
+
+    <div class="navbar-custom-menu" >
+      <ul class="nav navbar-nav" id="headnav">
+        <!-- Messages: style can be found in dropdown.less-->
+        
+          
+        <!-- User Account: style can be found in dropdown.less -->
+        <li class="dropdown user user-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="{{imagepath}}"  class="user-image" alt="User Image">
+            <span class="hidden-xs">{{email}}</span>
+            </a>
+          <ul class="dropdown-menu">
+            <!-- User image -->
+            <li class="user-header">
+              <img src="{{imagepath}}" class="img-circle" alt="User Image">
+
+              <p>
+                {{email}}
+                  
+             
+              </p>
+            </li>
+           
+            <!-- Menu Body -->
+             <li class="user-footer">
+                <div class="col-xs-4 text-center">
+                    <a href="#"  routerLink="profile" class="btn btn-info">Profile</a>      
+                </div>
+                <div class="col-xs-4 text-center">
+                    <a href="#"  routerLink="reset" class="btn btn-info">Reset</a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a href="#"  (click)="logout()" class="btn btn-info">Sign out</a>
+                </div>
+            </li>
+			
+            <!-- Menu Footer-->
+           
+          </ul>
+        </li>
+        <!-- Control Sidebar Toggle Button -->
+      
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+

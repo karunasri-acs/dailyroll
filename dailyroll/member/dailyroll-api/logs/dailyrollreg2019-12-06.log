@@ -1,0 +1,6 @@
+[2019-12-06 04:30:45]	[INFO][ws_an_register.php]		begining of Register
+[2019-12-06 04:30:45]	[INFO][ws_an_register.php]		after values get
+[2019-12-06 04:30:45]	[INFO][ws_an_register.php]		create a new user
+[2019-12-06 04:30:45]	[INFO][ws_an_register.php]		73
+[2019-12-06 04:30:45]	[INFO][ws_an_register.php]		before mail sent
+[2019-12-06 04:30:45]	[INFO][ws_an_register.php]		"success"

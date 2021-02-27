@@ -1,0 +1,25 @@
+[2019-11-30 14:03:04]	[INFO][ws_an_device_confirm.php]		12
+[2019-11-30 14:03:04]	[INFO][ws_an_device_confirm.php]		BDK5IJASRE7JVCCY
+[2019-11-30 14:03:04]	[INFO][ws_an_device_confirm.php]		karunasrivelagala@gmail.com
+[2019-11-30 14:03:04]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp
+[2019-11-30 14:03:04]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp"}
+[2019-11-30 14:03:07]	[INFO][ws_an_device_confirm.php]		12
+[2019-11-30 14:03:07]	[INFO][ws_an_device_confirm.php]		BDK5IJASRE7JVCCY
+[2019-11-30 14:03:07]	[INFO][ws_an_device_confirm.php]		karunasrivelagala@gmail.com
+[2019-11-30 14:03:07]	[INFO][ws_an_device_confirm.php]		https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp
+[2019-11-30 14:03:07]	[INFO][ws_an_device_confirm.php]		{"qrcode":"https:\/\/chart.googleapis.com\/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth%3A%2F%2Ftotp%2Fkarunasrivelagala%40gmail.com%3Fsecret%3DBDK5IJASRE7JVCCY%26issuer%3DDailyRoll%2BApp"}
+[2019-11-30 14:03:20]	[INFO][ws_an_device_confirm.php]		12
+[2019-11-30 14:03:20]	[INFO][ws_an_device_confirm.php]		956089
+[2019-11-30 14:03:20]	[INFO][ws_an_device_confirm.php]		BDK5IJASRE7JVCCY
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		1
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		2
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		SELECT SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='123'
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		SELECT subcat_id,SUM(amount) as expenses  FROM `expenses` WHERE `account_id`='123'GROUP BY `subcat_id`
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		SELECT  SUM(income_amount) as income  FROM `income` WHERE  `account_id`='123'
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		11121
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		17000
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		1
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		Array
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		2
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		Array
+[2019-11-30 14:03:21]	[INFO][ws_an_dashboard.php]		[{"value":"11121","label":"Expenses"},{"value":"17000","label":"Income"}]

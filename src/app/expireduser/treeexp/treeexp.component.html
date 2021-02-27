@@ -1,0 +1,93 @@
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">Business Details</h3>
+       
+         </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        
+<div *ngIf="catshow">
+   
+<mat-tree [dataSource]="classifications" [treeControl]="treeControl">
+    <div class="row">
+    <mat-nested-tree-node *matTreeNodeDef="let node">
+       <div class="col-md-9" >
+      <button class="btn btn-primary btn-xs"  mat-icon-button type="button" (click)="treeControl.toggle(node)"
+        [style.visibility]="node.children.length ? 'visible':'hidden'">
+        <mat-icon>{{treeControl.isExpanded(node) ? '_':'+' }}</mat-icon>
+     </button>
+      <span   *ngIf="node.type !=='sub-account'" style="padding-left: 5px;"> {{node.name}} </span>
+     <div class="row" *ngIf="node.type ==='sub-account'" style="margin-top:-20px" >
+      <div class="col-md-6">
+            {{node.name}}  
+       </div>
+      <div class="col-md-6">
+         {{node.amount}} 
+      
+      </div>
+    </div>
+    
+    </div>
+    <div class="col-md-3">
+        <ul >               
+            
+            <li *ngIf="node.type !=='no'"><a href=""  data-toggle="modal" data-target="#info" (click)="editMember(node)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+            </li>
+           
+         </ul>
+    </div>
+    <ng-container matTreeNodeOutlet  *ngIf="treeControl.isExpanded(node)"></ng-container>
+    
+   
+    </mat-nested-tree-node>
+</div>
+    
+</mat-tree>
+</div>
+</div>
+
+</div>
+
+  <div class="modal fade" id="info" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h4>View Contact</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span></button>
+      </div>
+      <form class="form-horizontal" action="" method="POST">
+        <div class="modal-body" >
+          <table id="my-tables" datatable  class="display" style="width:100%"   *ngIf="mytablecontacts">
+
+            <thead>
+<tr role="row">
+  <th >S.No</th>
+  <th> Name</th>
+  <th >Email </th>
+  <th >Address</th>
+  <th >Phone</th>
+ 
+    
+</tr>  
+</thead>
+<tbody>
+<tr  role="row" class="odd" *ngFor="let item of mycontacts,let i=index">
+    <td>{{i+1}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.email}}</td>
+    <td>{{item.address}}</td>
+    <td>{{item.phone}}</td>
+ 
+</tr></tbody>
+</table>
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+        </div>
+      
+      </form>
+      </div>
+    </div>
+  </div>

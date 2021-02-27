@@ -1,0 +1,58 @@
+[2019-11-30 13:59:42]	[INFO][ws_an_getprofile.php]		5c3b3a75532f62.49043861
+[2019-11-30 13:59:42]	[INFO][ws_an_getprofile.php]		13
+[2019-11-30 13:59:42]	[INFO][ws_an_getprofile.php]		select * from `users` where `user_id`='13'
+[2019-11-30 13:59:42]	[INFO][ws_an_getprofile.php]		select * from `profile` where `user_id`='13'
+[2019-11-30 13:59:42]	[INFO][ws_an_getprofile.php]		8940617535de2b5dfdc6aa.jpg
+[2019-11-30 13:59:42]	[INFO][ws_an_getprofile.php]		../../../../uploads/content/dailyroll/profile/
+[2019-11-30 14:01:53]	[INFO][ws_an_getprofile.php]		5c3b3a75532f62.49043861
+[2019-11-30 14:01:53]	[INFO][ws_an_getprofile.php]		13
+[2019-11-30 14:01:53]	[INFO][ws_an_getprofile.php]		select * from `users` where `user_id`='13'
+[2019-11-30 14:01:53]	[INFO][ws_an_getprofile.php]		select * from `profile` where `user_id`='13'
+[2019-11-30 14:01:53]	[INFO][ws_an_getprofile.php]		8940617535de2b5dfdc6aa.jpg
+[2019-11-30 14:01:53]	[INFO][ws_an_getprofile.php]		../../../../uploads/content/dailyroll/profile/
+[2019-11-30 14:02:48]	[INFO][ws_an_getprofile.php]		5c3b3a75532f62.49043861
+[2019-11-30 14:02:48]	[INFO][ws_an_getprofile.php]		13
+[2019-11-30 14:02:48]	[INFO][ws_an_getprofile.php]		select * from `users` where `user_id`='13'
+[2019-11-30 14:02:48]	[INFO][ws_an_getprofile.php]		select * from `profile` where `user_id`='13'
+[2019-11-30 14:02:48]	[INFO][ws_an_getprofile.php]		8940617535de2b5dfdc6aa.jpg
+[2019-11-30 14:02:48]	[INFO][ws_an_getprofile.php]		../../../../uploads/content/dailyroll/profile/
+[2019-11-30 14:02:48]	[INFO][ws_an_getprofile.php]		content/dailyroll/profile/
+[2019-11-30 14:02:48]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/
+[2019-11-30 14:02:48]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/8940617535de2b5dfdc6aa.jpg
+[2019-11-30 14:03:25]	[INFO][ws_an_getprofile.php]		5c3b3a6485ea66.91060288
+[2019-11-30 14:03:25]	[INFO][ws_an_getprofile.php]		12
+[2019-11-30 14:03:25]	[INFO][ws_an_getprofile.php]		select * from `users` where `user_id`='12'
+[2019-11-30 14:03:25]	[INFO][ws_an_getprofile.php]		select * from `profile` where `user_id`='12'
+[2019-11-30 14:03:25]	[INFO][ws_an_getprofile.php]		17574208445d52f5c0b3575.jpg
+[2019-11-30 14:03:25]	[INFO][ws_an_getprofile.php]		../../../../uploads/content/dailyroll/profile/
+[2019-11-30 14:03:25]	[INFO][ws_an_getprofile.php]		content/dailyroll/profile/
+[2019-11-30 14:03:25]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/
+[2019-11-30 14:03:25]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/17574208445d52f5c0b3575.jpg
+[2019-11-30 14:03:39]	[INFO][ws_an_profile.php]		5c3b3a6485ea66.91060288
+[2019-11-30 14:03:39]	[INFO][ws_an_profile.php]		12
+[2019-11-30 14:03:39]	[INFO][ws_an_profile.php]		1
+[2019-11-30 14:03:39]	[INFO][ws_an_profile.php]		UPDATE `profile` SET `name`='name',`lastname`='',`email`='karunasrivelagala@gmail.com',`address`='',`phone`='7989583581',`country`='',`photo`='1016146255de2bd0ba27d3.jpg' WHERE `user_id`='12'
+[2019-11-30 14:03:41]	[INFO][ws_an_getprofile.php]		5c3b3a6485ea66.91060288
+[2019-11-30 14:03:41]	[INFO][ws_an_getprofile.php]		12
+[2019-11-30 14:03:41]	[INFO][ws_an_getprofile.php]		select * from `users` where `user_id`='12'
+[2019-11-30 14:03:41]	[INFO][ws_an_getprofile.php]		select * from `profile` where `user_id`='12'
+[2019-11-30 14:03:41]	[INFO][ws_an_getprofile.php]		1016146255de2bd0ba27d3.jpg
+[2019-11-30 14:03:41]	[INFO][ws_an_getprofile.php]		../../../../uploads/content/dailyroll/profile/
+[2019-11-30 14:03:41]	[INFO][ws_an_getprofile.php]		content/dailyroll/profile/
+[2019-11-30 14:03:41]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/
+[2019-11-30 14:03:41]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/1016146255de2bd0ba27d3.jpg
+[2019-11-30 14:03:57]	[INFO][ws_an_getprofile.php]		5c3b3a6485ea66.91060288
+[2019-11-30 14:03:57]	[INFO][ws_an_getprofile.php]		12
+[2019-11-30 14:03:57]	[INFO][ws_an_getprofile.php]		select * from `users` where `user_id`='12'
+[2019-11-30 14:03:57]	[INFO][ws_an_getprofile.php]		select * from `profile` where `user_id`='12'
+[2019-11-30 14:03:57]	[INFO][ws_an_getprofile.php]		1016146255de2bd0ba27d3.jpg
+[2019-11-30 14:03:57]	[INFO][ws_an_getprofile.php]		../../../../uploads/content/dailyroll/profile/
+[2019-11-30 14:03:57]	[INFO][ws_an_getprofile.php]		content/dailyroll/profile/
+[2019-11-30 14:03:57]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/
+[2019-11-30 14:03:57]	[INFO][ws_an_getprofile.php]		https://apps.dinkhoo.com/uploads/content/dailyroll/profile/1016146255de2bd0ba27d3.jpg
+[2019-11-30 14:04:49]	[INFO][ws_an_fileupload1.php]		../../../../uploads/content/dailyroll/uploads/5c3b3a6485ea66.91060288/2019/11/30/5c3b3a6485ea66.91060288-pic4.jpg
+[2019-11-30 14:04:49]	[INFO][ws_an_fileupload1.php]		Array
+[2019-11-30 14:04:49]	[INFO][ws_an_update_expense.php]		UPDATE `expenses` SET `account_id`='37',`amount`='720',`file_name`='../../../../uploads/content/dailyroll/uploads/5c3b3a6485ea66.91060288/2019/11/30/5c3b3a6485ea66.91060288-pic4.jpg',`description`='test',`subcat_id`='96',`cat_id`='47',`tr_date`= '2019-09-05', pendingflag='non-pending' WHERE `id`='382'
+[2019-11-30 14:06:14]	[INFO][ws_an_fileupload1.php]		../../../../uploads/content/dailyroll/uploads/5c3b3a6485ea66.91060288/2019/11/30/5c3b3a6485ea66.91060288-2189525-bigthumbnail.jpg
+[2019-11-30 14:06:14]	[INFO][ws_an_fileupload1.php]		Array
+[2019-11-30 14:06:14]	[INFO][ws_an_update_expense.php]		UPDATE `expenses` SET `account_id`='93',`amount`='1231',`file_name`='../../../../uploads/content/dailyroll/uploads/5c3b3a6485ea66.91060288/2019/11/30/5c3b3a6485ea66.91060288-2189525-bigthumbnail.jpg',`description`='test6',`subcat_id`='675',`cat_id`='265',`tr_date`= '2019-09-07', pendingflag='non-pending' WHERE `id`='385'

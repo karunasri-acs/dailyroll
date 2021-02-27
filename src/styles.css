@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url(assets/css/themify-icons.css);
+@import url(assets/daily/css/bootstrap.min.css);
+@import url(assets/daily/css/font-awesome.min.css);
+@import url(assets/daily/css/pe-icon-7-stroke.css);
+@import url(assets/daily/css/owl.carousel.min.css);
+@import url(assets/daily/css/owl.theme.default.min.css);
+@import url(assets/daily/css/flexslider.css);
+@import url(assets/daily/css/magnific-popup.css);
+@import url(assets/daily/css/slick.css);
+@import url(assets/daily/css/slick-theme.css);
+@import url(assets/daily/css/animate.min.css);
+@import url(assets/daily/css/style.css);
+@import url(assets/daily/css/blue.css);
+@import url(assets/daily/css/indiared.css);
+@import url(assets/daily/css/yellow.css);
+@import url(assets/daily/css/olive-drab.css);
+@import url(assets/daily/css/sky-blue.css);
+@import url(assets/daily/css/cadet-blue.css);
+@import url(assets/daily/css/orange-red.css);
+@import url(assets/daily/css/lightgreen.css);
+@import url(assets/daily/css/responsive.css);
+;
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,137 @@
+<div class="row">
+  
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-lg-4 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-aqua">
+          <div class="inner">
+            <h3>{{accounts}}</h3>
+
+            <p>Accounts</p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-shopping-bag"></i>
+          </div>
+          </div>
+      </div>
+      <!-- ./col -->
+      <!-- ./col -->
+      <div class="col-lg-4 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-yellow">
+          <div class="inner">
+            <h3>{{expense}}</h3>
+
+            <p>Expenses</p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-bar-chart"></i>
+          </div>
+         </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-lg-4 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-red">
+          <div class="inner">
+            <h3>{{income}}</h3>
+
+            <p>Income</p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-money"></i>
+          </div>
+         </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    <!-- Main row -->
+    <div class="box box-info">
+      <div class="box-header with-border">
+        <h3 class="box-title"></h3>
+      </div>
+     <form class="form-horizontal" action="" method="POST">
+        <div class="box-body">
+  <div class="row">
+    <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="inputEmail3" class="col-sm-4 control-label">Account</label>
+      <div class="col-sm-8">
+
+        <select id="account_id" #account_id="ngModel" class="hideLabel form-control" [(ngModel)]="accountid" name="accountdash_id" (change)="selectacc();">  
+      
+                          <option [ngValue]="k.account_id" *ngFor="let k of accountslist">  
+                              {{k.accountname}}  
+                          </option>  
+                        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail3" class="col-sm-4 control-label">Select Period</label>
+<div class="col-sm-8">
+<select id="period_id" #period_id="ngModel" class="hideLabel form-control"  [(ngModel)]="periodtype" name="accountperiod_id" (change)="selectperiod();">  
+ 
+    <option [ngValue]="k.catname" *ngFor="let k of messagetype">  
+      {{k.catname}}  
+  </option>  
+</select>
+</div>
+    </div>   
+  </div>
+ 
+        </div>
+        </div>
+       </form>
+   </div>
+   <div class="row">
+    <section class="col-lg-6 connectedSortable">
+        <div class="col-md-12">
+            <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Expenses:Income</h3>
+            <div class="box-tools pull-right">
+                    </div>
+            <div class="box-body">
+    <div style="display: block">
+    <fusioncharts
+    width="400"
+    height="300"
+    type="doughnut2d"
+    dataFormat="json"
+    [dataSource]="data1" >
+  </fusioncharts>
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+  </section>
+  <section class="col-lg-6 connectedSortable">
+    <div class="box box-danger">
+        <div class="box-header with-border">
+          <h3 class="box-title">Expenses</h3>
+          <div class="box-tools pull-right">
+           </div>
+        </div>
+        <div class="box-body chart-responsive">
+          <fusioncharts
+          width="400"
+          height="300"
+          type="Column2d"
+          [dataSource]="dataSource"
+        >
+        </fusioncharts>
+        
+           
+  </div>
+  </div>
+  </section>
+  </div>
+    
+    <!-- /.row (main row) -->
+  </div>
+ 
+    
+</div>

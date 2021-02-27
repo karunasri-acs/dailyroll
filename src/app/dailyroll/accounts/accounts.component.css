@@ -1,0 +1,9 @@
+ul.opera{
+    display: inline;
+
+}
+ul li{
+    padding: 5px;
+    padding-right: 10px;
+    float:left;
+}

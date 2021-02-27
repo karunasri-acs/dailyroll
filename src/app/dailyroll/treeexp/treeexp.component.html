@@ -1,0 +1,491 @@
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">Business Details</h3>
+       
+         </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        <button class="btn btn-info" style="float: right;padding-right: 7px;" data-toggle="modal" data-target="#addbusi" ><span class="glyphicon glyphicon-plus-sign"></span>Add Business</button>
+<br>      
+<div *ngIf="catshow">
+   
+<mat-tree [dataSource]="classifications" [treeControl]="treeControl">
+    <div class="row">
+    <mat-nested-tree-node *matTreeNodeDef="let node">
+       <div class="col-md-9" >
+      <button class="btn btn-primary btn-xs"  mat-icon-button type="button" (click)="treeControl.toggle(node)"
+        [style.visibility]="node.children.length ? 'visible':'hidden'">
+        <mat-icon>{{treeControl.isExpanded(node) ? '_':'+' }}</mat-icon>
+     </button>
+      <span   *ngIf="node.type !=='sub-account' && node.type==='business'" style="padding-left: 5px;"> {{node.name}}</span>
+     <span *ngIf="node.type !=='sub-account'  && node.type !=='business'"  style="padding-left: 5px;"> {{node.name}} </span>
+     <span *ngIf="node.type !=='sub-account'  && node.type !=='business'"  data-toggle="tooltip" title="" class="badge bg-light-blue" >{{node.count}}</span>
+     <div class="row" *ngIf="node.type ==='sub-account'" style="margin-top:-20px" >
+      <div class="col-md-6">
+            {{node.name}}  
+       </div>
+      <div class="col-md-6">
+         {{node.symbol}}{{node.amount}} 
+      
+      </div>
+    </div>
+    
+    </div>
+    <div class="col-md-3">
+        <ul >               
+            
+            <li *ngIf="node.type !=='no'"><a href=""  data-toggle="modal" data-target="#info" (click)="editMember(node)" title="Contact Info"> <i class="fa  fa-info-circle"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+            </li>
+            <li *ngIf="node.type !=='no' && node.status !== 'not'"><a href=""  data-toggle="modal" data-target="#contact" (click)="editMember(node)" title="Add Contact"> <i class="fa fa-phone"aria-hidden="true" style="font-size:15px;"></i></a>
+            </li>
+            <li *ngIf="node.type !=='no' && node.type !=='sub-account'  && node.status !== 'not' "><a href=""  data-toggle="modal" data-target="#edit" (click)="editMember(node)" title="Edit"> <i class="fa  fa-edit"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+            </li>
+            <li *ngIf="node.type !=='no' && node.type ==='sub-account'  && node.status !== 'not'"><a href=""  data-toggle="modal" data-target="#editsub" (click)="editMember(node)" title="Edit"> <i class="fa  fa-edit"aria-hidden="true" style="font-size:15px;color :green"></i></a>
+            </li>
+            <li *ngIf="node.type ==='no'  && node.status !== 'not'"><a href=""  data-toggle="modal" data-target="#add" (click)="editMember(node)" title="Add "> <i class="fa  fa-plus-square"aria-hidden="true" style="font-size:15px; "></i></a>
+            </li>
+            <li *ngIf="node.type ==='account' && node.status !== 'not'"><a href=""  data-toggle="modal" data-target="#addacc" (click)="editMember(node)" title="Add"> <i class="fa  fa-plus-square"aria-hidden="true" style="font-size:15px; "></i></a>
+            </li>
+            <li *ngIf="node.status === 'active' && node.type !=='no'"> <a href=""  data-toggle="modal" data-target="#modalinactive"  (click)="editMember(node)" title="Inactive"> <i class="fa  fa-check" aria-hidden="true" style="font-size:15px;color:   #D11027;"></i></a>
+            </li>
+            <li *ngIf="node.status === 'inactive' && node.type !=='no'"><a href=""  data-toggle="modal" data-target="#modalactive" (click)="editMember(node)" title="Active"> <i class="fa  fa-ban" aria-hidden="true" style="font-size:15px;color:   #D11027;"></i></a>
+            </li>
+         </ul>
+    </div>
+    <ng-container matTreeNodeOutlet  *ngIf="treeControl.isExpanded(node)"></ng-container>
+    
+   
+    </mat-nested-tree-node>
+</div>
+    
+</mat-tree>
+</div>
+</div>
+
+</div>
+<div class="modal fade" id="modalactive">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title">Activate</h4>
+      </div>
+      <form action="" method="POST">
+      <div class="modal-body">
+       
+        <p>Are You Relly Want Activate</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+        <button class = "btn btn-primary" (click)="activate()"   name="Activate"   value="Activate" data-dismiss="modal" >Activate</button>
+        </div>
+      </form>
+      </div>
+    </div>
+    </div>
+   
+    <div class="modal fade" id="modalinactive">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+             <h4 class="modal-title">In-Activate</h4>
+        </div>
+        <form action="" method="POST">
+        <div class="modal-body">
+         
+          <p>Are You Relly Want In-Activate </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button  class = "btn btn-primary"  (click)="inactivate()"  data-dismiss="modal" >In-Active</button>
+        
+        </div>
+        </form>
+        </div>
+      </div>
+    </div>
+<div class="modal fade" id="contact" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h4>Add Contact</h4>
+      <h4 *ngIf="editedProduct.type==='business'"><strong>{{editedProduct.busname}}</strong></h4> 
+     <h4 *ngIf="editedProduct.type==='account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}</strong></h4> 
+     <h4 *ngIf="editedProduct.type==='sub-account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.subcatname}}</strong></h4> 
+         
+      </div>
+      <form class="form-horizontal" action="" method="POST">
+      
+            <div class="modal-body">
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label"> Name</label>
+            <div class="col-sm-9"> 
+              <input type="text" class="form-control"  required  [(ngModel)]='contactname' placeholder="Contact Name" name="contactname">
+            </div>
+          </div>
+          
+          <br>
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label"> Email</label>
+            <div class="col-sm-9"> 
+              <input type="email" class="form-control"  required  [(ngModel)]='contactemail' placeholder="Contact Email" name="contactemail">
+            </div>
+          </div>
+          
+          <br>
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label"> Address<Address></Address></label>
+            <div class="col-sm-9"> 
+              <input type="text" class="form-control"  required  [(ngModel)]='contactaddress' placeholder="Contact Address" name="contactaddress">
+            </div>
+          </div>
+          
+          <br>
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label">Phone </label>
+            <div class="col-sm-9"> 
+              <input type="number" class="form-control"    [(ngModel)]='contactphone' placeholder="Contact Phone" name="contactphone">
+            </div>
+          </div>
+          <br>
+           </div>
+           <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="submit"  (click)="addcontact()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Add</button>
+          </div>
+      
+      </form>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="edit" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h4>Edit</h4>
+      <h4 *ngIf="editedProduct.type==='business'"><strong>{{editedProduct.busname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.type==='account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.type==='sub-account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.subcatname}}</strong></h4> 
+       
+        </div>
+      <form class="form-horizontal" action="" method="POST">
+      
+            <div class="modal-body">
+          <div class="row">
+            <label for="name" class="col-sm-3 control-label" style="text-align: left;">Name</label>
+            <div class="col-sm-8"> 
+              <input type="text" class="form-control"  required  [(ngModel)]='editedProduct.name' placeholder="Contact Name" name="contactname">
+            </div>
+          </div>
+          <br>
+          <div class="row" *ngIf="editedProduct.type === 'business'">
+            <label for="name" class="col-sm-3 control-label" style="text-align: left;">Member </label>
+            <div class="col-sm-8">  
+           
+            <button type="submit"  (click)="viewdata()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Member view</button>
+            </div>
+          </div>
+          <br>
+          <div class="row" *ngIf="editedProduct.type === 'business'">
+            <label for="name" class="col-sm-3 control-label" style="text-align: left;" >Transactions </label>
+            <div class="col-sm-8"> 
+           
+            <button type="submit"  (click)="viewalldata()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Transactions view</button>
+            </div>
+          </div>
+          
+          
+           </div>
+           <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="submit"  (click)="updatename()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Update</button>
+          </div>
+      
+      </form>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="editsub" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h4>Edit</h4>
+      <h4 *ngIf="editedProduct.type==='business'"><strong>{{editedProduct.busname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.type==='account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.type==='sub-account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.subcatname}}</strong></h4> 
+       
+      </div>
+      <form class="form-horizontal" action="" method="POST">
+      
+            <div class="modal-body">
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-9"> 
+              <input type="text" class="form-control"  required  [(ngModel)]='editedProduct.name' placeholder="Enter Name" name="name">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label">Amount</label>
+            <div class="col-sm-9"> 
+              <input type="number" class="form-control"  required  [(ngModel)]='editedProduct.amount' placeholder=" Enter Amout" name="amount">
+            </div>
+          </div>
+          
+          
+           </div>
+           <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="submit"  (click)="updatesubac()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Update</button>
+          </div>
+      
+      </form>
+      </div>
+    </div>
+  </div>
+ 
+<div class="modal fade" id="addbusi" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h4>Add Business</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span></button>
+      </div>
+      <form class="form-horizontal" action="" method="POST">
+      
+            <div class="modal-body">
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-9"> 
+              <input type="text" class="form-control"  required  [(ngModel)]='addname' placeholder="Enter Account Name" name="contactname">
+            </div>
+          </div>
+          
+          
+           </div>
+           <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="submit"  (click)="addbus()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Add</button>
+          </div>
+      
+      </form>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="add" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h4>Add </h4>
+      <h4 *ngIf="editedProduct.type==='business'"><strong>{{editedProduct.busname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.type==='account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.type==='sub-account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.subcatname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.showtype==='Expenses'"><strong>{{editedProduct.busname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.showtype==='Income'"><strong>{{editedProduct.busname}}</strong></h4> 
+       
+      </div>
+      <form class="form-horizontal" action="" method="POST">
+      
+            <div class="modal-body">
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-9"> 
+              <input type="text" class="form-control"  required  [(ngModel)]='addname' placeholder="Enter Account Name" name="contactname">
+            </div>
+          </div>
+          
+          
+           </div>
+           <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="submit"  (click)="adddata()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Add</button>
+          </div>
+      
+      </form>
+      </div>
+    </div>
+  </div>
+ 
+<div class="modal fade" id="addacc" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h4>Add</h4>
+      <h4 *ngIf="editedProduct.type==='business'"><strong>{{editedProduct.busname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.type==='account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}</strong></h4> 
+      <h4 *ngIf="editedProduct.type==='sub-account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.subcatname}}</strong></h4> 
+       
+      </div>
+      <form class="form-horizontal" action="" method="POST">
+      
+            <div class="modal-body">
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-9"> 
+              <input type="text" class="form-control"  required  [(ngModel)]='addaccname' placeholder="Enter Sub-Account Name" name="contactname">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <label for="name" class="col-sm-2 control-label">Amount</label>
+            <div class="col-sm-9"> 
+              <input type="number" class="form-control"  required  [(ngModel)]='addamount' placeholder="Enter Amount" name="amount">
+            </div>
+          </div>
+          
+          
+           </div>
+           <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="submit"  (click)="addaccdata()" data-dismiss="modal"  class="btn btn-primary" name="accountadd">Add</button>
+          </div>
+      
+      </form>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="modal fade" id="info" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h4>View Contact</h4>
+      <h4 *ngIf="editedProduct.type==='business'"><strong>{{editedProduct.busname}}</strong></h4> 
+     <h4 *ngIf="editedProduct.type==='account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}</strong></h4> 
+     <h4 *ngIf="editedProduct.type==='sub-account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.subcatname}}</strong></h4> 
+        
+             </div>
+      <form class="form-horizontal" action="" method="POST">
+        <div class="modal-body" >
+          <table id="my-tables" datatable  class="display" style="width:100%"   *ngIf="mytablecontacts">
+
+            <thead>
+<tr role="row">
+ 
+  <th >Date</th>
+  <th> Name</th>
+  <th >Phone</th>
+  <th>Operations</th>
+    
+</tr>  
+</thead>
+<tbody>
+<tr  role="row" class="odd" *ngFor="let item of mycontacts,let i=index">
+   
+    <td>{{item.adddate}}</td>
+    <td>{{item.name}}</td>
+   
+    <td>{{item.phone}}</td>
+    <td>
+<ul>
+  <li>
+    <a href="" data-toggle="modal" data-target="#accountedit" (click)="editcontact(item)"> <i class="fa fa-edit (alias)" aria-hidden="true" style="font-size:15px;color:   #0C14B7;"></i></a>&nbsp;&nbsp;&nbsp;
+  </li>
+  <li>
+    <a href="" data-toggle="modal" data-target="#accountdelete" (click)="editcontact(item)"> <i class="fa  fa-trash-o" aria-hidden="true" style="font-size:15px;color:   #0C14B7;"></i></a>
+  </li>
+
+</ul>
+
+    </td>
+    
+</tr></tbody>
+</table>
+
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+        </div>
+      
+      </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="accountedit">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h4>Edit Contact</h4>
+        <h4 *ngIf="editedProduct.type==='business'"><strong>{{editedProduct.busname}}</strong></h4> 
+        <h4 *ngIf="editedProduct.type==='account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}</strong></h4> 
+        <h4 *ngIf="editedProduct.type==='sub-account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.subcatname}}</strong></h4> 
+         
+        </div>
+      
+       <div class="modal-body">
+        <div class="row">
+          <label for="name" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-9" > 
+            <input type="text" class="form-control"  [(ngModel)]='editcontactproduct.name'   required="" name="amount" placeholder="Amount">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <label for="name" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-9"  > 
+            <input type="email" class="form-control"  [(ngModel)]='editcontactproduct.email'   required="" name="amount" placeholder="Amount">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <label for="name" class="col-sm-2 control-label">Phone</label>
+          <div class="col-sm-9" > 
+            <input type="Number" class="form-control"  [(ngModel)]='editcontactproduct.phone'   required="" name="amount" placeholder="Amount">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <label for="name" class="col-sm-2 control-label">Address</label>
+          <div class="col-sm-9" > 
+            <input type="text" class="form-control"  [(ngModel)]='editcontactproduct.address'   required="" name="amount" placeholder="Amount">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <label for="name" class="col-sm-2 control-label">Date</label>
+          <div class="col-sm-9"  > 
+            <input type="date" class="form-control" disabled  [(ngModel)]='editcontactproduct.adddate'   required="" name="amount" placeholder="Amount">
+          </div>
+        </div>
+        <br>
+               
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="submit" (click)="updatecontact()"     data-dismiss="modal" class="btn btn-primary" name="add">Add</button>
+        </div>
+    
+    </div>
+    </div>
+</div>	
+  <div class="modal fade" id="accountdelete">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h4>Delete Contact</h4>
+        <h4 *ngIf="editedProduct.type==='business'"><strong>{{editedProduct.busname}}</strong></h4> 
+        <h4 *ngIf="editedProduct.type==='account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}</strong></h4> 
+        <h4 *ngIf="editedProduct.type==='sub-account'"><strong>{{editedProduct.busname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.showtype}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.accname}}&nbsp;&nbsp;->&nbsp;&nbsp;{{editedProduct.subcatname}}</strong></h4> 
+         
+        </div>
+      
+       <div class="modal-body">
+       
+       <p>Are you really want to delete Contact</p>
+               
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="submit" (click)="deletecontact()"    data-dismiss="modal" class="btn btn-primary" name="add">Add</button>
+        </div>
+    
+    </div>
+    </div>
+</div>	

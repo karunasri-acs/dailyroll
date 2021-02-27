@@ -1,0 +1,40 @@
+<div class="row">
+	
+	<div class="col-md-12">
+	
+		<div class="box box-primary">
+<div class="box-header with-border">
+	<h3 class="box-title">Feedback</h3>
+</div>
+<!-- /.box-header -->
+<!-- form start -->
+<form  action="" method="POST">
+	<div class="box-body">
+	<div class="form-group">
+		<label for="exampleInputName">Feedback Type</label>
+		<select   id="feedback"  [(ngModel)]="type"  class="form-control" name="feedback"  >
+			<option value="request"> Request </option>
+			<option value="suggestions"> Suggestions</option>
+		</select></div>
+	<div class="form-group">
+		<label for="exampleInputPassword1">Email</label>
+		<input type="email" class="form-control" id="email" [(ngModel)]="email"  [ngModelOptions]="{standalone: true}"   placeholder="Enter Vaild Email">
+	</div>
+	
+	<div class="form-group">
+		<label for="exampleInputPassword1">Description</label>
+		<textarea class="form-control" type="textarea" name="comments"  [(ngModel)]="description"  placeholder="Your Comments" maxlength="6000" rows="6"></textarea>
+	</div>
+	</div>
+	<div class="box-footer">
+	<button type = "submit"  (click)="addFedback()"name = "fedback"  class="btn btn-primary">Submit</button>
+	</div>
+</form>
+</div>
+
+
+
+
+	</div>
+			
+</div>
